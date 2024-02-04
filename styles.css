@@ -1,16 +1,19 @@
- /* Color Variables  */
+
 
 :root {
+
+     /* Color Variables  */
     --clr-primary: #000000; /* black */
     --clr-secondary: #333333; /* dark grey */
-    --clr-accent: #333333; /* dark grey */
+    --clr-accent: #E1E1E1; /* dark grey */
     --clr-light: #f5f5f5; /* very light grey */
     --clr-white: #ffffff; /* white */
+    --clr-link--active: #1074ab; /* dark blue */
+
     
 }
 
 /* Box sizing and CSS reset */
-
 *,
 *::before,
 *::after {
@@ -37,3 +40,6 @@ ol {
     padding: 0;
     list-style: none;
 }
+
+
+
