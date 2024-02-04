@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,78 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="design-system.css" />
 </head>
+
 <body>
-    
+    <!-- Top Navbar -->
+    <header class="navbar__top">
+        <div class="navbar__logo">Design System</div>
+        <!-- Hamburger icon for mobile menu -->
+        <div class="navbar__mobile-toggle" onclick="toggleMobileMenu()"></div>
+        <nav class="navbar__menu">
+            <ul class="navbar__menu__items">
+                <li><a href="about-me.html" class="navbar__link">About Me</a></li>
+                <li><a href="index.html" class="navbar__link">Demos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Side navbar -->
+    <nav class="navbar__side">
+        <!-- Top level navigation items -->
+        <ul class="top__items">
+            <li><a class="menu__link" href="about-me.html">About Me</a></li>
+            <li><a class="menu__link" href="index.html">Demos</a></li>
+        </ul>
+
+        <!-- Branding section -->
+        <h3 class="menu__heading">Branding</h3>
+        <ul class="navbar__list__items">
+            <li><a class="menu__link" href="#Colours"><span class="list__number">01 </span> Colours</a></li>
+            <li><a class="menu__link" href="#Typography"><span class="list__number">02 </span> Typography</a></li>
+            <li><a class="menu__link" href="#Logo"><span class="list__number">03 </span> Logo</a></li>
+        </ul>
+
+        <!-- Utilities section -->
+        <h3 class="menu__heading">Utilities</h3>
+        <ul class="navbar__list__items">
+            <li><a class="menu__link" href="#"><span class="list__number">04 </span> Spacing</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">05 </span> Containers</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">06 </span> Images</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">07 </span> Interactive</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">08 </span> Feedback</a></li>
+        </ul>
+
+        <!-- Navigation section -->
+        <h3 class="menu__heading">Navigation</h3>
+        <ul class="navbar__list__items">
+            <li><a class="menu__link" href="#"><span class="list__number">09 </span> Navbars</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">10 </span> Breadcrumbs</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">11 </span> Pagination</a></li>
+        </ul>
+
+        <!-- Blocks section -->
+        <h3 class="menu__heading">Blocks</h3>
+        <ul class="navbar__list__items">
+            <li><a class="menu__link" href="#"><span class="list__number">12 </span> Hero</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">13 </span> Carousel</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">14 </span> Slats</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">15 </span> Footer</a></li>
+        </ul>
+
+        <!-- Components section -->
+        <h3 class="menu__heading">Components</h3>
+        <ul class="navbar__list__items">
+            <li><a class="menu__link" href="#"><span class="list__number">16 </span> Cards</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">17 </span> Forms</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">18 </span> Accordion</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">19 </span> Lists</a></li>
+        </ul>
+    </nav>
+
+    <!-- Scripts -->
+    <script src="design-system.js"></script>
+
 </body>
+
 </html>
