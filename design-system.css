@@ -34,4 +34,72 @@
     display: flex;
     gap: 1rem;
   }
+
+
+
+/* Menu links */
+.navbar__menu__items li .navbar__link {
+    text-decoration: none;
+    color: var(--clr-primary);
+  }
+  
+  /* Menu links  States - Hover*/
+  .navbar__menu__items li .navbar__link:hover {
+    color: var(--clr-light);
+  }
+  
+  /* Active state menu link */
+  .navbar__menu__items li .navbar__link--active {
+    border-bottom: 2px solid var(--clr-primary);
+  }
+  
+  /* Hide the mobile menu */
+  .navbar__side {
+    display: none;
+  }
+  
+  .navbar__side--open {
+    display: block;
+  }
+  
+  /* Mobile menu toggle button */
+  .navbar__mobile-toggle {
+    display: block;
+  }
+  
+  /* Side Navbar top items */
+  .top__items {
+    display: block;
+    margin-top: 20px;
+  }
+  
+  /* Menu links and states */
+  
+  .menu__link {
+    text-decoration: none;
+    color: var(--clr-primary);
+  }
+  
+  .menu__link:hover {
+    color: var(--clr-accent);
+  }
+  
+  .menu__link--active {
+    color: var(--clr-secondary);
+    border-bottom: 2px solid var(--clr-secondary);
+  }
+  
+  /*  show active state on focus */
+  a:focus {
+    color: var(--clr-link--active);
+    font-weight: bolder;
+  }
+  
+  /*  Menu headung categories */
+  
+  .menu__heading {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
   
