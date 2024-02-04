@@ -102,4 +102,41 @@
     margin-bottom: 20px;
   }
   
+  /* Media Queries */
+
+@media (min-width: 768px) {
+    /* Tablets and above */
+    .navbar__mobile-toggle {
+      display: none;
+    }
+  
+    .navbar__side {
+      display: block;
+      position: static;
+      width: auto;
+    }
+  
+    /* Top navbar visibility*/
+    .navbar__top {
+      display: flex;
+    }
+  
+    /* Hide side navbar for desktop */
+    .navbar__side {
+      display: block;
+    }
+  }
+  
+  /* Larger desktop screens */
+  @media (min-width: 1024px) {
+    .top__items {
+      display: none;
+    }
+    .navbar__menu {
+      display: flex;
+    }
+    .navbar__side {
+      display: block;
+    }
+  }
   
