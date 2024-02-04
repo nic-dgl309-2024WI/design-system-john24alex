@@ -1,0 +1,37 @@
+/* Nav Bar */
+.navbar__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--clr-accent);
+    padding: 1rem;
+  }
+  
+  /* Hide on mobile devices */
+  .navbar__menu {
+    display: none;
+  }
+  
+  .navbar__logo {
+    font-weight: bold;
+    color: var(--clr-primary);
+  }
+  
+  /* Toggle icon Mobile */
+  .navbar__mobile-toggle:before {
+    content: "☰";
+    cursor: pointer;
+  }
+  
+  /*Toggle icon close */
+  .navbar__mobile-toggle.open:before {
+    content: "×";
+  }
+  
+  /* Top Navbar items */
+  .navbar__menu__items {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
