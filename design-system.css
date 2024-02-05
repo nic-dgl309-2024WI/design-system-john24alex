@@ -1,141 +1,130 @@
 /* Nav Bar */
 .navbar__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-  }
-  
-  /* Hide on mobile devices */
-  .navbar__menu {
-    display: none;
-  }
-  
-  .navbar__logo {
-    font-weight: bold;
-    color: var(--clr-primary);
-  }
-  
-  /* Toggle icon Mobile */
-  .navbar__mobile-toggle:before {
-    content: "☰";
-    cursor: pointer;
-  }
-  
-  /*Toggle icon close */
-  .navbar__mobile-toggle.open:before {
-    content: "×";
-  }
-  
-  /* Top Navbar items */
-  .navbar__menu__items {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--clr-primary-background);
+}
+
+/* Hide on mobile devices */
+.navbar__menu {
+  display: none;
+}
+
+.navbar__logo {
+  font-weight: bold;
+  color: var(--clr-primary);
+}
+
+/* Toggle icon Mobile */
+.navbar__mobile-toggle:before {
+  content: "☰";
+  cursor: pointer;
+}
+
+/*Toggle icon close */
+.navbar__mobile-toggle.open:before {
+  content: "×";
+}
+
+/* Top Navbar items */
+.navbar__menu__items {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  color: var(--clr-primary-text);
+}
 
 
-
-/* Menu links */
-.navbar__menu__items li .navbar__link {
-    text-decoration: none;
-    color: var(--clr-primary);
+  
+  .text--primary-background {
+    color: var(--clr-primary-background); /* Note: Unusual to set text color to a background variable */
   }
   
-  /* Menu links  States - Hover*/
-  .navbar__menu__items li .navbar__link:hover {
-    color: var(--clr-light);
-  }
-  
-  /* Active state menu link */
-  .navbar__menu__items li .navbar__link--active {
-    border-bottom: 2px solid var(--clr-primary);
-  }
-  
-  /* Hide the mobile menu */
-  .navbar__side {
-    display: none;
-  }
-  
-  .navbar__side--open {
-    display: block;
-  }
-  
-  /* Mobile menu toggle button */
-  .navbar__mobile-toggle {
-    display: block;
-  }
-  
-  /* Side Navbar top items */
-  .top__items {
-    display: block;
-    margin-top: 20px;
-  }
-  
-  /* Menu links and states */
-  
-  .menu__link {
-    text-decoration: none;
-    color: var(--clr-primary);
-  }
-  
-  .menu__link:hover {
+  .text--accent {
     color: var(--clr-accent);
   }
   
-  .menu__link--active {
-    color: var(--clr-secondary);
-    border-bottom: 2px solid var(--clr-secondary);
+  .text--secondary-background {
+    color: var(--clr-secondary-background); /* Note: As above, check intention */
   }
   
-  /*  show active state on focus */
-  a:focus {
-    color: var(--clr-link--active);
-    font-weight: bolder;
+  .text--secondary {
+    color: var(--clr-secondary-text);
   }
   
-  /*  Menu headung categories */
-  
-  .menu__heading {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  .text--brown-light {
+    color: var(--clr-brown-light);
   }
   
-  /* Media Queries */
+  .text--sunset-light {
+    color: var(--clr-sunset-light);
+  }
+  
+  .text--sunset-dark {
+    color: var(--clr-sunset-dark);
+  }
+  
+  .text--brown-medium {
+    color: var(--clr-brown-medium);
+  }
+  
+  .text--blue-medium {
+    color: var(--clr-blue-medium);
+  }
+
+  
+  /* Utility Classes for Light and Dark Text */
+  .text--light {
+    color: var(--clr-brown-light); 
+  }
+
+  .text--white{
+    color: var(--clr-text-white); 
+  
+
+  }
+  
+  .text--dark {
+    color: var(--clr-primary-text);
+  }
+
+
+/* Media Queries */
 
 @media (min-width: 768px) {
-    /* Tablets and above */
-    .navbar__mobile-toggle {
-      display: none;
-    }
-  
-    .navbar__side {
-      display: block;
-      position: static;
-      width: auto;
-    }
-  
-    /* Top navbar visibility*/
-    .navbar__top {
-      display: flex;
-    }
-  
-    /* Hide side navbar for desktop */
-    .navbar__side {
-      display: block;
-    }
+  /* Tablets and above */
+  .navbar__mobile-toggle {
+    display: none;
   }
-  
-  /* Larger desktop screens */
-  @media (min-width: 1024px) {
-    .top__items {
-      display: none;
-    }
-    .navbar__menu {
-      display: flex;
-    }
-    .navbar__side {
-      display: block;
-    }
+
+  .navbar__side {
+    display: block;
+    position: static;
+    width: auto;
   }
-  
+
+  /* Top navbar visibility*/
+  .navbar__top {
+    display: flex;
+  }
+
+  /* Hide side navbar for desktop */
+  .navbar__side {
+    display: block;
+  }
+}
+
+/* Larger desktop screens */
+@media (min-width: 1024px) {
+  .top__items {
+    display: none;
+  }
+  .navbar__menu {
+    display: flex;
+  }
+  .navbar__side {
+    display: block;
+  }
+}
