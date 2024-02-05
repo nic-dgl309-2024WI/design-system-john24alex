@@ -10,16 +10,23 @@
 
   /* Site color Variables  */
   --clr-primary-text: #231007;
-  --clr-primary-background: #faf9eb;
-  --clr-accent: #62311f;
-  --clr-secondary-background: #053855;
   --clr-secondary-text: #8ecddf;
+  --clr-text-light: #dfd9c3;
+  --clr-text-gray: #909090;
+  --clr-text-accent: #62311f;
+  --clr-text-white: ##ffffff;
+
+
+  --clr-primary-background: #faf9eb;
+  --clr-secondary-background: #053855;
+ --clr-accent-background: #d68c3d;
+
 
   /* Tonal  color Variables  */
   --clr-brown-light: #dfd9c3;
   --clr-sunset-light: #b6a248;
   --clr-sunset-dark: #d68c3d;
-  --clr-brown-medium: #938d6c;
+  --clr-gray-medium: #909090;
   --clr-blue-medium: #396f86;
 }
 
