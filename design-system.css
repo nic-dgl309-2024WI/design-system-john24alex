@@ -1,130 +1,305 @@
 /* Nav Bar */
 .navbar__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background-color: var(--clr-primary-background);
-}
-
-/* Hide on mobile devices */
-.navbar__menu {
-  display: none;
-}
-
-.navbar__logo {
-  font-weight: bold;
-  color: var(--clr-primary);
-}
-
-/* Toggle icon Mobile */
-.navbar__mobile-toggle:before {
-  content: "☰";
-  cursor: pointer;
-}
-
-/*Toggle icon close */
-.navbar__mobile-toggle.open:before {
-  content: "×";
-}
-
-/* Top Navbar items */
-.navbar__menu__items {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  color: var(--clr-primary-text);
-}
-
-
-  
-  .text--primary-background {
-    color: var(--clr-primary-background); /* Note: Unusual to set text color to a background variable */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--clr-primary-background);
   }
   
-  .text--accent {
+  /* Hide on mobile devices */
+  .navbar__menu {
+    display: none;
+  }
+  
+  .navbar__logo {
+    font-weight: bold;
+    color: var(--clr-primary);
+  }
+  
+  /* Toggle icon Mobile */
+  .navbar__mobile-toggle:before {
+    content: "☰";
+    cursor: pointer;
+  }
+  
+  /*Toggle icon close */
+  .navbar__mobile-toggle.open:before {
+    content: "×";
+  }
+  
+  /* Top Navbar items */
+  .navbar__menu__items {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    color: var(--clr-primary-text);
+  }
+  
+  /* Menu links */
+  .navbar__menu__items li .navbar__link {
+    text-decoration: none;
+    color: var(--clr-primary);
+  }
+  
+  /* Menu links  States - Hover*/
+  .navbar__menu__items li .navbar__link:hover {
     color: var(--clr-accent);
   }
   
-  .text--secondary-background {
-    color: var(--clr-secondary-background); /* Note: As above, check intention */
+  /* Active state menu link */
+  .navbar__menu__items li .navbar__link--active {
+    border-bottom: 2px solid var(--clr-primary);
   }
   
-  .text--secondary {
-    color: var(--clr-secondary-text);
+  /* Hide the mobile menu */
+  .navbar__side {
+    display: none;
   }
   
-  .text--brown-light {
-    color: var(--clr-brown-light);
+  .navbar__side--open {
+    display: block;
   }
   
-  .text--sunset-light {
-    color: var(--clr-sunset-light);
+  /* Mobile menu toggle button */
+  .navbar__mobile-toggle {
+    display: block;
   }
   
-  .text--sunset-dark {
-    color: var(--clr-sunset-dark);
+  /* Side Navbar top items */
+  .top__items {
+    display: block;
+    margin-top: 20px;
   }
   
-  .text--brown-medium {
-    color: var(--clr-brown-medium);
+  /* Menu links and states */
+  
+  .menu__link {
+    text-decoration: none;
+    color: var(--clr-primary);
   }
   
-  .text--blue-medium {
-    color: var(--clr-blue-medium);
-  }
-
-  
-  /* Utility Classes for Light and Dark Text */
-  .text--light {
-    color: var(--clr-brown-light); 
-  }
-
-  .text--white{
-    color: var(--clr-text-white); 
-  
-
+  .menu__link:hover {
+    color: var(--clr-accent);
   }
   
-  .text--dark {
+  .menu__link--active {
+    color: var(--clr-link--active);
+  }
+  
+  /*  show active state on focus */
+  a:focus {
+    color: var(--clr-link--active);
+    font-weight: bolder;
+  }
+  
+  /*  Menu headung categories */
+  
+  .menu__heading {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Site text colors */
+  
+  .text-primary {
     color: var(--clr-primary-text);
   }
-
-
-/* Media Queries */
-
-@media (min-width: 768px) {
-  /* Tablets and above */
-  .navbar__mobile-toggle {
-    display: none;
+  .text-secondary {
+    color: var(--clr-secondary-text);
   }
-
-  .navbar__side {
+  .text-accent {
+    color: var(--clr-text-accent);
+  }
+  .text-light {
+    color: var(--clr-light);
+  }
+  .text-white {
+    color: var(--clr-white);
+  }
+  
+  /* Site Background colors */
+  .bg-primary {
+    background-color: var(--clr-primary-background);
+  }
+  .bg-secondary {
+    background-color: var(--clr-secondary-background);
+  }
+  .bg-accent {
+    background-color: var(--clr-accent);
+  }
+  .bg-light {
+    background-color: var(--clr-light);
+  }
+  .bg-white {
+    background-color: var(--clr-white);
+  }
+  
+  /* Colors swatches section */
+  
+  
+  
+  .colour-swatches__heading {
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  
+  .swatch {
+    width: 100%;
+    min-height: 150px;
+  }
+  .swatch-span {
     display: block;
-    position: static;
-    width: auto;
+    text-align: center;
   }
-
-  /* Top navbar visibility*/
-  .navbar__top {
-    display: flex;
+  .swatch-div-options{
+      width: 300px;
+      margin-bottom: 10px;
+  
   }
-
-  /* Hide side navbar for desktop */
-  .navbar__side {
-    display: block;
+  .swatch-span-bg{
+      width: 50px;
+      height: 20px;
+      display: inline-block;
+      margin-left: 15px;
   }
-}
-
-/* Larger desktop screens */
-@media (min-width: 1024px) {
-  .top__items {
-    display: none;
+  
+  
+  /* Color Swatches */
+  
+  .bg-primary-text {
+    background-color: var(--clr-primary-text);
   }
-  .navbar__menu {
-    display: flex;
+  .bg-primary-background {
+    background-color: var(--clr-primary-background);
   }
-  .navbar__side {
-    display: block;
+  .bg-accent {
+    background-color: var(--clr-accent);
   }
-}
+  .bg-secondary-background {
+    background-color: var(--clr-secondary-background);
+  }
+  .bg-secondary-text {
+    background-color: var(--clr-secondary-text);
+  }
+  .bg-brown-light {
+    background-color: var(--clr-brown-light);
+  }
+  .bg-sunset-light {
+    background-color: var(--clr-sunset-light);
+  }
+  .bg-sunset-dark {
+    background-color: var(--clr-sunset-dark);
+  }
+  .bg-brown-medium {
+    background-color: var(--clr-brown-medium);
+  }
+  .bg-blue-medium {
+    background-color: var(--clr-blue-medium);
+  }
+  .swatch-text-light {
+    color: var(--clr-brown-light);
+  }
+  .swatch-text-dark {
+    color: var(--clr-primary-text);
+  }
+  
+  /* Negative colors */
+  
+  /* Text Color Swatches */
+  
+  .text--primary {
+      color: var(--clr-primary-text);
+    }
+    
+    .text--primary-background {
+      color: var(--clr-primary-background); /* Note: Unusual to set text color to a background variable */
+    }
+    
+    .text--accent {
+      color: var(--clr-accent);
+    }
+    
+    .text--secondary-background {
+      color: var(--clr-secondary-background); /* Note: As above, check intention */
+    }
+    
+    .text--secondary {
+      color: var(--clr-secondary-text);
+    }
+    
+    .text--brown-light {
+      color: var(--clr-brown-light);
+    }
+    
+    .text--sunset-light {
+      color: var(--clr-sunset-light);
+    }
+    
+    .text--sunset-dark {
+      color: var(--clr-sunset-dark);
+    }
+    
+    .text--brown-medium {
+      color: var(--clr-brown-medium);
+    }
+    
+    .text--blue-medium {
+      color: var(--clr-blue-medium);
+    }
+  
+    
+    /* Utility Classes for Light and Dark Text */
+    .text--light {
+      color: var(--clr-brown-light); 
+    }
+  
+    .text--white{
+      color: var(--clr-text-white); 
+    
+  
+    }
+    
+    .text--dark {
+      color: var(--clr-primary-text);
+    }
+  
+  
+  /* Media Queries */
+  
+  @media (min-width: 768px) {
+    /* Tablets and above */
+    .navbar__mobile-toggle {
+      display: none;
+    }
+  
+    .navbar__side {
+      display: block;
+      position: static;
+      width: auto;
+    }
+  
+    /* Top navbar visibility*/
+    .navbar__top {
+      display: flex;
+    }
+  
+    /* Hide side navbar for desktop */
+    .navbar__side {
+      display: block;
+    }
+  }
+  
+  /* Larger desktop screens */
+  @media (min-width: 1024px) {
+    .top__items {
+      display: none;
+    }
+    .navbar__menu {
+      display: flex;
+    }
+    .navbar__side {
+      display: block;
+    }
+  }
+  
