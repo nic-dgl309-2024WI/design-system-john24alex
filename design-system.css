@@ -1,3 +1,26 @@
+/* Utility classes for font-family */
+.u-font-family--main { font-family: var(--font-family-main); }
+.u-font-family--secondary { font-family: var(--font-family-secondary); }
+
+
+/* Utility classes for font-size */
+.font-size--small { font-size: var(--font-size-small); }
+.font-size--medium { font-size: var(--font-size-medium); }
+.font-size--large { font-size: var(--font-size-large); }
+.font-size--heading { font-size: var(--font-size-heading); }
+.font-size--heading-2 { font-size: var(--font-size-heading-2); }
+.font-size--headline { font-size: var(--font-size-headLine); }
+.font-size--hero-sub { font-size: var(--font-size-hero-sub); }
+
+
+/* Utility classes for font-weight */
+.font-weight--light { font-weight: var(--font-weight-light); }
+.font-weight--regular { font-weight: var(--font-weight-regular); }
+.font-weight--medium { font-weight: var(--font-weight-medium); }
+.font-weight--bold { font-weight: var(--font-weight-bold); }
+
+
+
 /* Nav Bar */
 .navbar__top {
     display: flex;
@@ -264,6 +287,13 @@
       color: var(--clr-primary-text);
     }
   
+
+  /* Typography Section  */
+
+
+
+
+
   
   /* Media Queries */
   
