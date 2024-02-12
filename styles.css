@@ -1,17 +1,10 @@
+/* Type faces Import  */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Roboto:wght@300;400;500&display=swap");
 
-
-
- /* Type faces Import  */
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Roboto:wght@300;400;500&display=swap');
- 
-  /* CSS rules to Type faces
+/* CSS rules to Type faces
   font-family: 'Open Sans', sans-serif;
   font-family: 'Roboto', sans-serif;
   */
-
-
-
-
 
 :root {
   /* Color Variables  */
@@ -21,7 +14,7 @@
   --clr-light: #f5f5f5; /* very light grey */
   --clr-white: #ffffff; /* white */
   --clr-link--active: #1074ab; /* dark blue */
-
+  --clr-blue-highlight: #0884c7; /* dark blue */
 
   /* Site color Variables  */
   --clr-primary-text: #231007;
@@ -31,11 +24,9 @@
   --clr-text-accent: #62311f;
   --clr-text-white: ##ffffff;
 
-
   --clr-primary-background: #faf9eb;
   --clr-secondary-background: #053855;
- --clr-accent-background: #d68c3d;
-
+  --clr-accent-background: #d68c3d;
 
   /* Tonal  color Variables  */
   --clr-brown-light: #dfd9c3;
@@ -44,35 +35,42 @@
   --clr-gray-medium: #909090;
   --clr-blue-medium: #396f86;
 
+  /* Functuonal gray tones*/
+  --clr-black-100: #000000; /* Black */
+  --clr-black-90: #2b2b2b; /* Very Dark Grey */
+  --clr-black-80: #454c53; /* Darker Grey */
+  --clr-black-70: #565a71; /* Dark Grey */
+  --clr-black-60: #838385; /* Medium Dark Grey */
+  --clr-black-50: #969696; /* Medium Grey */
+  --clr-black-40: #a1a1a1; /* True Medium Grey */
+  --clr-black-30: #c3c1c1; /* Medium Light Grey */
+  --clr-black-20: #d2d2d2; /* Light Grey */
+  --clr-black-10: #e1e1e1; /* Very Light Grey */
+  --clr-black-5: #f4f2f2; /* Off White */
 
-/* Font-family variables */
---font-family-main: 'Open Sans', sans-serif;
---font-family-secondary: 'Roboto', sans-serif;
+  /* Font-family variables */
+  --font-family-main: "Open Sans", sans-serif;
+  --font-family-secondary: "Roboto", sans-serif;
 
+  /* Font-size variables */
 
-/* Font-size variables */
+  --font-size-small: 0.8rem; /* 12px */
+  --font-size-medium: 1rem; /* 16px */
+  --font-size-large: 1.25rem; /* 20px */
+  --font-size-heading: 1.37rem; /* 22px */
+  --font-size-heading-2: 1.56rem; /* 24px */
+  --font-size-largex: 1.625rem; /* 26px */
+  --font-size-title-standar:  1.875rem; /* 30px */
+  --font-size-headLine: 2.18rem; /* 34px */
+  --font-size-hero-sub: 1rem; /* 16px */
 
---font-size-small: 0.8rem; /* 12px */
---font-size-medium: 1rem;  /* 16px */
---font-size-large: 1.25rem; /* 20px */
---font-size-large: 1.25rem; /* 20px */
+  /* Font-weight variables */
 
---font-size-heading: 1.37rem; /* 22px */
---font-size-heading-2: 1.56rem; /* 18px */
---font-size-headLine: 2.18rem; /* 26px */
---font-size-hero-sub: 1rem; /* 16px */
-
-
-/* Font-weight variables */
-
---font-weight-light: 300;
---font-weight-regular: 400;
---font-weight-medium: 500;
---font-weight-bold: 600;
-
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
 }
-
-
 
 /* Box sizing and CSS reset */
 *,
