@@ -266,7 +266,7 @@ body {
 }
 
 /* Top Navbar items */
-.navbar__menu__items {
+.navbar__items {
   list-style: none;
   display: flex;
   gap: 1rem;
@@ -274,18 +274,18 @@ body {
 }
 
 /* Menu links */
-.navbar__menu__items li .navbar__link {
+.navbar__items li .navbar__link {
   text-decoration: none;
   color: var(--clr-primary);
 }
 
 /* Menu links  States - Hover*/
-.navbar__menu__items li .navbar__link:hover {
+.navbar__items li .navbar__link:hover {
   color: var(--clr-accent);
 }
 
 /* Active state menu link */
-.navbar__menu__items li .navbar__link--active {
+.navbar__items li .navbar__link--active {
   border-bottom: 2px solid var(--clr-primary);
 }
 
