@@ -54,7 +54,6 @@
   font-weight: var(--font-weight-bold);
 }
 
-
 /* Utility classes for text colors */
 .text--primary {
   color: var(--clr-primary-text);
@@ -134,7 +133,6 @@
 .text-black-5 {
   color: var(--clr-black-5);
 }
-
 
 /* Utility classes for background colors */
 .bg-primary {
@@ -236,7 +234,7 @@
 /* HTML font asignation */
 body {
   font-family: var(--font-family-main);
-  line-height: var( --line-height);
+  line-height: var(--line-height);
 }
 
 /* Nav Bar */
@@ -300,7 +298,6 @@ body {
 /* Hide the mobile menu */
 .navbar__side {
   display: none;
-
 }
 
 .navbar__side--open {
@@ -459,103 +456,158 @@ a:focus {
   color: var(--clr-primary-text);
 }
 
-
 /* Apply margin to all four sides */
-.l-m-1 { margin: var(--spacing-1); }
-.l-m-1-25 { margin: var(--spacing-1-25); }
-.l-m-1-5 { margin: var(--spacing-1-5); }
-.l-m-2 { margin: var(--spacing-2); }
+.l-m-1 {
+  margin: var(--spacing-1);
+}
+.l-m-1-25 {
+  margin: var(--spacing-1-25);
+}
+.l-m-1-5 {
+  margin: var(--spacing-1-5);
+}
+.l-m-2 {
+  margin: var(--spacing-2);
+}
 
 /* Top margin */
-.l-mt-1 { margin-top: var(--spacing-1); }
-.l-mt-1-25 { margin-top: var(--spacing-1-25); }
-.l-mt-1-5 { margin-top: var(--spacing-1-5); }
-.l-mt-2 { margin-top: var(--spacing-2); }
+.l-mt-1 {
+  margin-top: var(--spacing-1);
+}
+.l-mt-1-25 {
+  margin-top: var(--spacing-1-25);
+}
+.l-mt-1-5 {
+  margin-top: var(--spacing-1-5);
+}
+.l-mt-2 {
+  margin-top: var(--spacing-2);
+}
 
 /* Bottom margin */
-.l-mb-1 { margin-bottom: var(--spacing-1); }
+.l-mb-1 {
+  margin-bottom: var(--spacing-1);
+}
 /* Repeat for mb, mr, ml with respective variables */
 
 /* Horizontal margins (left and right) */
-.l-mx-1 { margin-left: var(--spacing-1); margin-right: var(--spacing-1); }
+.l-mx-1 {
+  margin-left: var(--spacing-1);
+  margin-right: var(--spacing-1);
+}
 /* Repeat for mx with respective variables */
 
 /* Vertical margins (top and bottom) */
-.l-my-1 { margin-top: var(--spacing-1); margin-bottom: var(--spacing-1); }
-
+.l-my-1 {
+  margin-top: var(--spacing-1);
+  margin-bottom: var(--spacing-1);
+}
 
 /*padding to all four sides */
-.l-p-1 { padding: var(--spacing-1); }
-.l-p-1-25 { padding: var(--spacing-1-25); }
-.l-p-1-5 { padding: var(--spacing-1-5); }
-.l-p-2 { padding: var(--spacing-2); }
+.l-p-1 {
+  padding: var(--spacing-1);
+}
+.l-p-1-25 {
+  padding: var(--spacing-1-25);
+}
+.l-p-1-5 {
+  padding: var(--spacing-1-5);
+}
+.l-p-2 {
+  padding: var(--spacing-2);
+}
 
 /* Top padding */
-.l-pt-1 { padding-top: var(--spacing-1); }
-.l-pt-1-25 { padding-top: var(--spacing-1-25); }
-.l-pt-1-5 { padding-top: var(--spacing-1-5); }
-.l-pt-2 { padding-top: var(--spacing-2); }
+.l-pt-1 {
+  padding-top: var(--spacing-1);
+}
+.l-pt-1-25 {
+  padding-top: var(--spacing-1-25);
+}
+.l-pt-1-5 {
+  padding-top: var(--spacing-1-5);
+}
+.l-pt-2 {
+  padding-top: var(--spacing-2);
+}
 
 /* Bottom padding */
-.l-pb-1 { padding-bottom: var(--spacing-1); }
+.l-pb-1 {
+  padding-bottom: var(--spacing-1);
+}
 /* Repeat for pb, pr, pl with respective variables */
 
 /* Horizontal paddings (left and right) */
-.l-px-1 { padding-left: var(--spacing-1); padding-right: var(--spacing-1); }
+.l-px-1 {
+  padding-left: var(--spacing-1);
+  padding-right: var(--spacing-1);
+}
 /* Repeat for px with respective variables */
 
 /* Vertical paddings (top and bottom) */
-.l-py-1 { padding-top: var(--spacing-1); padding-bottom: var(--spacing-1); }
+.l-py-1 {
+  padding-top: var(--spacing-1);
+  padding-bottom: var(--spacing-1);
+}
 /* Repeat for py with respective variables */
 
-
-
-
 /* Flexbox */
-.l-flex { display: flex; }
-.l-flex-column { flex-direction: column; }
-.l-justify-center { justify-content: center; }
-.l-align-center { align-items: center; }
+.l-flex {
+  display: flex;
+}
+.l-flex-column {
+  flex-direction: column;
+}
+.l-justify-center {
+  justify-content: center;
+}
+.l-align-center {
+  align-items: center;
+}
 /* Add more flex-related utility classes as needed */
 
 /* CSS Grid */
-.l-grid { display: grid; }
-.l-grid-columns-2 { grid-template-columns: repeat(2, 1fr); }
-.l-grid-gap-1 { gap: 1rem; }
+.l-grid {
+  display: grid;
+}
+.l-grid-columns-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.l-grid-gap-1 {
+  gap: 1rem;
+}
 
 /* Typography Section  */
 
+/* container content */
+.content-container {
+  margin-top: 60px;
 
+  overflow-y: auto;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* content center */
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 20px;
+  margin-top: 100px;
+}
 
 /* Media Queries */
-
-
-
-
-
-
 
 @media (min-width: 768px) {
   /* Tablets and above */
   .navbar__mobile-toggle {
     display: none;
+    margin-left: 350px;
+  }
+
+  .content-container {
+    padding-left: 0;
+    margin-left: 290px;
   }
 
   .navbar__side {
@@ -571,21 +623,20 @@ a:focus {
   }
 }
 
-  /* Top navbar visibility*/
-  .navbar__top {
-    display: flex;
-  }
+/* Top navbar visibility*/
+.navbar__top {
+  display: flex;
+}
 
-  /* Hide side navbar for desktop */
-  .navbar__side {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: yellow;
-    width: 250px;
-    margin-top: 60px;
-  }
+/* Hide side navbar for desktop */
+.navbar__side {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: yellow;
+  width: 250px;
+  margin-top: 60px;
 }
 
 /* Larger desktop screens */
@@ -600,5 +651,3 @@ a:focus {
     display: block;
   }
 }
-
-
