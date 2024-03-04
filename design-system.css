@@ -231,6 +231,197 @@
   background-color: var(--clr-black-5);
 }
 
+/* Line height utilities */
+.u-line-height-double {
+  line-height: var(--line-heightdouble);
+}
+
+.u-line-height-triple {
+  line-height: var(--line-heightTriple);
+}
+
+/* Spacing utilities */
+.u-margin-top-normal {
+  margin-top: var(--normal-spacing);
+}
+
+.u-padding-vertical-1 {
+  padding-top: var(--spacing-1);
+  padding-bottom: var(--spacing-1); /* Vertical padding */
+}
+
+
+
+
+
+/* Classes width*/
+.u-width--full {
+  width: var(--width-full);
+  background-color: aquamarine;
+}
+
+
+.u-width--90 {
+  width: var(--width-90); 
+}
+
+
+.u-width--80 {
+  width: var(--width-80);
+}
+
+
+.u-width--70 {
+  width: var(--width-70); 
+}
+
+
+/* Center text */
+.u-center-text {
+  text-align: center;
+}
+
+/* Left text */
+.u-left-text {
+  text-align: left;
+}
+
+.u-right-text {
+  text-align: right;
+}
+
+/* Center blocks or elements inline-block */
+.u-center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Center both */
+.u-center-both {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+/* Center content horizontall Flexy*/
+.u-center-flex-horizontal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+/* Center content vertically */
+.u-center-flx--vertical {
+  display: flex;
+  align-items: center;
+}
+
+/* Center content both horizontally and vertically */
+.u-center-flex--both {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* Layout 1 column */
+.u-grid--1-column {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Layout 2 columns */
+.u-grid--2-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+/* Layout  3 columns */
+.u-grid--3-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+/* Gaps */
+
+.u-gap-1{
+  gap: 1rem; 
+};
+.u-gap-1-5{
+  gap: 1.5rem; 
+}
+.u-gap-2{
+  gap:2rem; 
+}
+
+.u-gap-3{
+  gap:3rem; 
+}
+
+
+
+
+
+
+/* Basic text elements */
+body, p {
+  line-height: var(--line-height); /* Default line height for body text */
+}
+
+/* Headings */
+h1 {
+  line-height: var(--line-heightdouble); /* Slightly more space for top-level headings */
+}
+
+h2 {
+  line-height: var(--line-heightTriple); /* Increased line height for secondary headings */
+}
+
+/* Blockquotes or special text */
+blockquote, .special-text {
+  line-height: var(--line-height-quadruple); /* Maximum line height for emphasis */
+}
+
+
+/* Margins */
+.margin-top-1 {
+  margin-top: var(--spacing-1); /* Apply specific top margin */
+}
+
+.margin-bottom-2 {
+  margin-bottom: var(--spacing-2); /* Apply specific bottom margin */
+}
+
+/* Paddings */
+.padding-all {
+  padding: var(--normal-spacing); /* Apply uniform padding */
+}
+
+.padding-horizontal-15 {
+  padding-left: var(--spacing-15);
+  padding-right: var(--spacing-15); /* Apply horizontal padding */
+}
+
+/* Spacing for container or sections */
+.container, .section {
+  padding: var(--normal-spacing); /* Standard padding */
+  margin-bottom: var(--spacing-2); /* Standard bottom margin for separation */
+}
+
+
+
+
+
 /* HTML font asignation */
 body {
   font-family: var(--font-family-main);
@@ -576,6 +767,16 @@ a:focus {
 .l-grid-gap-1 {
   gap: 1rem;
 }
+
+
+
+
+/* Color Section  */
+
+
+
+
+
 
 /* Typography Section  */
 
