@@ -74,16 +74,20 @@
 
  /* Line Height variables */
 
-    --line-height: 1.5rem; /* default */
-    --line-heightdouble: 2rem;
-    --line-heightTriple: 3rem;
-    --line-height-quadruple: 4rem;
+  --line-height: 1.5rem; /* default */
+  --line-heightdouble: 2rem;
+  --line-heightTriple: 3rem;
+  --line-height-quadruple: 4rem;
 
  /* spacing variables */
  --normal-spacing: 1rem; /* 16px */
  --spacing-1: 1.25rem; /* 20px */
  --spacing-15: 1.5rem; /* 24px */
  --spacing-2: 2rem; /* 32px */
+ --spacing-3: 3rem; /* 48 */
+
+
+
 
 
  /* width variables */
@@ -92,7 +96,7 @@
  --width-80: 80%; /* 16px */
  --width-70: 70%; /* 16px */
 
-  
+
 
 }
 
