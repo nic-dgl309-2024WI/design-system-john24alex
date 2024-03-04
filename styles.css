@@ -70,6 +70,34 @@
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 600;
+
+
+ /* Line Height variables */
+
+    --line-height: 1.5rem; /* default */
+    --line-heightdouble: 2rem;
+    --line-heightTriple: 3rem;
+    --line-height-quadruple: 4rem;
+
+ /* spacing variables */
+ --normal-spacing: 1rem; /* 16px */
+ --spacing-1: 1.25rem; /* 20px */
+ --spacing-15: 1.5rem; /* 24px */
+ --spacing-2: 2rem; /* 32px */
+
+
+
+ /* Spacing scale based on rem units */
+ --spacing-1: 1rem; /* Equivalent to 16px */
+ --spacing-1-25: 1.25rem; /* Equivalent to 20px */
+ --spacing-1-5: 1.5rem; /* Equivalent to 24px */
+ --spacing-2: 2rem; /* Equivalent to 32px */
+
+
+ 
+
+  
+
 }
 
 /* Box sizing and CSS reset */
@@ -99,3 +127,7 @@ ol {
   padding: 0;
   list-style: none;
 }
+
+
+
+
