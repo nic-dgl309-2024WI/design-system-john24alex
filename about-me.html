@@ -1,63 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-  </head>
-  <body>
-      <!-- add your name -->
-    <h1>Hi! My name is John Huerfano M.</h1>
-    <h2>Publicist with dev Background</h2>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design System</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" type="text/css" href="design-system.css" />
+</head>
+
+<body>
+  <!-- Top Navbar -->
+  <header class="navbar__top z-index--2">
+    <div class="navbar__logo">Design System</div>
+    <!-- Hamburger icon for mobile menu -->
+    <div class="navbar__mobile-toggle" onclick="toggleMobileMenu()"></div>
+    <nav class="navbar__menu">
+      <ul class="navbar__items">
+        <li><a href="about-me.html" class="navbar__link">About Me</a></li>
+        <li><a href="index.html" class="menu__link menu__link--active">Demos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+   <!-- Side navbar -->
+   <nav class="navbar__side l-pl-2  u-line-height-1-8  l-mt-3  ">
+    <!-- Top level navigation items -->
+        <ul class="top__items l-mb-2">
+        <li><a class="menu__link" href="about-me.html">About Me</a></li>
+        <li><a class="menu__link menu__link--active" href="index.html">Demos</a></li>
+    </ul>
+
+          <!-- Branding section -->
+          <h3 class="menu__heading l-mt-3  ">Branding</h3>
+          <ul class="sidebar__list l-mb-2 ">
+        <li><a class="menu__link" href="colours.html"><span class="list__number">01 </span> Colours</a></li>
+        <li><a class="menu__link" href="typography.html"><span class="list__number">02 </span> Typography</a></li>
+        <li><a class="menu__link" href="#Logo"><span class="list__number">03 </span> Logo</a></li>
+    </ul>
+
+    <!-- Utilities section -->
+    <h3 class="menu__heading">Utilities</h3>
+    <ul class="sidebar__list">
+        <li><a class="menu__link " href="spacing.html"><span class="list__number">04 </span> Spacing</a></li>
+        <li><a class="menu__link " href="containers.html"><span class="list__number">05 </span> Containers</a></li>
+        <li><a class="menu__link" href="#"><span class="list__number">06 </span> Images</a></li>
+        <li><a class="menu__link" href="#"><span class="list__number">07 </span> Interactive</a></li>
+        <li><a class="menu__link" href="#"><span class="list__number">08 </span> Feedback</a></li>
+    </ul>
+
+    <!-- Navigation section -->
+    <h3 class="menu__heading">Navigation</h3>
+    <ul class="sidebar__list">
+        <li><a class="menu__link" href="#"><span class="list__number">09 </span> Navbars</a></li>
+        <li><a class="menu__link" href="#"><span class="list__number">10 </span> Breadcrumbs</a></li>
+        <li><a class="menu__link" href="#"><span class="list__number">11 </span> Pagination</a></li>
+    </ul>
+
+    <!-- Blocks section -->
+    <h3 class="menu__heading">Blocks</h3>
+    <ul class="sidebar__list">
+        <li><a class="menu__link" href="#"><span class="list__number">12 </span> Hero</a></li>
+        <li><a class="menu__link" href="#"><span class="list__number">13 </span> Carousel</a></li>
+        <li><a class="menu__link" href="#"><span class="list__number">14 </span> Slats</a></li>
+        <li><a class="menu__link" href="#"><span class="list__number">15 </span> Footer</a></li>
+    </ul>
+
+    <!-- Components section -->
+    <h3 class="menu__heading">Components</h3>
+    <ul class="sidebar__list">
+        <li><a class="menu__link" href="#"><span class="list__number">16 </span> Cards</a></li>
+        <li><a class="menu__link" href="#"><span class="list__number">17 </span> Forms</a></li>
+        <li><a class="menu__link" href="#"><span class="list__number">18 </span> Accordion</a></li>
+        <li><a class="menu__link" href="#"><span class="list__number">19 </span> Lists</a></li>
+    </ul>
+</nav>
+
+
+
+  <!-- Main content-->
+  <br />
+  <br />
+  <section class="u-center u-width--100 l-flex  l-flex-column l-justify-center l-align-center  u-m-a  margin-top-3 margin-bottom-3  l-p-2 ">
+    <!-- add your name -->
+    <h1 class="margin-top-3 text-black-80 ">Hi! My name is John Huerfano M.</h1>
+    <h2 class="margin-bottom-3 font-size--large text-black-60">Publicist with dev Background</h2>
     <!-- add your portrait photo -->
-    <img
-      src="images/Profile-image.jpg"
-      alt="Portrait of lorem ipsum"
-      style="width: 500px; height: 500px"
-    />
+    <img src="images/Profile-image.jpg" alt="Portrait of lorem ipsum" style="width: 500px; height: 500px"  class="l-mb-2 l-mt-2 "/>
     <!-- add a short biography. Include where you are from, your education background, your current program, and something interesting about yourself. -->
-    <p>
-     Publicist with experience  and with  background in software development, including UX/UI design, front-end development, and SEO optimization. Adept at leading teams to deliver successful digital products, agile methodologies, and a range of modern web technologies. 
-<br/>
-As a publicist with experience as a Developer and Certified Scrum Master with more than 8 years of experience in the development industry, I believe that learning is an endless path that gives us tools to use in every step of our lives.
-
-Passionate about technology,  UX/UI, CMS, E-commerce and  front-end frameworks I'm always open to learning new stuff :) 
-
-
- <br />
- My current program is DIGITAL Design + Development Post Graduate Diploma- MOBILE.
- <br />
- In my free time love driving on road trips and natural landscapes 
+    <p class="u-center-horizontal-block  l-mt-2 max-w-500 l-mb-2">
+      Publicist with experience and with background in software development, including UX/UI design, front-end
+      development, and SEO optimization. Adept at leading teams to deliver successful digital products, agile
+      methodologies, and a range of modern web technologies.
+      <br />
+      <br />
+      As a publicist with experience as a Developer and Certified Scrum Master with more than 8 years of experience in
+      the development industry, I believe that learning is an endless path that gives us tools to use in every step of
+      our lives.
+      <br />
+      <br />
+      Passionate about technology,  UX/UI, CMS, E-commerce and  front-end frameworks I'm always open to learning new
+      stuff :) 
+      <br />
       
-      
+      <br />
+      My current program is DIGITAL Design + Development Post Graduate Diploma- MOBILE.
+      <br />
+      In my free time love driving on road trips and natural landscapes 
+
+      <br />
     </p>
-     <!-- add a list of your favourite web development tools. -->
-     <p>My favourite tools are</p>
-     <ul>
-       <li>Visual Studio</li>
-       <li>Figma</li>
-       <li>Photoshop</li>
-       <li>Jira</li>
-       <li>ADO</li>
-     </ul>
-     <!-- add a list of your strongest web development skills. -->
-     <p>My skills include</p>
-     <ul>
-       <li>Front-end</li>
-       <li>CSS</li>
-       <li>HTML</li>
-       <li>Javascript</li>
-       <li>UX/UI</li>
-       <li>SEO</li>
-       <li>Accessibility</li>
-       <li>Drupal</li>
-       <li>Worpress</li>
-       <li>Magento</li>
-       <li>Scrum</li>
-       <li>Kanban</li>
-       <li>Ecommerce</li>
+    <br />
+    <section class="max-w-500 l-mb-2 l-mt-2 min-w-500">
+      <!-- add a list of your favourite web development tools. -->
+      <p class="u-center-text font-weight--medium font-size--large l-mt-2  l-mb-2">My favourite tools are</p>
+    
+      <div class="u-grid--2-columns u-width--full l-mt-2 l-jc ">
+        <article>
+          <ul class="l-align-center l-mt-2">
+        <li class="li-square">Visual Studio</li>
+        <li class="li-square">Figma</li>
+        <li class="li-square">Photoshop</li>
+      </ul>
+      </article>
+      <article>
+        <ul class=" l-align-left l-mt-2">
+
+        <li class="li-square">Jira</li>
+        <li class="li-square"> ADO</li>
+      </ul>
+    </article>
+  </div>
+    </section>
+
+
+    <section class="max-w-500 l-mb-2 l-mt-2 min-w-500">
+      <p class="u-center-text font-weight--medium font-size--large l-mt-2  l-mb-2">My skills include</p>
  
-     </ul>
-  </body>
+
+      <div class="u-grid--2-columns u-width--full l-mt-2 l-jc  ">
+        <article>
+          <ul class="l-align-center l-mt-2">
+            <li class="li-square">Front-end</li>
+            <li class="li-square">CSS</li>
+            <li class="li-square">HTML</li>
+            <li class="li-square">Javascript</li>
+            <li class="li-square">UX/UI</li>
+            <li class="li-square">SEO</li>
+            <li class="li-square">Accessibility</li>
+
+          </ul>
+
+        </article>
+        <article>
+
+          <ul>
+          <li class="li-square">Drupal</li>
+          <li class="li-square">Worpress</li>
+          <li class="li-square">Magento</li>
+          <li class="li-square">Scrum</li>
+          <li class="li-square">Kanban</li>
+          <li class="li-square">Ecommerce</li>
+        </ul>
+        </article>
+
+      </div>
+
+
+
+
+    </section>
+    <!-- add a list of your strongest web development skills. -->
+
+
+
+    <!-- End of content ... -->
+  </section>
+
+  <!-- Scripts -->
+  <script src="design-system.js"></script>
+
+</body>
+
 </html>
