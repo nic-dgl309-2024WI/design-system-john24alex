@@ -1,6 +1,8 @@
 :root {
   overscroll-behavior: none;
 }
+
+
 /* Utility classes for font-family */
 .u-font-family--main {
   font-family: var(--font-family-main);
@@ -74,7 +76,7 @@
   color: var(--clr-link--active);
 }
 .text--white {
-  color: var(--clr-text-white);
+  color: var(--clr-white);
 }
 .text--primary-background {
   color: var(--clr-primary-background);
@@ -146,6 +148,10 @@
 }
 .bg-light {
   background-color: var(--clr-light);
+}
+
+.bg-blue-highlight {
+  background-color: var(--clr-blue-highlight);
 }
 .bg-white {
   background-color: var(--clr-white);
@@ -232,6 +238,15 @@
 }
 
 /* Line height utilities */
+
+.u-line-height-1-5 {
+  line-height: var(--line-height);
+}
+
+.u-line-height-1-8 {
+  line-height: var(--line-height-1-8);
+}
+
 .u-line-height-double {
   line-height: var(--line-heightdouble);
 }
@@ -239,6 +254,45 @@
 .u-line-height-triple {
   line-height: var(--line-heightTriple);
 }
+
+/* margin utilities */
+
+
+/* margin auto */
+.u-m-a{
+margin-left: auto;
+margin-right: auto;
+}
+
+.u-m-a-all{
+  margin: auto;
+
+  }
+  
+
+/* list options */
+
+.li-square{
+list-style: square;
+}
+
+
+.li-circle{
+  list-style:circle;
+  }
+  
+  .li-dash{
+    content: "-";
+    text-indent: -5px;
+    }
+
+  
+ 
+
+
+
+
+
 
 /* Spacing utilities */
 .u-margin-top-normal {
@@ -253,7 +307,6 @@
 /* Classes width*/
 .u-width--full {
   width: var(--width-full);
-  background-color: aquamarine;
 }
 
 .u-width--90 {
@@ -268,6 +321,9 @@
   width: var(--width-70);
 }
 
+
+   
+
 /* Center text */
 .u-center-text {
   text-align: center;
@@ -281,6 +337,12 @@
 .u-right-text {
   text-align: right;
 }
+/* Justify items */
+
+.l-jc{
+justify-items: center;
+}
+
 
 /* Center blocks or elements inline-block */
 .u-center {
@@ -352,6 +414,11 @@
   gap: 3rem;
 }
 
+
+
+
+
+
 /* Basic text elements */
 body,
 p {
@@ -381,8 +448,45 @@ blockquote,
 
 /* Margins */
 .margin-top-1 {
-  margin-top: var(--normal-spacing); /* Apply specific top margin */
+  margin-top: var(--spacing-1); /* Apply specific top margin */
 }
+
+.margin-top-15 {
+  margin-top: var(--spacing-15); /* Apply specific top margin */
+}
+
+
+.margin-top-2 {
+  margin-top: var(--spacing-2); /* Apply specific top margin */
+}
+
+.margin-top-3 {
+  margin-top: var(--spacing-3); /* Apply specific top margin */
+}
+
+
+.margin-bottom-1 {
+  margin-bottom: var(--spacing-1); /* Apply specific top margin */
+}
+
+.margin-bottom-15 {
+  margin-bottom: var(--spacing-15); /* Apply specific top margin */
+}
+
+
+.margin-bottom-2 {
+  margin-bottom: var(--spacing-2); /* Apply specific top margin */
+}
+
+.margin-bottom-3 {
+  margin-bottom: var(--spacing-3); /* Apply specific top margin */
+}
+
+
+
+
+
+
 
 .margin-bottom-2 {
   margin-bottom: var(--spacing-2); /* Apply specific bottom margin */
@@ -391,6 +495,10 @@ blockquote,
 /* Paddings */
 .padding-all {
   padding: var(--normal-spacing); /* Apply uniform padding */
+}
+
+.padding-bottom {
+  padding-bottom: var(--normal-spacing); /* Apply uniform padding */
 }
 
 .padding-horizontal-15 {
@@ -410,10 +518,20 @@ blockquote,
   height: 20px;
 }
 
+/* width percentages*/
+
+.l-w-100{
+  width: var(--width-full);
+}
+.l-w-50{
+  width: var(--width-50);
+}
+
+
 /* HTML font asignation */
 body {
   font-family: var(--font-family-main);
-  line-height: var(--line-height);
+
 }
 
 /* Nav Bar */
@@ -443,6 +561,7 @@ body {
 .navbar__mobile-toggle:before {
   content: "☰";
   cursor: pointer;
+  font-size: 30px;
 }
 
 /*Toggle icon close */
@@ -519,8 +638,8 @@ a:focus {
 /*  Menu headung categories */
 
 .menu__heading {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;;
 }
 
 /* Site text colors */
@@ -629,63 +748,54 @@ a:focus {
 }
 
 .text--white {
-  color: var(--clr-text-white);
+  color: var(--clr-white);
 }
 
 .text--dark {
   color: var(--clr-primary-text);
 }
 
-
-
- /* spacing Horizontal */
- .l-s-h-normal-spacing{
+/* spacing Horizontal */
+.l-s-h-normal-spacing {
   width: var(--normal-spacing);
- }
+}
 
- .l-s-h-1{
+.l-s-h-1 {
   width: var(--spacing-1);
- }
+}
 
- .l-s-h-15{
+.l-s-h-15 {
   width: var(--spacing-15);
- }
+}
 
- .l-s-h-2{
+.l-s-h-2 {
   width: var(--spacing-2);
- }
+}
 
- .l-s-h-3{
+.l-s-h-3 {
   width: var(--spacing-3);
- }
+}
 
- 
- 
- 
-
-
- /* spacing vertival */
- .l-s-v-normal-spacing{
+/* spacing vertival */
+.l-s-v-normal-spacing {
   height: var(--normal-spacing);
- }
+}
 
- .l-s-v-1{
+.l-s-v-1 {
   height: var(--spacing-1);
- }
+}
 
- .l-s-v-15{
+.l-s-v-15 {
   height: var(--spacing-15);
- }
+}
 
- .l-s-v-2{
+.l-s-v-2 {
   height: var(--spacing-2);
- }
+}
 
- .l-s-v-3{
+.l-s-v-3 {
   height: var(--spacing-3);
- }
-
-
+}
 
 /* Apply margin to all four sides */
 .l-m-1 {
@@ -715,13 +825,12 @@ a:focus {
   margin-top: var(--spacing-2);
 }
 .l-mt-3 {
-  margin-top: var(--spacing-3);
+  margin-top: var(--spacing-3) !important;
 }
 
-
 /* Bottom margin */
-.l-mb-1 {
-  margin-bottom: var(--normal-spacing);
+.l-mb-xs-1 {
+  margin-bottom: var(--small-spacing);
 }
 
 .l-mb-1 {
@@ -739,12 +848,57 @@ a:focus {
   margin-bottom: var(--spacing-3);
 }
 
+
+
+
+/* Left margin */
+.l-ml-xs-1 {
+  margin-left: var(--small-spacing);
+}
+
+.l-ml-1 {
+  margin-left: var(--spacing-1);
+}
+
+.l-ml-1-25 {
+  margin-left: var(--spacing-15);
+}
+
+.l-ml-2 {
+  margin-left: var(--spacing-2);
+}
+.l-ml-3 {
+  margin-left: var(--spacing-3);
+}
+
+
+
+
+/* Right margin */
+.l-mr-xs-1 {
+  margin-right: var(--small-spacing);
+}
+
+.l-mr-1 {
+  margin-right: var(--spacing-1);
+}
+
+.l-mr-1-25 {
+  margin-right: var(--spacing-15);
+}
+
+.l-mr-2 {
+  margin-right: var(--spacing-2);
+}
+.l-mr-3 {
+  margin-right: var(--spacing-3);
+}
+
 /* Horizontal margins (left and right) */
 .l-mx-1 {
   margin-left: var(--normal-spacing);
   margin-right: var(--normal-spacing);
 }
-
 
 /* Vertical margins (top and bottom) */
 .l-my-1 {
@@ -752,7 +906,27 @@ a:focus {
   margin-bottom: var(--normal-spacing);
 }
 
+.l-my-15 {
+  margin-top: var(--spacing-15);
+  margin-bottom: var(--spacing-15);
+}
+
+.l-my-2 {
+  margin-top: var(--spacing-2);
+  margin-bottom: var(--spacing-2);
+}
+
+.l-my-3 {
+  margin-top: var(--spacing-3);
+  margin-bottom: var(--spacing-3);
+}
+
 /*padding to all four sides */
+
+.l-p-0-5 {
+  padding: var(--small-spacing);
+}
+
 .l-p-1 {
   padding: var(--normal-spacing);
 }
@@ -810,6 +984,89 @@ a:focus {
   padding-right: var(--spacing-2);
 }
 
+/* Layout Width max  */
+
+.max-w-300{
+  max-width: var(--max-w-300);
+}
+.max-w-400{
+  max-width: var(--max-w-400);
+}
+.max-w-500{
+  max-width: var(--max-w-500);
+}
+.max-w-600{
+  max-width: var(--max-w-600);
+}
+.max-w-700{
+  max-width: var(--max-w-700);
+}
+.max-w-800{
+  max-width: var(--max-w8700);
+}
+.max-w-900{
+  max-width: var(--max-w-900);
+}
+.max-w-1000{
+  max-width: var(--max-w-1000);
+}
+.max-w-1100{
+  max-width: var(--max-w-1100);
+}
+.max-w-1200{
+  max-width: var(--max-w-1200);
+}
+.max-w-1300{
+  max-width: var(--max-w-1300);
+}
+.max-w-1400{
+  max-width: var(--max-w-1400);
+}
+
+
+/* Layout Width min  */
+
+.min-w-300{
+  min-width: var(--min-w-300);
+}
+.min-w-400{
+  min-width: var(--min-w-400);
+}
+.min-w-500{
+  min-width: var(--min-w-500);
+}
+.min-w-600{
+  min-width: var(--min-w-600);
+}
+.min-w-700{
+  min-width: var(--min-w-700);
+}
+.min-w-800{
+  min-width: var(--min-w8700);
+}
+.min-w-900{
+  min-width: var(--min-w-900);
+}
+.min-w-1000{
+  min-width: var(--min-w-1000);
+}
+.min-w-1100{
+  min-width: var(--min-w-1100);
+}
+.min-w-1200{
+  min-width: var(--min-w-1200);
+}
+.min-w-1300{
+  min-width: var(--min-w-1300);
+}
+.min-w-1400{
+  min-width: var(--min-w-1400);
+}
+
+
+
+
+
 /* Bottom padding */
 .l-pb-1 {
   padding-bottom: var(--normal-spacing);
@@ -843,7 +1100,6 @@ a:focus {
 .l-align-center {
   align-items: center;
 }
-/* Add more flex-related utility classes as needed */
 
 /* CSS Grid */
 .l-grid {
@@ -856,6 +1112,50 @@ a:focus {
   gap: 1rem;
 }
 
+/* Lauyout  posisition */
+
+/* Static posisition */
+.position--static {
+  position: static;
+}
+
+/* Relative posisition */
+.position--relative {
+  position: relative;
+}
+
+/* Absolute posisition */
+.position--absolute {
+  position: absolute;
+}
+
+/* Fixed posisition */
+.position--fixed {
+  position: fixed;
+}
+
+/* Sticky posisition */
+.position--sticky {
+  position: sticky;
+  top: 0;
+}
+
+.z-index--1 {
+  z-index: 1;
+}
+.z-index--2 {
+  z-index: 2;
+}
+.z-index--3 {
+  z-index: 3;
+}
+.z-index--high {
+  z-index: 999;
+}
+.z-index--highest {
+  z-index: 9999;
+}
+
 /* Color Section  */
 
 /* Typography Section  */
@@ -863,7 +1163,6 @@ a:focus {
 /* container content */
 .content-container {
   margin-top: 60px;
-
   overflow-y: auto;
 }
 
@@ -873,9 +1172,163 @@ a:focus {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  margin-left: 20px;
   margin-top: 100px;
 }
+
+
+
+
+
+/* Cards containers  */
+
+.containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.card_image {
+  max-width: 300px; /* Ajusta al ancho deseado */
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  background-color: #fff;
+}
+
+.bg-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.card-text {
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  min-width: 100px;
+  height: 35px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.card-image-bg {
+  max-width: 300px; /* Ajusta al ancho deseado */
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  background-color: #fff;
+}
+
+/* Cards containers background image  */
+
+.card {
+  position: relative;
+  width: 300px; /* Ajuste el ancho según sea necesario */
+  height: 200px; /* Ajuste la altura según sea necesario */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.card-content {
+  position: absolute;
+  z-index: 2;
+  color: white;
+}
+
+.card-title {
+  font-size: 1.5rem; /* Ajuste el tamaño de fuente según sea necesario */
+  margin: 0;
+}
+
+.card-subtitle {
+  font-size: 1rem; /* Ajuste el tamaño de fuente según sea necesario */
+  margin: 0;
+}
+
+.card-button {
+  background-color: #007bff; /* O su color azul destacado */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  background-color: #0056b3; /* O un azul más oscuro para el estado hover */
+}
+
+.card-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegúrese de que la imagen cubra todo el contenedor */
+  z-index: 1;
+  filter: brightness(0.8); /* Ajuste el brillo según sea necesario */
+}
+
+
+
+
+
+/* Card Double */
+
+
+
+.card-double {
+  position: relative;
+  width: 600px; /* Ajuste el ancho según sea necesario */
+  height: 260px; /* Ajuste la altura según sea necesario */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+
+
+.card-full-width {
+  position: relative;
+  width: calc(100vw); /* Ajuste el ancho según sea necesario */
+  height: 250px; /* Ajuste la altura según sea necesario */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+
+
+
 
 /* spacing Section */
 
@@ -897,9 +1350,58 @@ a:focus {
 .cell {
   display: table-cell;
   padding: 8px;
-  border: 1px solid #ddd; 
-  height: 48px;
+  border: 1px solid #ddd;
+  height: 60px;
 }
+
+
+
+
+
+
+/* Visibility */
+.hide{
+  display: none;
+
+}
+.show{
+  display: block;
+
+}
+
+
+
+/* Top navbar visibility*/
+.navbar__top {
+  display: flex;
+}
+
+/* side bar Mobile*/
+
+.navbar__side {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Make sure the z-index is enough to be above other elements */
+  height: 100vh; /* Set the height to be the same as the height of the viewport */
+  width: 80%; /* Or the width you want for the side menu */
+  overflow-y: auto; /* Allow vertical scrolling */
+  -webkit-overflow-scrolling: touch; /* Enables smoother scrolling on iOS */
+  background-color: var(--clr-primary-background); /* Background color */
+  transition: transform 0.3s; /* Smooth transition for menu opening */
+  padding-bottom: 100px;
+  padding-top: 30px;
+}
+
+/* Show side menu when .navbar__side has class .open */
+.navbar__side.open {
+  display: block;
+  transform: translateX(0);
+}
+
+
+
+
 
 
 
@@ -913,9 +1415,22 @@ a:focus {
     margin-left: 350px;
   }
 
+
+  .content-container {
+
+    margin-left: 20px;
+
+  }
+  
+
+.card-full-width {
+  position: relative;
+  width: calc(100vw - 260px); /* Ajust width*/
+}
+
   .content-container {
     padding-left: 0;
-    margin-left: 290px;
+    margin-left: 260px;
   }
 
   .navbar__side {
@@ -924,27 +1439,14 @@ a:focus {
     top: 0;
     left: 0;
     width: 250px;
-    margin-top: 60px; /* Ajusta según la altura de tu barra de navegación superior */
-    max-height: 100vh; /* Esto hace que la barra lateral tenga como máximo la altura de la ventana del navegador */
-    overflow-y: auto; /* Permite el desplazamiento vertical si el contenido excede la altura máxima */
-    background-color: yellow; /* Mantén tu estilo actual */
+    margin-top: 60px; /* Adjusts according to the height of your top navigation bar */
+    max-height: 100vh; /* This makes the sidebar at most the height of the browser window */
+    overflow-y: auto; /* Allows vertical scrolling if the content exceeds the maximum height */
+    background-color: var(--clr-primary-background);
+    min-width: 250px;
   }
 }
 
-/* Top navbar visibility*/
-.navbar__top {
-  display: flex;
-}
-
-/* Hide side navbar for desktop */
-.navbar__side {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: yellow;
-  width: 250px;
-  margin-top: 60px;
-}
 
 /* Larger desktop screens */
 @media (min-width: 1024px) {
@@ -956,5 +1458,12 @@ a:focus {
   }
   .navbar__side {
     display: block;
+    width: 250px;
   }
+  .navbar__mobile-toggle {
+    display: none;
+    margin-left: 350px;
+  }
+
 }
+
