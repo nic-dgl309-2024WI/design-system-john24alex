@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design System</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="design-system.css" />
+</head>
+
+<body>
+    <!-- Top Navbar -->
+    <header class="navbar__top z-index--2">
+        <div class="navbar__logo">Design System</div>
+        <!-- Hamburger icon for mobile menu -->
+        <div class="navbar__mobile-toggle" onclick="toggleMobileMenu()"></div>
+        <nav class="navbar__menu l-mr-1-25 ">
+            <ul class="navbar__items">
+                <li><a href="about-me.html" class="navbar__link">About Me</a></li>
+                <li><a href="index.html" class="menu__link menu__link--active">Demos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Side navbar -->
+    <nav class="navbar__side l-pl-2  u-line-height-1-8  l-mt-3  ">
+        <!-- Top level navigation items -->
+        <ul class="top__items">
+            <li><a class="menu__link" href="about-me.html">About Me</a></li>
+            <li><a class="menu__link menu__link--active" href="index.html">Demos</a></li>
+        </ul>
+
+         <!-- Branding section -->
+         <h3 class="menu__heading l-mt-3  ">Branding</h3>
+        <ul class="sidebar__list">
+            <li><a class="menu__link" href="colours.html"><span class="list__number">01 </span> Colours</a></li>
+            <li><a class="menu__link" href="typography.html"><span class="list__number">02 </span> Typography</a></li>
+            <li><a class="menu__link" href="#Logo"><span class="list__number">03 </span> Logo</a></li>
+        </ul>
+
+        <!-- Utilities section -->
+        <h3 class="menu__heading">Utilities</h3>
+        <ul class="sidebar__list">
+            <li><a class="menu__link " href="spacing.html"><span class="list__number">04 </span> Spacing</a></li>
+            <li><a class="menu__link menu__link--active" href="containers.html"><span class="list__number">05 </span> Containers</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">06 </span> Images</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">07 </span> Interactive</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">08 </span> Feedback</a></li>
+        </ul>
+
+        <!-- Navigation section -->
+        <h3 class="menu__heading">Navigation</h3>
+        <ul class="sidebar__list">
+            <li><a class="menu__link" href="#"><span class="list__number">09 </span> Navbars</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">10 </span> Breadcrumbs</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">11 </span> Pagination</a></li>
+        </ul>
+
+        <!-- Blocks section -->
+        <h3 class="menu__heading">Blocks</h3>
+        <ul class="sidebar__list">
+            <li><a class="menu__link" href="#"><span class="list__number">12 </span> Hero</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">13 </span> Carousel</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">14 </span> Slats</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">15 </span> Footer</a></li>
+        </ul>
+
+        <!-- Components section -->
+        <h3 class="menu__heading">Components</h3>
+        <ul class="sidebar__list">
+            <li><a class="menu__link" href="#"><span class="list__number">16 </span> Cards</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">17 </span> Forms</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">18 </span> Accordion</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">19 </span> Lists</a></li>
+        </ul>
+    </nav>
+    <div class="content-container l-mb-2">
+        <!-- Main content-->
+        <div class="containers">
+
+            <div >
+                <h2  class="l-mt-2 l-mb-2 font-size--large u-width--70 u-line-height-1-5 text-black-80">Image and text container with label</h2>
+            
+                <div class="card_image">
+                    <div class="bg-image hover-overlay">
+                        <img src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" class="img-fluid" />
+                    </div>
+                    <div class="l-p-0-5 l-pl-1  bg-blue-highlight text--white">Title</div>
+                    <div class="card-body">
+                        <h5 class="font-size--large text-black-70 l-mb-xs-1  ">SubTitle</h5>
+                        <p class="font-size--medium  l-mb-1 text-black-60 ">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus volutpat ante, a
+                            scelerisque diam placerat et. Suspendisse consequat nibh nisi, vel molestie ex faucibus non.
+                        </p>
+                        <button type="button" class="btn btn-primary bg-blue-highlight text--white">Button</button>
+                    </div>
+                </div>
+            
+            
+            </div>
+            
+            
+            <div>
+                <h2  class="l-mt-2 l-mb-2 font-size--large u-width--90 u-line-height-1-5 text-black-80">Image and text container</h2>
+            
+                    <div class="card_image">
+                        <div class="bg-image hover-overlay">
+                            <img src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" class="img-fluid" />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="font-size--large  text-black-70  l-mb-xs-1 ">Title</h5>
+                            <p class="font-size--medium l-mb-1 text-black-60  ">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus volutpat ante, a
+                                scelerisque diam placerat et. Suspendisse consequat nibh nisi, vel molestie ex faucibus non.
+                            </p>
+                            <button type="button" class="btn btn-primary bg-blue-highlight text--white">Button</button>
+                        </div>
+                    </div>
+                </div>
+            
+            
+                    <div>
+                        <h2  class="l-mt-2 l-mb-2 font-size--large u-width--90 u-line-height-1-5 text-black-80">Text container</h2>
+            
+                    <div class="card_image">
+                    
+                        <div class="card-body">
+                            <h5 class="font-size--large text-black-70 l-mb-xs-1 ">Title</h5>
+                            <p class="font-size--small  l-mb-1 text-black-60  ">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus volutpat ante, a
+                                scelerisque diam placerat et. Suspendisse consequat nibh nisi, vel molestie ex faucibus non.
+                            </p>
+                            <button type="button" class="btn btn-primary bg-blue-highlight text--white">Button</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2  class="l-mt-2 l-mb-2 font-size--large u-width--90 u-line-height-1-5 text-black-80">Image and copy container</h2>
+            
+                    <div class="card">
+                        <div class="card-content">
+                            <h2 class="card-title">Title</h2>
+                            <h5 class="card-subtitle">SubTitle</h5>
+                            <button type="button" class="card-button">Button</button>
+                        </div>
+                        <img src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" class="card-bg" alt="Background" />
+                    </div>
+                </div>
+            
+            
+            
+                <div>
+                    <h2  class="l-mt-2 l-mb-2 font-size--large u-width--90 u-line-height-1-5 text-black-80">Banner image</h2>
+            
+                    <div class="card-double">
+                        <div class="card-content">
+                            <h2 class="card-title">Title</h2>
+                            <h5 class="card-subtitle">SubTitle</h5>
+                            <button type="button" class="card-button">Button</button>
+                        </div>
+                        <img src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" class="card-bg" alt="Background" />
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="u-width--100">
+                <h2  class="l-mt-2 l-mb-2 font-size--large u-width--90 u-line-height-1-5 text-black-80">Banner image</h2>
+        
+                <div class="card-full-width">
+                    <div class="card-content">
+                        <h2 class="card-title">Title</h2>
+                        <h5 class="card-subtitle">SubTitle</h5>
+                        <button type="button" class="card-button">Button</button>
+                    </div>
+                    <img src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" class="card-bg" alt="Background" />
+                </div>
+            </div>
+        </div>
+          <!-- End of content ... -->
+    </div>
+
+    <!-- Scripts -->
+    <script src="design-system.js"></script>
+
+</body>
+
+</html>
