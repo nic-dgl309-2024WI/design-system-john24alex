@@ -7,6 +7,7 @@
     <title>Design System</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="design-system.css" />
+
 </head>
 
 <body>
@@ -25,16 +26,16 @@
 
 
     <!-- Side navbar -->
-    <nav class="navbar__side l-pl-2">
+    <nav class="navbar__side l-pl-2  u-line-height-1-8  l-mt-3  ">
         <!-- Top level navigation items -->
-        <ul class="top__items">
-            <li><a class="menu__link" href="about-me.html">About Me</a></li>
+        <ul class="top__items l-mb-2">
+            <li><a class="menu__link  " href="about-me.html">About Me</a></li>
             <li><a class="menu__link" href="index.html">Demos</a></li>
         </ul>
 
         <!-- Branding section -->
-        <h3 class="menu__heading">Branding</h3>
-        <ul class="sidebar__list">
+        <h3 class="menu__heading l-mt-3  ">Branding</h3>
+        <ul class="sidebar__list l-mb-2 ">
             <li><a class="menu__link menu__link--active" href="#Colours"><span class="list__number">01 </span>
                     Colours</a></li>
             <li><a class="menu__link" href="typography.html"><span class="list__number">02 </span> Typography</a></li>
@@ -44,8 +45,10 @@
         <!-- Utilities section -->
         <h3 class="menu__heading">Utilities</h3>
         <ul class="sidebar__list">
-            <li><a class="menu__link " href="spacing.html"><span class="list__number">04 </span> Spacing</a></li>            <li><a class="menu__link" href="#"><span class="list__number">05 </span> Containers</a></li>
+            <li><a class="menu__link " href="spacing.html"><span class="list__number">04 </span> Spacing</a></li>
             <li><a class="menu__link " href="containers.html"><span class="list__number">05 </span> Containers</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">06 </span> Images</a></li>
+
             <li><a class="menu__link" href="#"><span class="list__number">07 </span> Interactive</a></li>
             <li><a class="menu__link" href="#"><span class="list__number">08 </span> Feedback</a></li>
         </ul>
@@ -82,60 +85,63 @@
     <div class="content-container">
         <!-- Main content-->
         <!-- Colours section -->
-    <section class="colour-swatches u-width--90">
+        <section class="colour-swatches u-width--90">
 
-        <h2 class="colour-swatches__heading">Color Swatches</h2>
+            <h2 class="colour-swatches__heading">Color Swatches</h2>
 
-        <!-- Colour swatches -->
+            <!-- Colour swatches -->
 
-        <div class="swatch bg-primary-text">
-            <span class=" swatch-span swatch-text-light"> text--primary <br> #231007<br> [Pargraphs, titles, text menus]</span>
-            <div class="swatch-div-options text--light"> Background 1<span> #faf9eb</span></div>
-            <div class="swatch-div-options text--light"> Background 2<span> #dfd9c3</span></div>
-        </div>
+            <div class="swatch bg-primary-text">
+                <span class=" swatch-span swatch-text-light"> text--primary <br> #231007<br> [Pargraphs, titles, text
+                    menus]</span>
+                <div class="swatch-div-options text--light"> Background 1<span> #faf9eb</span></div>
+                <div class="swatch-div-options text--light"> Background 2<span> #dfd9c3</span></div>
+            </div>
 
-        <div class="swatch bg-primary-background">
-            <span class="swatch-span swatch-text-dark">bg-primary<br>#faf9eb <br> [Backgrounds]</span>
-            <div class="swatch-div-options text--primary"> Foreground 1<span> #231007</span></div>
-            <div class="swatch-div-options text-accent"> Foreground 2<span> #62311f</span></div>
-        </div>
+            <div class="swatch bg-primary-background">
+                <span class="swatch-span swatch-text-dark">bg-primary<br>#faf9eb <br> [Backgrounds]</span>
+                <div class="swatch-div-options text--primary"> Foreground 1<span> #231007</span></div>
+                <div class="swatch-div-options text-accent"> Foreground 2<span> #62311f</span></div>
+            </div>
 
-        <div class="swatch bg-accent">
-            <span class=" swatch-span --clr-secondary">text-accent<br>#62311f <br> [Backgrounds]</span>
-            <div class="swatch-div-options text--primary"> Foreground 1<span> #231007</span></div>
-            <div class="swatch-div-options text-accent"> Foreground 2<span> #62311f</span></div>
-        </div>
+            <div class="swatch bg-accent">
+                <span class=" swatch-span --clr-secondary">text-accent<br>#62311f <br> [Backgrounds]</span>
+                <div class="swatch-div-options text--primary"> Foreground 1<span> #231007</span></div>
+                <div class="swatch-div-options text-accent"> Foreground 2<span> #62311f</span></div>
+            </div>
 
-        
-        <div class="swatch bg-secondary-background swatch-text-light">
-            <span class=" swatch-span">bg-secondary <br>#053855 <br> [Backgrounds]</span>
-            <div class="swatch-div-options text-secondary"> Foreground 1<span> #8ecddf</span></div>
-            <div class="swatch-div-options text--white"> Foreground 2<span> #fff</span></div>
-        </div>
-        <div class="swatch bg-secondary-text">
-            <span class=" swatch-span swatch-text">text-secondary<br>#8ecddf <br> [Highlight Text only over bg-secondary  ]</span>
-        </div>
-        <div class="swatch bg-brown-light">
-            <span class="swatch-span swatch-text">bg-brown-light<br>#dfd9c3 <br> [Backgrounds]</span>
-        </div>
-        <div class="swatch bg-sunset-light">
-            <span class="swatch-span swatch-text">bg-sunset-light<br>#b6a248 <br> [Backgrounds]</span>
-        </div>
-        <div class="swatch bg-sunset-dark">
-            <span class=" swatch-span swatch-text">bg-sunset-dark<br>#d68c3d<br> [Backgrounds]</span>
-        </div>
-      
-        <div class="swatch bg-blue-medium">
-            <span class="swatch-span swatch-text-light">Blue Medium<br>#396f86<br> [Backgrounds]</span>
-        </div>
 
-    </section>
-          <!-- End of content ... -->
+            <div class="swatch bg-secondary-background swatch-text-light">
+                <span class=" swatch-span">bg-secondary <br>#053855 <br> [Backgrounds]</span>
+                <div class="swatch-div-options text-secondary"> Foreground 1<span> #8ecddf</span></div>
+                <div class="swatch-div-options text--white"> Foreground 2<span> #fff</span></div>
+            </div>
+            <div class="swatch bg-secondary-text">
+                <span class=" swatch-span swatch-text">text-secondary<br>#8ecddf <br> [Highlight Text only over
+                    bg-secondary ]</span>
+            </div>
+            <div class="swatch bg-brown-light">
+                <span class="swatch-span swatch-text">bg-brown-light<br>#dfd9c3 <br> [Backgrounds]</span>
+            </div>
+            <div class="swatch bg-sunset-light">
+                <span class="swatch-span swatch-text">bg-sunset-light<br>#b6a248 <br> [Backgrounds]</span>
+            </div>
+            <div class="swatch bg-sunset-dark">
+                <span class=" swatch-span swatch-text">bg-sunset-dark<br>#d68c3d<br> [Backgrounds]</span>
+            </div>
+
+            <div class="swatch bg-blue-medium">
+                <span class="swatch-span swatch-text-light">Blue Medium<br>#396f86<br> [Backgrounds]</span>
+            </div>
+
+        </section>
+        <!-- End of content ... -->
     </div>
 
-   
+
     <!-- Scripts -->
     <script src="design-system.js"></script>
+
 
 </body>
 
