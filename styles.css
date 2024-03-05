@@ -22,7 +22,7 @@
   --clr-text-light: #dfd9c3;
   --clr-text-gray: #909090;
   --clr-text-accent: #62311f;
-  --clr-text-white: ##ffffff;
+  --clr-text-white: #ffffff;
 
   --clr-primary-background: #faf9eb;
   --clr-secondary-background: #053855;
@@ -75,11 +75,13 @@
  /* Line Height variables */
 
   --line-height: 1.5rem; /* default */
+  --line-height-1-8: 1.8rem; /* default */
   --line-heightdouble: 2rem;
   --line-heightTriple: 3rem;
   --line-height-quadruple: 4rem;
 
  /* spacing variables */
+ --small-spacing: 0.5rem; /* 8px */
  --normal-spacing: 1rem; /* 16px */
  --spacing-1: 1.25rem; /* 20px */
  --spacing-15: 1.5rem; /* 24px */
@@ -91,14 +93,50 @@
 
 
  /* width variables */
- --width-full: 100%; /* 16px */
- --width-90: 90%; /* 16px */
- --width-80: 80%; /* 16px */
- --width-70: 70%; /* 16px */
+ --width-full: 100%; 
+  --width-90: 90%; 
+  --width-80: 80%; 
+  --width-70: 70%; 
+   --width-60: 60%; 
+   --width-50: 50%; 
+   --width-40: 40%; 
+   --width-30: 30%; 
+   --width-20: 20%; 
+   --width-10: 10%; 
 
 
+/* max-width variables */
 
-}
+--max-w-300:300px;
+--max-w-400:400px;
+--max-w-500:500px;
+--max-w-600:600px;
+--max-w-700:700px;
+--max-w-800:800px;
+--max-w-900:900px;
+--max-w-1000:1000px;
+--max-w-1100:1100px;
+--max-w-1200:1200px;
+--max-w-1300:1300px;
+--max-w-1400:1400px;
+--max-w-1500:1500px;
+
+/* min-width variables */
+
+--min-w-300:300px;
+--min-w-400:400px;
+--min-w-500:500px;
+--min-w-600:600px;
+--min-w-700:700px;
+--min-w-800:800px;
+--min-w-900:900px;
+--min-w-1000:1000px;
+--min-w-1100:1100px;
+--min-w-1200:1200px;
+--min-w-1300:1300px;
+--min-w-1400:1400px;
+--min-w-1500:1500px;
+
 
 /* Box sizing and CSS reset */
 *,
@@ -127,6 +165,12 @@ ol {
   padding: 0;
   list-style: none;
 }
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 
 
 
