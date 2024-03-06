@@ -55,6 +55,7 @@
   /* Font-size variables */
 
   --font-size-small: 0.8rem; /* 12px */
+  --font-size-standard: 0.875rem; /* 14px */
   --font-size-medium: 1rem; /* 16px */
   --font-size-large: 1.25rem; /* 20px */
   --font-size-heading: 1.37rem; /* 22px */
@@ -74,8 +75,9 @@
 
  /* Line Height variables */
 
+ --line-height-1: 1.3rem; /* 20 px */
   --line-height: 1.5rem; /* default */
-  --line-height-1-8: 1.8rem; /* default */
+  --line-height-1-8: 1.8rem; 
   --line-heightdouble: 2rem;
   --line-heightTriple: 3rem;
   --line-height-quadruple: 4rem;
