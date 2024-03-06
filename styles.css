@@ -4,6 +4,8 @@
 /* CSS rules to Type faces
   font-family: 'Open Sans', sans-serif;
   font-family: 'Roboto', sans-serif;
+
+
   */
 
 :root {
@@ -172,8 +174,4 @@ img {
   width: 100%;
   height: auto;
 }
-
-
-
-
-
+}
