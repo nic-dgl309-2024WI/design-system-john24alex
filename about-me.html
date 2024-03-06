@@ -15,26 +15,26 @@
     <div class="navbar__logo">Design System</div>
     <!-- Hamburger icon for mobile menu -->
     <div class="navbar__mobile-toggle" onclick="toggleMobileMenu()"></div>
-    <nav class="navbar__menu">
+    <nav class="navbar__menu l-mr-1-25 ">
       <ul class="navbar__items">
-        <li><a href="about-me.html" class="navbar__link">About Me</a></li>
-        <li><a href="index.html" class="menu__link menu__link--active">Demos</a></li>
+        <li><a href="about-me.html" class="menu__link menu__link--active">About Me</a></li>
+        <li><a href="index.html" class="menu__link ">Demos</a></li>
       </ul>
     </nav>
   </header>
 
 
    <!-- Side navbar -->
-   <nav class="navbar__side l-pl-2  u-line-height-1-8  l-mt-3  ">
+   <nav class="navbar__side l-pl-2  u-line-height-1-8 no-menu ">
     <!-- Top level navigation items -->
         <ul class="top__items l-mb-2">
         <li><a class="menu__link" href="about-me.html">About Me</a></li>
         <li><a class="menu__link menu__link--active" href="index.html">Demos</a></li>
     </ul>
-
+<div class="hide-item">
           <!-- Branding section -->
           <h3 class="menu__heading l-mt-3  ">Branding</h3>
-          <ul class="sidebar__list l-mb-2 ">
+          <ul class="sidebar__list l-mb-2  ">
         <li><a class="menu__link" href="colours.html"><span class="list__number">01 </span> Colours</a></li>
         <li><a class="menu__link" href="typography.html"><span class="list__number">02 </span> Typography</a></li>
         <li><a class="menu__link" href="#Logo"><span class="list__number">03 </span> Logo</a></li>
@@ -75,19 +75,21 @@
         <li><a class="menu__link" href="#"><span class="list__number">18 </span> Accordion</a></li>
         <li><a class="menu__link" href="#"><span class="list__number">19 </span> Lists</a></li>
     </ul>
+  </div>
 </nav>
 
-
+<div class="content-container l-mb-2 no-content-container ">
+  <!-- Main content-->
 
   <!-- Main content-->
   <br />
   <br />
-  <section class="u-center u-width--100 l-flex  l-flex-column l-justify-center l-align-center  u-m-a  margin-top-3 margin-bottom-3  l-p-2 ">
+  <section class="u-center u-width--90 l-flex  l-flex-column  margin-bottom-3  u-center-flx--vertical ">
     <!-- add your name -->
     <h1 class="margin-top-3 text-black-80 ">Hi! My name is John Huerfano M.</h1>
     <h2 class="margin-bottom-3 font-size--large text-black-60">Publicist with dev Background</h2>
     <!-- add your portrait photo -->
-    <img src="images/Profile-image.jpg" alt="Portrait of lorem ipsum" style="width: 500px; height: 500px"  class="l-mb-2 l-mt-2 "/>
+    <img src="images/Profile-image.jpg" alt="Portrait of lorem ipsum"  class="l-mb-2 l-mt-2 max-w-500"/>
     <!-- add a short biography. Include where you are from, your education background, your current program, and something interesting about yourself. -->
     <p class="u-center-horizontal-block  l-mt-2 max-w-500 l-mb-2">
       Publicist with experience and with background in software development, including UX/UI design, front-end
@@ -177,6 +179,8 @@
 
     <!-- End of content ... -->
   </section>
+
+</div>
 
   <!-- Scripts -->
   <script src="design-system.js"></script>
