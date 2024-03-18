@@ -157,6 +157,19 @@
 .bg-blue-highlight {
   background-color: var(--clr-blue-highlight);
 }
+
+
+  .bg-primary-background{
+
+   background-color: var( --clr-primary-background);
+  
+}
+
+
+
+
+
+
 .bg-white {
   background-color: var(--clr-white);
 }
@@ -389,6 +402,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+/* Layout  2 columns */
+.u-grid--2-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
 /* Gaps */
 
@@ -504,6 +522,63 @@ blockquote,
 .l-w-50 {
   width: var(--width-50);
 }
+
+
+
+
+.max-w-300 { max-width: 300px; }
+.max-w-500 { max-width: 500px; }
+.width-100 { width: 100%; }
+.l-flex { display: flex; }
+.l-grid { display: grid; grid-template-columns: repeat(2, 1fr); }
+.l-grid--2-columns { grid-template-columns: 1fr 1fr; }
+.l-grid--3-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px; 
+}
+
+.l-grid--4-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px; 
+}
+
+.l-justify-center { justify-content: center; }
+.l-align-center { align-items: center; }
+
+.l-flex {
+  display: flex;
+  gap: 10px; /*space */
+}
+
+.l-flex-column {
+  flex-direction: column;
+}
+
+.l-wrap-content {
+  flex-wrap: wrap;
+}
+
+.box {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+}
+
+.l-2-columns, .l-3-columns {
+  flex: 1; /*Flexible adjustment to fill available space*/
+  min-width: calc((100% / 2) - 10px); /* For two columns */
+}
+
+.l-3-columns {
+  min-width: calc((100% / 3) - 10px); /* 3 columns */
+}
+
+
+
+
+
 
 /* HTML font asignation */
 body {
@@ -655,6 +730,13 @@ a:focus {
 
 /* Colors swatches section */
 
+.miniSwatch{
+  width: 50px;  
+  height: 30px;
+ 
+
+}
+
 .colour-swatches__heading {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -663,11 +745,42 @@ a:focus {
 .swatch {
   width: 100%;
   min-height: 150px;
+  max-width: 100%;
+  min-width: 100%;
+
 }
 .swatch-span {
   display: block;
   text-align: center;
+
+  height: 40px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 8px;
+  border-radius: 4px;
+
+
 }
+
+.miniSwatch{
+  width: 50px;  
+  height: 30px;
+
+  min-width: 50px;
+  min-height: 30px;
+  display:block;
+  float: left;
+  margin-right: 10px;
+
+}
+.inline{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px !important;
+
+}
+
 .swatch-div-options {
   width: 300px;
   margin-bottom: 10px;
@@ -715,7 +828,7 @@ a:focus {
   color: var(--clr-brown-light);
 }
 .swatch-text-dark {
-  color: var(--clr-primary-text);
+  color: var(--clr-black-90);
 }
 
 /* Utility Classes for Light and Dark Text */
@@ -1076,10 +1189,12 @@ a:focus {
 /* Flexbox */
 .l-flex {
   display: flex;
+  
 }
 .l-flex-column {
   flex-direction: column;
 
+}
   .l-flex-row {
     flex-direction: row;
   }
@@ -1090,6 +1205,24 @@ a:focus {
   .l-align-center {
     align-items: center !important;
   }
+
+  .l-wrap-content{
+    flex-wrap: wrap;
+   
+  }
+  .l-3-columns{
+    flex: 1 1 calc(33.333% - 10px)
+
+  }
+
+  .l-2-columns{
+    flex: 1 1 calc(50% - 10px)
+
+  }
+
+ 
+  
+
 
   /* Align by margin */
   .l-align-margin {
@@ -1375,6 +1508,13 @@ a:focus {
   padding-top: 30px;
 }
 
+.typo-container{
+padding-left: 80px;
+padding-right: 80px;
+
+
+}
+
 /* Show side menu when .navbar__side has class .open */
 .navbar__side.open {
   display: block;
@@ -1389,9 +1529,14 @@ a:focus {
     display: none;
     margin-left: 350px;
   }
+  .swatch {
+    max-width: 30%;
+    min-width: 30%;
+
+  }
 
   .content-container {
-    margin-left: 20px;
+    margin-left: 40px;
   }
 
   .card-full-width {
@@ -1401,7 +1546,7 @@ a:focus {
 
   .content-container {
     padding-left: 0;
-    margin-left: 260px;
+    margin-left: 280px;
   }
 
   .navbar__side {
@@ -1441,7 +1586,17 @@ a:focus {
     display: none;
     margin-left: 350px;
   }
+  .swatch {
+    max-width: 30%;
+    min-width: 30%;
+
+  
+  }
+
+
+  
 }
+
 
 /* Visibility */
 .hide-item {
@@ -1450,3 +1605,4 @@ a:focus {
 .show-item {
   display: block;
 }
+
