@@ -16,42 +16,180 @@ Last Modified: 2024-03-05
     <title>Design System</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
 
+    <style>
+        body {
+            background-image: url(images/desktop.png);
+            height: 5924px;
+
+        }
+    </style>
+
+
 </head>
 
 <body>
     <!-- Top Navbar -->
-    <header class="navbar__top">
-        <div class="navbar__logo"><a href="design-system.html" class="menu__link">Design System</a></div>
+    <header class="navbar-top">
+        <div class="logo"><a href="design-system.html" class="menu__link"><img src="./images/outback-nursery-logo.png"
+                    alt="Logo" /></a></div>
         <!-- Hamburger icon for mobile menu -->
         <div class="navbar__mobile-toggle" onclick="toggleMobileMenu()"></div>
         <nav class="navbar__menu l-mr-1-25 ">
-            <ul class="navbar__items">
-                <li><a href="about-me.html" class="navbar__link">About Me</a></li>
-                <li><a href="design-system.html" class="menu__link menu__link--active">Demos</a></li>
-                <li><a href="about-me.html" class="navbar__link">About Me</a></li>
-                <li><a href="design-system.html" class="menu__link menu__link--active">Demos</a></li>
-                <li><a href="about-me.html" class="navbar__link">About Me</a></li>
-                <li><a href="design-system.html" class="menu__link menu__link--active">Demos</a></li>
+            <ul class="navbar__items u-gap-1-8">
+                <li><a href="#" class="menu__link">Products</a></li>
+                <li><a href="#" class="menu__link">Gardening Tips</a></li>
+                <li><a href="#" class="menu__link">Gift Certificates</a></li>
+                <li><a href="#" class="menu__link">Community</a></li>
+                <li><a href="#" class="menu__link">About</a></li>
+                <li><a href="#" class="menu__link">Contact</a></li>
             </ul>
         </nav>
     </header>
+
+    <div class="breadCrumb-container">
+
+        <nav aria-label="Breadcrumb">
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Subcategory</a></li>
+                <li>Current Page</li>
+            </ul>
+        </nav>
+
+
+    </div>
+
+
 
 
     <!-- Mobile Menu -->
     <nav class="navbar__side l-pl-2">
         <!-- Top level navigation items -->
         <ul class="top__items">
-            <li><a class="menu__link" href="about-me.html">About Me</a></li>
-            <li><a class="menu__link menu__link--active" href="index.html">Demos</a></li>
-            <li><a class="menu__link menu__link--active" href="index.html">Demos</a></li>
-            <li><a class="menu__link menu__link--active" href="index.html">Demos</a></li>
-            <li><a class="menu__link menu__link--active" href="index.html">Demos</a></li>
-            <li><a class="menu__link menu__link--active" href="index.html">Demos 2</a></li>
+            <li><a href="#" class="menu__link">Products</a></li>
+            <li><a href="#" class="menu__link">Gardening Tips</a></li>
+            <li><a href="#" class="menu__link">Gift Certificates</a></li>
+            <li><a href="#" class="menu__link">Community</a></li>
+            <li><a href="#" class="menu__link">About</a></li>
+            <li><a href="#" class="menu__link">Contact</a></li>
         </ul>
     </nav>
 
     <div class="content-container">
         <!-- Main content-->
+
+        <div class="hero">
+
+            <div class="upper-hero">
+
+                <div class="hero-left">
+                    <p class="font-size--body font-weight--bold text-black-90">A Green Canvas Awaits</p>
+                    <h1 class="font-size--hero-h1 u-line-height-triple u-blue-text font-weight--bold">Every leaf <br />
+                        Tells a Story</h1>
+                    <p class="font-size-18 text-black-70 font-weight--light  margin-top-1">Outback Nursery, Where
+                        Gardening <br /> Dreams Take Root and Soar.</p>
+                    <a href="#"
+                        class="u-button bg-secondary-background font-size-17 text--white font-size-18 margin-top-3">EXPLORE
+                        THE WONDERS</a>
+
+
+                </div>
+
+
+                <div class="hero-right">
+                    <img class="hero-image" src="./images/Hero-Image.png" alt="placeholder" />
+
+                </div>
+            </div>
+            <div class="lower-hero">
+                <div class="custom-shape-divider-top-1711479978">
+                    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                        preserveAspectRatio="none">
+                        <path
+                            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                            class="shape-fill"></path>
+                    </svg>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="feature-products">
+
+            <h2 class="font-size--h2-38 u-blue-text font-weight--medium  ">Featured Products</h2>
+            <p class="font-size-18 text-black-70 font-weight--light  u-width--70 u-center-text max-w-500 padding-all  ">
+                Let our collection inspire your next green project, and find the ideal companions for your garden
+                journey.</p>
+
+            <div class="slider-container  margin-top-2">
+
+                 <!--Slides -->
+                <div class="slider">
+                    <div class="slide">
+                        <img class="product-image" src="./images/Nootkatensis-Pendula-image.jpg" alt="">
+                        <h1
+                            class=" font-size--large text-black-70 font-weight--light u-center-text u-text-upper margin-top-1">
+                            Nootkatensis Pendula</h1>
+
+                        <p
+                            class="font-size--body text-black-70 font-weight--light  u-center-text u-padding-horizontal-1-5">
+                            This particular cultivar, ‘Pendula', is celebrated for its elegant and solemnity.</p>
+                        <a href="#"
+                            class="u-button bg-secondary-background font-size-17 text--white font-size-18 margin-top-3">EXPLORE
+                        </a>
+
+
+
+                    </div>
+                    <div class="slide">
+                        <img class="product-image" src="./images/Nootkatensis-Pendula-image.jpg" alt="">
+                        <h1
+                            class=" font-size--large text-black-70 font-weight--light u-center-text u-text-upper margin-top-1">
+                            Nootkatensis Pendula</h1>
+
+                        <p
+                            class="font-size--body text-black-70 font-weight--light  u-center-text u-padding-horizontal-1-5">
+                            This particular cultivar, ‘Pendula', is celebrated for its elegant and solemnity.</p>
+                        <a href="#"
+                            class="u-button bg-secondary-background font-size-17 text--white font-size-18 margin-top-3">EXPLORE
+                        </a>
+
+
+                    </div>
+                    <div class="slide">
+
+                        <img class="product-image" src="./images/Nootkatensis-Pendula-image.jpg" alt="">
+                        <h1
+                            class=" font-size--large text-black-70 font-weight--light u-center-text u-text-upper margin-top-1">
+                            Nootkatensis Pendula</h1>
+
+                        <p
+                            class="font-size--body text-black-70 font-weight--light  u-center-text u-padding-horizontal-1-5">
+                            This particular cultivar, ‘Pendula', is celebrated for its elegant and solemnity.</p>
+                        <a href="#"
+                            class="u-button bg-secondary-background font-size-17 text--white font-size-18 margin-top-3">EXPLORE
+                        </a>
+
+
+                    </div>
+                    <!--End Slides -->
+                </div>
+               
+            </div>
+            <a href="#"
+            class="font-size--large u-blue-text font-weight--bold u-center-text u-text-upper margin-top-1 u-text-no-decoration">SEE ALL
+        </a>
+
+
+
+
+
+        </div>
+
 
 
 
