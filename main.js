@@ -7,26 +7,47 @@ function toggleMobileMenu() {
     menu.classList.toggle('navbar__side--open');
     toggle.classList.toggle('open');
 }
+const slider = document.querySelector('.slider');
+let isDown = false;
+let startX;
+let scrollLeft;
 
+slider.addEventListener('mousedown', (e) => {
+  isDown = true;
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
 
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
-const totalSlides = slides.length;
+slider.addEventListener('mouseleave', () => {
+  isDown = false;
+});
 
-function nextSlide() {
-  if (currentSlide < totalSlides - 1) {
-    currentSlide++;
-  } else {
-    currentSlide = 0;
-  }
-  updateSlidePosition();
-}
+slider.addEventListener('mouseup', () => {
+  isDown = false;
+});
 
-function updateSlidePosition() {
-  const slider = document.querySelector('.slider');
-  const slideWidth = slides[currentSlide].clientWidth;
-  const newTransformValue = -(slideWidth * currentSlide);
-  slider.style.transform = `translateX(${newTransformValue}px)`;
-}
+slider.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX) * 2; // Multiply by 2 to increase scroll speed
+  slider.scrollLeft = scrollLeft - walk;
+});
 
-//setInterval(nextSlide, 3000); // Cambia el slide cada 3 segundos
+//Touch events for mobile support
+slider.addEventListener('touchstart', (e) => {
+  isDown = true;
+  startX = e.touches[0].pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+
+slider.addEventListener('touchend', () => {
+  isDown = false;
+});
+
+slider.addEventListener('touchmove', (e) => {
+  if (!isDown) return;
+  const x = e.touches[0].pageX - slider.offsetLeft;
+  const walk = (x - startX) * 2;
+  slider.scrollLeft = scrollLeft - walk;
+});

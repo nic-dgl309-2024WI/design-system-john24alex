@@ -40,6 +40,7 @@
 
   /* Tonal  color Variables  */
   --clr-brown-light: #dfd9c3;
+  --clr-brown-medium: #EFE8CB;
   --clr-sunset-light: #b6a248;
   --clr-sunset-dark: #d68c3d;
   --clr-gray-medium: #909090;
@@ -339,6 +340,9 @@ text-transform: uppercase;
 .text--brown-light {
   color: var(--clr-brown-light);
 }
+
+
+
 .text--sunset-light {
   color: var(--clr-sunset-light);
 }
@@ -455,6 +459,12 @@ text-transform: uppercase;
 .bg-brown-light {
   background-color: var(--clr-brown-light);
 }
+
+.bg-brown-medium {
+  background-color: var(--clr-brown-medium);
+}
+
+
 .bg-sunset-light {
   background-color: var(--clr-sunset-light);
 }
@@ -1036,7 +1046,7 @@ a:focus {
 }
 
 
-/*  Hero Content */
+/*  Hero Section */
 
 .hero{
   background-color: #EDE6C9 !important;
@@ -1119,6 +1129,9 @@ position: relative;
 }
 
 
+
+/* Feacture product section  */
+
 .feature-products{
   display: flex;
   width: 100%;
@@ -1168,6 +1181,50 @@ position: relative;
 }
 
 
+/* Gardening Sections */
+
+.gardening-tips{
+
+  height: 160px !important;
+    width: 100% !important;
+
+}
+
+
+
+/* General style for the slider */
+.slider-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: scroll;
+  scrollbar-width: none; /* Hide the scroll bar for browsers that support it*/
+}
+
+.slider::-webkit-scrollbar {
+  display: none; /*Hide scrollbar in Webkit*/
+}
+
+.slide {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 80%; /* The width of the cards on mobile */
+  margin-right: 20%; /* Space to see a fragment of the following card*/
+}
+
+/* Styles for tablets and desktop, adjust as needed */
+@media (min-width: 768px) {
+  .slide {
+    width: 25%; /* Four cards in a row*/
+    margin-right: 0;
+  }
+}
+
 
 
 
@@ -1197,6 +1254,8 @@ position: relative;
   }
 
   .content-container-main {
+
+  
    
   }
 
