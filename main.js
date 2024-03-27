@@ -7,6 +7,9 @@ function toggleMobileMenu() {
     menu.classList.toggle('navbar__side--open');
     toggle.classList.toggle('open');
 }
+
+
+
 const slider = document.querySelector('.slider');
 let isDown = false;
 let startX;
@@ -50,4 +53,53 @@ slider.addEventListener('touchmove', (e) => {
   const x = e.touches[0].pageX - slider.offsetLeft;
   const walk = (x - startX) * 2;
   slider.scrollLeft = scrollLeft - walk;
+});
+
+
+////
+
+
+const sliderGardening = document.querySelector('.gardening-slider');
+let isDownG = false;
+let startXG;
+let scrollLeftG;
+
+sliderGardening.addEventListener('mousedown', (e) => {
+  isDownG = true;
+  startXG = e.pageX - sliderGardening.offsetLeft;
+  scrollLeftG = sliderGardening.scrollLeftG;
+});
+
+sliderGardening.addEventListener('mouseleave', () => {
+  isDownG = false;
+});
+
+sliderGardening.addEventListener('mouseup', () => {
+  isDownG = false;
+});
+
+sliderGardening.addEventListener('mousemove', (e) => {
+  if (!isDownG) return;
+  e.preventDefault();
+  const x = e.pageX - sliderGardening.offsetLeft;
+  const walk = (x - startXG) * 2; // Multiply by 2 to increase scroll speed
+  sliderGardening.scrollLeftG = scrollLeftG - walk;
+});
+
+//Touch events for mobile support
+sliderGardening.addEventListener('touchstart', (e) => {
+  isDownG = true;
+  startXG = e.touches[0].pageX - sliderGardening.offsetLeft;
+  scrollLeftG = sliderGardening.scrollLeftG;
+});
+
+sliderGardening.addEventListener('touchend', () => {
+  isDownG = false;
+});
+
+sliderGardening.addEventListener('touchmove', (e) => {
+  if (!isDownG) return;
+  const x = e.touches[0].pageX - sliderGardening.offsetLeft;
+  const walk = (x - startXG) * 2;
+  sliderGardening.scrollLeftG = scrollLeftG - walk;
 });
