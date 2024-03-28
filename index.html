@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <!-- 
 Author: John Huerfano M.
 Purpose: Index page for the design system
@@ -8,12 +7,10 @@ Last Modified: 2024-03-05
 -->
 
 <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex" />
 
-
-    <meta charset="UTF-8">
-    <meta name="robots" content="noindex">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Design System</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
 
@@ -21,25 +18,25 @@ Last Modified: 2024-03-05
         body {
             background-image: url(images/desktop.png);
             height: 5924px;
-
         }
     </style>
-
-
 </head>
 
 <body>
     <!-- Top Navbar -->
     <header class="navbar-top">
-        <div class="logo"><a href="design-system.html" class="menu__link"><img src="./images/outback-nursery-logo.png"
-                    alt="Logo" /></a></div>
+        <div class="logo">
+            <a href="design-system.html" class="menu__link"><img src="./images/outback-nursery-logo.png"
+                    alt="Logo" /></a>
+        </div>
         <!-- Hamburger icon for mobile menu -->
         <div class="navbar__mobile-toggle" onclick="toggleMobileMenu()"></div>
-        <nav class="navbar__menu l-mr-1-25 ">
+        <nav class="navbar__menu l-mr-1-25">
             <ul class="navbar__items u-gap-1-8">
                 <li><a href="#" class="menu__link">Products</a></li>
                 <li><a href="#" class="menu__link">Gardening Tips</a></li>
-                <li><a href="#" class="menu__link">Gift Certificates</a></li>
+                <li><a href="#" class="menu__link">Gift
+                        Certificates</a></li>
                 <li><a href="#" class="menu__link">Community</a></li>
                 <li><a href="#" class="menu__link">About</a></li>
                 <li><a href="#" class="menu__link">Contact</a></li>
@@ -48,7 +45,6 @@ Last Modified: 2024-03-05
     </header>
 
     <div class="breadCrumb-container">
-
         <nav aria-label="Breadcrumb">
             <ul class="breadcrumb">
                 <li><a href="#">Home</a></li>
@@ -57,12 +53,7 @@ Last Modified: 2024-03-05
                 <li>Current Page</li>
             </ul>
         </nav>
-
-
     </div>
-
-
-
 
     <!-- Mobile Menu -->
     <nav class="navbar__side l-pl-2">
@@ -81,26 +72,26 @@ Last Modified: 2024-03-05
         <!-- Main content-->
 
         <section class="hero">
-
             <div class="upper-hero">
-
                 <div class="hero-left">
-                    <p class="font-size--body font-weight--bold text-black-90">A Green Canvas Awaits</p>
-                    <h1 class="font-size--hero-h1 u-line-height-triple u-blue-text font-weight--bold">Every leaf <br />
-                        Tells a Story</h1>
-                    <p class="font-size-18 text-black-70 font-weight--light  margin-top-1">Outback Nursery, Where
-                        Gardening <br /> Dreams Take Root and Soar.</p>
+                    <p class="font-size--body font-weight--bold text-black-90">
+                        A Green Canvas Awaits
+                    </p>
+                    <h1 class="font-size--hero-h1 u-line-height-triple u-blue-text font-weight--bold">
+                        Every leaf <br />
+                        Tells a Story
+                    </h1>
+                    <p class="font-size-18 text-black-70 font-weight--light margin-top-1">
+                        Outback Nursery, Where Gardening <br />
+                        Dreams Take Root and Soar.
+                    </p>
                     <a href="#"
                         class="u-button bg-secondary-background font-size-17 text--white font-size-18 margin-top-3">EXPLORE
                         THE WONDERS</a>
-
-
                 </div>
-
 
                 <div class="hero-right">
                     <img class="hero-image" src="./images/Hero-Image.png" alt="placeholder" />
-
                 </div>
             </div>
             <div class="lower-hero">
@@ -113,184 +104,323 @@ Last Modified: 2024-03-05
                     </svg>
                 </div>
             </div>
-
-
         </section>
 
-
-
         <section class="feature-products bg-brown-medium">
+            <h2 class="font-size--h2-38 u-blue-text font-weight--medium">
+                Featured Products
+            </h2>
+            <p class="font-size-18 text-black-70 font-weight--light u-width--70 u-center-text max-w-500 padding-all">
+                Let our collection inspire your next green project, and find
+                the ideal
+                companions for your garden journey.
+            </p>
 
-            <h2 class="font-size--h2-38 u-blue-text font-weight--medium  ">Featured Products</h2>
-            <p class="font-size-18 text-black-70 font-weight--light  u-width--70 u-center-text max-w-500 padding-all  ">
-                Let our collection inspire your next green project, and find the ideal companions for your garden
-                journey.</p>
-
-            <div class="slider-container  margin-top-2">
-
+            <div class="slider-container margin-top-2">
                 <!--Slides -->
                 <div class="slider">
-
                     <div class="slide">
-                        <img class="product-image" src="./images/Nootkatensis-Pendula-image.jpg" alt="">
+                        <img class="product-image" src="./images/Nootkatensis-Pendula-image.jpg" alt />
                         <h1
-                            class=" font-size--large text-black-70 font-weight--light u-center-text u-text-upper margin-top-1">
-                            Nootkatensis Pendula</h1>
+                            class="font-size--large text-black-70 font-weight--light u-center-text u-text-upper margin-top-1">
+                            Nootkatensis Pendula
+                        </h1>
 
                         <p
-                            class="font-size--body text-black-70 font-weight--light  u-center-text u-padding-horizontal-1-5">
-                            This particular cultivar, ‘Pendula', is celebrated for its elegant and solemnity.</p>
+                            class="font-size--body text-black-70 font-weight--light u-center-text u-padding-horizontal-1-5 u-line-height-normal u-height--100 margin-top-1">
+                            This particular cultivar, ‘Pendula', is
+                            celebrated for its
+                            elegant and solemnity.
+                        </p>
                         <a href="#"
-                            class="u-button bg-secondary-background font-size-17 text--white font-size-18 margin-top-3">EXPLORE
+                            class="u-button bg-secondary-background font-size-17 text--white font-size-18">EXPLORE
                         </a>
-
-
-
                     </div>
                     <div class="slide">
-                        <img class="product-image" src="./images/Nootkatensis-Pendula-image.jpg" alt="">
+                        <img class="product-image" src="./images/Nootkatensis-Pendula-image.jpg" alt />
                         <h1
-                            class=" font-size--large text-black-70 font-weight--light u-center-text u-text-upper margin-top-1">
-                            Nootkatensis Pendula</h1>
+                            class="font-size--large text-black-70 font-weight--light u-center-text u-text-upper margin-top-1">
+                            Little Diamond
+                        </h1>
 
                         <p
-                            class="font-size--body text-black-70 font-weight--light  u-center-text u-padding-horizontal-1-5">
-                            This particular cultivar, ‘Pendula', is celebrated for its elegant and solemnity.</p>
+                            class="font-size--body text-black-70 font-weight--light u-center-text u-padding-horizontal-1-5 u-line-height-normal u-height--100 margin-top-1">
+                            elegance and versatility, is a gem among garden
+                            selections.
+                        </p>
                         <a href="#"
-                            class="u-button bg-secondary-background font-size-17 text--white font-size-18 margin-top-3">EXPLORE
+                            class="u-button bg-secondary-background font-size-17 text--white font-size-18">EXPLORE
                         </a>
-
-
                     </div>
                     <div class="slide">
-
-                        <img class="product-image" src="./images/Nootkatensis-Pendula-image.jpg" alt="">
+                        <img class="product-image" src="./images/Nootkatensis-Pendula-image.jpg" alt />
                         <h1
-                            class=" font-size--large text-black-70 font-weight--light u-center-text u-text-upper margin-top-1">
-                            Nootkatensis Pendula</h1>
+                            class="font-size--large text-black-70 font-weight--light u-center-text u-text-upper margin-top-1">
+                            Dwarf Balsam Fir
+                        </h1>
 
                         <p
-                            class="font-size--body text-black-70 font-weight--light  u-center-text u-padding-horizontal-1-5">
-                            This particular cultivar, ‘Pendula', is celebrated for its elegant and solemnity.</p>
+                            class="font-size--body text-black-70 font-weight--light u-center-text u-padding-horizontal-1-5 u-line-height-normal u-height--100 margin-top-1">
+                            This charming conifer is a popular choice among
+                            gardeners
+                            looking to add a touch of evergreen elegance
+                        </p>
                         <a href="#"
-                            class="u-button bg-secondary-background font-size-17 text--white font-size-18 margin-top-3">EXPLORE
+                            class="u-button bg-secondary-background font-size-17 text--white font-size-18">EXPLORE
                         </a>
-
-
                     </div>
                     <!--End Slides -->
                 </div>
-
             </div>
             <a href="#"
-                class="font-size--large u-blue-text margin-top-3 margin-bottom-3  font-weight--bold u-center-text u-text-upper margin-top-1 u-text-no-decoration">SEE
+                class="font-size--large u-blue-text margin-top-3 margin-bottom-3 font-weight--bold u-center-text u-text-upper margin-top-1 u-text-no-decoration">SEE
                 ALL
             </a>
-
-
-
-
-
         </section>
 
-        <!-- bg-light -->
-        <section class="gardening-tips bg-light  ">
-            <h2 class="font-size--h2-38 u-blue-text font-weight--medium margin-bottom-2 margin-top-3 u-line-height-normal  ">Gardening Tips
+        <!-- Gardening Tips -->
+        <section class="gardening-tips bg-light">
+            <h2
+                class="font-size--h2-38 u-blue-text font-weight--medium margin-bottom-2 margin-top-3 u-line-height-normal">
+                Gardening Tips
             </h2>
-            <p class="font-size-17 text-black-70 font-weight--light  u-width--70 u-center-text max-w-500 padding-all  ">
-                Understanding the foundation of garden care can transform your space into a vibrant haven of growth and
-                renewal. Here are essential gardening tips </p>
-
-
+            <p class="font-size-17 text-black-70 font-weight--light u-width--70 u-center-text max-w-500 padding-all">
+                Understanding the foundation of garden care can transform
+                your space
+                into a vibrant haven of growth and renewal. Here are
+                essential
+                gardening tips
+            </p>
 
             <div class="slider-container-gardening">
-                <div class=" gardening-slider">
+                <div class="gardening-slider">
+                    <!-- SLIDE DIV  -->
+                    <div class="gardening-slide bg-white">
+                        <img class="tip-image" src="./images/Know-Your-Zone.jpg" alt />
+                        <h1 class="u-blue-text font-size--large u-padding-horizontal-22 font-weight--bold margin-top-1">
+                            Know Your Zone
+                        </h1>
+
+                        <p
+                            class="font-size--body text-black-70 font-weight--regular u-padding-horizontal-22 u-line-height-normal margin-top-1 u-height--100">
+                            Understanding the foundation of garden care can
+                            transform your
+                            space into a vibrant haven of growth and
+                            renewal.
+                        </p>
+                        <a href="#"
+                            class="u-padding-horizontal-22 u-text-no-decoration font-size-medium text--sunset-dark margin-top-1 font-weight--bolder">--LEAR
+                            MORE
+                        </a>
+                    </div>
 
                     <!-- SLIDE DIV  -->
-                    <div class=" gardening-slide bg-white ">
-                        <img class="tip-image" src="./images/Know-Your-Zone.jpg" alt="">
-                        <h1
-                            class=" font-size--large u-padding-horizontal-22  text-black-70 font-weight--bold  margin-top-1">
-                            Know Your Zone</h1>
+                    <div class="gardening-slide bg-white margin-top-3">
+                        <img class="tip-image" src="./images/Water-Wisely.jpg" alt="Water Wisely" />
+                        <h1 class="font-size--large u-padding-horizontal-22 u-blue-text font-weight--bold margin-top-1">
+                            Water Wisely
+                        </h1>
 
                         <p
-                            class="font-size--body text-black-70 font-weight--regular u-padding-horizontal-22 u-line-height-normal margin-top-1  ">
-                            Understanding the foundation of garden care can transform your space into a vibrant haven of
-                            growth and renewal. </p>
+                            class="font-size--body text-black-70 font-weight--regular u-padding-horizontal-22 u-line-height-normal margin-top-1 u-height--100">
+                            Overwatering is as detrimental as
+                            under-watering. Learn the
+                            specific needs of your plants
+                        </p>
                         <a href="#"
-                            class="  u-padding-horizontal-22 u-text-no-decoration font-size-medium text--sunset-dark  margin-top-2 font-weight--bolder ">--LEAR
+                            class="u-padding-horizontal-22 u-text-no-decoration font-size-medium text--sunset-dark margin-top-1 font-weight--bolder">--LEAR
                             MORE
                         </a>
-
                     </div>
 
-                     <!-- SLIDE DIV  -->
-                     <div class=" gardening-slide bg-white margin-top-3 ">
-                        <img class="tip-image" src="./images/Water-Wisely.jpg" alt="Water Wisely">
-                        <h1
-                            class=" font-size--large u-padding-horizontal-22  text-black-70 font-weight--bold  margin-top-1">
-                            Water Wisely</h1>
+                    <!-- SLIDE DIV  -->
+                    <div class="gardening-slide bg-white">
+                        <img class="tip-image" src="./images/Mulch-Magic.jpg" alt="Mulch Magic" />
+                        <h1 class="font-size--large u-padding-horizontal-22 u-blue-text font-weight--bold margin-top-1">
+                            Mulch Magic
+                        </h1>
 
                         <p
-                            class="font-size--body text-black-70 font-weight--regular u-padding-horizontal-22 u-line-height-normal margin-top-1  ">
-                            Overwatering is as detrimental as under-watering. Learn the specific needs of your plants </p>
+                            class="font-size--body text-black-70 font-weight--regular u-padding-horizontal-22 u-line-height-normal margin-top-1 u-height--100">
+                            Apply a layer of mulch around your plants to
+                            suppress weeds,
+                            maintain soil moisture, and regulate soil
+                            temperature.
+                        </p>
                         <a href="#"
-                            class="  u-padding-horizontal-22 u-text-no-decoration font-size-medium text--sunset-dark  margin-top-2 font-weight--bolder ">--LEAR
+                            class="u-padding-horizontal-22 u-text-no-decoration font-size-medium text--sunset-dark margin-top-1 font-weight--bolder">--LEAR
                             MORE
                         </a>
-
                     </div>
 
-                     <!-- SLIDE DIV  -->
-                     <div class=" gardening-slide bg-white ">
-                        <img class="tip-image" src="./images/Mulch-Magic.jpg" alt="Mulch Magic">
-                        <h1
-                            class=" font-size--large u-padding-horizontal-22  text-black-70 font-weight--bold  margin-top-1">
-                            Mulch Magic</h1>
+                    <!-- SLIDE DIV  -->
+                    <div class="gardening-slide bg-white margin-top-3">
+                        <img class="tip-image" src="./images/Prune-for-Power.jpg" alt="Prune for Power" />
+                        <h1 class="font-size--large u-padding-horizontal-22 u-blue-text font-weight--bold margin-top-1">
+                            Prune for Power
+                        </h1>
 
                         <p
-                            class="font-size--body text-black-70 font-weight--regular u-padding-horizontal-22 u-line-height-normal margin-top-1  ">
-                            Apply a layer of mulch around your plants to suppress weeds, maintain soil moisture, and regulate soil temperature. </p>
+                            class="font-size--body text-black-70 font-weight--regular u-padding-horizontal-22 u-line-height-normal margin-top-1 u-height--100">
+                            Regular pruning removes dead or diseased
+                            branches, encourages
+                            healthy growth, and shapes your plants.
+                        </p>
                         <a href="#"
-                            class="  u-padding-horizontal-22 u-text-no-decoration font-size-medium text--sunset-dark  margin-top-2 font-weight--bolder ">--LEAR
+                            class="u-padding-horizontal-22 u-text-no-decoration font-size-medium text--sunset-dark margin-top-1 font-weight--bolder">--LEAR
                             MORE
                         </a>
-
                     </div>
-
-                     <!-- SLIDE DIV  -->
-                     <div class=" gardening-slide bg-white margin-top-3">
-                        <img class="tip-image" src="./images/Prune-for-Power.jpg" alt="Prune for Power">
-                        <h1
-                            class=" font-size--large u-padding-horizontal-22  text-black-70 font-weight--bold  margin-top-1">
-                            Prune for Power</h1>
-
-                        <p
-                            class="font-size--body text-black-70 font-weight--regular u-padding-horizontal-22 u-line-height-normal margin-top-1  ">
-                            Regular pruning removes dead or diseased branches, encourages healthy growth, and shapes your plants. </p>
-                        <a href="#"
-                            class="  u-padding-horizontal-22 u-text-no-decoration font-size-medium text--sunset-dark  margin-top-2 font-weight--bolder ">--LEAR
-                            MORE
-                        </a>
-
-                    </div>
-                    
                 </div>
             </div>
 
             <a href="#"
-                class="font-size--large u-blue-text  margin-bottom-3  font-weight--bold u-center-text u-text-upper margin-top-1 u-text-no-decoration">SEE
+                class="font-size--large u-blue-text margin-bottom-3 font-weight--bold u-center-text u-text-upper margin-top-1 u-text-no-decoration">SEE
                 ALL
             </a>
+        </section>
 
 
+
+        <!-- Section Gifts -->
+
+        <section class="gift bg-light-green margin-top-2">
+
+            <div class="gift-div  ">
+                <div class="plant-gift"><img class="image-plant" src="./images/plant-gift.png" alt=""></div>
+            </div>
+            <div class="gift-div u-center-text  u-center-flex-horizontal">
+                <h2 class="font-size--80 font-weight--light u-text-upper text--white margin-top-3">Celebrate
+                    <br /> <span class="font-size--hero-h1">the Gift of Green</span>
+                </h2>
+                <p class="u-width--70 u-line-height-normal margin-top-1 font-weight--light">Looking for a unique gift
+                    for birthdays, anniversaries, or just because?</p>
+                <a href="#"
+                    class="u-button bg-secondary-background font-size-17 text--white font-size-18 margin-top-2 ">Give
+                    Green
+                </a>
+            </div>
+            <div class="gift-div ">
+                <div class="gift-card"><img class="image-card" src="./images/gift-card.png" alt=""></div>
+            </div>
+
+
+        </section>
+
+
+
+        <!-- Section Community -->
+
+        <section class="community bg-white ">
+
+            <h2 class="font-size--h2-38 u-blue-text font-weight--medium u-m-t-30">
+                Our Community
+            </h2>
+            <p class="font-size-18 text-black-70 font-weight--light u-width--70 u-center-text max-w-500 padding-all">
+                Understanding the foundation of garden care can transform your space into a vibrant haven of growth and
+                renewal. Here are essential gardening tips
+            </p>
+
+            <div class="slider-container margin-top-2 ">
+
+                <!--Slides -->
+                <div class="slider u-padding-t-48 ">
+
+                        
+                <!--Slides 1 -->
+                <div class="slide u-center-flex-horizontal u-radius-20  slide-community bg-primary-background ">
+                    <div class="stars"><img src="./images/starts.svg" alt=""></div>
+
+
+
+                    <p
+                        class=" text-black-70 font-size--body margin-bottom-10  u-center-text u-padding-horizontal-1-5 u-line-height-normal u-m-t-70 u-height--80 ">
+                        The moment you step onto the property, you're greeted by an astounding variety of plants,
+                        each more beautiful than the last.
+                    </p>
+
+                    <img class="user-image " src="./images/user-1.png" alt />
+                    <h1
+                        class="font-size--medium  text-black-70 font-weight--bold u-center-text margin-top-1 u-text-upper">
+                        Jane Doe
+                    </h1>
+                    <p class="font-size--small  text-black-70 font-weight--bold u-center-text  u-text-upper">
+                        Courtenay, BC
+                    </p>
+
+                </div>
+
+                    
+                <!--Slides 2 -->
+                <div class="slide u-center-flex-horizontal u-radius-20  slide-community bg-primary-background ">
+                    <div class="stars"><img src="./images/starts.svg" alt=""></div>
+
+
+
+                    <p
+                        class=" text-black-70 font-size--body margin-bottom-10  u-center-text u-padding-horizontal-1-5 u-line-height-normal u-m-t-70 u-height--80 ">
+                        Not only are their plants of exceptional quality, but the customer service is top-notch
+                    </p>
+
+                    <img class="user-image " src="./images/user-2.png" alt />
+                    <h1
+                        class="font-size--medium  text-black-70 font-weight--bold u-center-text margin-top-1 u-text-upper">
+                        Samantha Smith
+                    </h1>
+                    <p class="font-size--small  text-black-70 font-weight--bold u-center-text  u-text-upper">
+                        Courtenay, BC
+                    </p>
+
+                </div>
+
+                    
+                <!--Slides 3 -->
+                <div class="slide u-center-flex-horizontal u-radius-20  slide-community bg-primary-background ">
+                    <div class="stars"><img src="./images/starts.svg" alt=""></div>
+
+
+
+                    <p
+                        class=" text-black-70 font-size--body margin-bottom-10  u-center-text u-padding-horizontal-1-5 u-line-height-normal u-m-t-70 u-height--80 ">
+                        "Discovering Outback Nursery was like finding a hidden gem on Vancouver Island.”
+                    </p>
+
+                    <img class="user-image " src="./images/user-3.png" alt />
+                    <h1
+                        class="font-size--medium  text-black-70 font-weight--bold u-center-text margin-top-1 u-text-upper">
+                        Nick Thomas
+                    </h1>
+                    <p class="font-size--small  text-black-70 font-weight--bold u-center-text  u-text-upper">
+                        Courtenay, BC
+                    </p>
+
+                </div>
+                   
+                   
+               
+                  
+                  
+                    <!--End Slides -->
+                </div>
+            </div>
+          
 
 
 
 
         </section>
 
+        <!-- Section About -->
 
+        <section class="about">
+
+
+
+
+            <div class="accordeon"></div>
+
+
+        </section>
 
 
         <!-- End of content ... -->
@@ -298,7 +428,6 @@ Last Modified: 2024-03-05
 
     <!-- Scripts -->
     <script src="main.js"></script>
-
 </body>
 
 </html>
