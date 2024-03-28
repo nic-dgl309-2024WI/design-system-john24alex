@@ -7,12 +7,11 @@ Last Modified: 2024-03-05
 -->
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="robots" content="noindex" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Design System</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Outback Nursery - Courtenay BC</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 
     <style>
         body {
@@ -23,13 +22,20 @@ Last Modified: 2024-03-05
 </head>
 
 <body>
-    <!-- Top Navbar -->
-    <header class="navbar-top">
+   
+     <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                                             Header
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    -->
+
+    <header class="navbar-top u-zi-5">
         <div class="logo">
             <a href="design-system.html" class="menu__link"><img src="./images/outback-nursery-logo.png"
-                    alt="Logo" /></a>
+                    alt="Logo">Outback Nursery</a>
         </div>
-        <!-- Hamburger icon for mobile menu -->
+    
+     <!--  :::::::::::::: Navigation Menu  ::::::::::::::  -->
+
         <div class="navbar__mobile-toggle" onclick="toggleMobileMenu()"></div>
         <nav class="navbar__menu l-mr-1-25">
             <ul class="navbar__items u-gap-1-8">
@@ -44,6 +50,12 @@ Last Modified: 2024-03-05
         </nav>
     </header>
 
+     <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                                            BreadCrumb 
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    -->
+
+
     <div class="breadCrumb-container">
         <nav aria-label="Breadcrumb">
             <ul class="breadcrumb">
@@ -55,7 +67,12 @@ Last Modified: 2024-03-05
         </nav>
     </div>
 
-    <!-- Mobile Menu -->
+  
+     <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                                             Mobile Menu
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    -->
+
     <nav class="navbar__side l-pl-2">
         <!-- Top level navigation items -->
         <ul class="top__items">
@@ -68,8 +85,21 @@ Last Modified: 2024-03-05
         </ul>
     </nav>
 
+   <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                                             Main Container
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    -->
+
     <div class="content-container">
-        <!-- Main content-->
+     
+
+
+
+     <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                                             Hero Section
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    -->
+
 
         <section class="hero">
             <div class="upper-hero">
@@ -78,11 +108,11 @@ Last Modified: 2024-03-05
                         A Green Canvas Awaits
                     </p>
                     <h1 class="font-size--hero-h1 u-line-height-triple u-blue-text font-weight--bold">
-                        Every leaf <br />
+                        Every leaf <br >
                         Tells a Story
                     </h1>
                     <p class="font-size-18 text-black-70 font-weight--light margin-top-1">
-                        Outback Nursery, Where Gardening <br />
+                        Outback Nursery, Where Gardening <br>
                         Dreams Take Root and Soar.
                     </p>
                     <a href="#"
@@ -91,7 +121,7 @@ Last Modified: 2024-03-05
                 </div>
 
                 <div class="hero-right">
-                    <img class="hero-image" src="./images/Hero-Image.png" alt="placeholder" />
+                    <img class="hero-image" src="./images/Hero-Image.png" alt="Gardening" >
                 </div>
             </div>
             <div class="lower-hero">
@@ -106,6 +136,15 @@ Last Modified: 2024-03-05
             </div>
         </section>
 
+
+
+
+     <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                                             Feature Products Section
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    -->
+
+
         <section class="feature-products bg-brown-medium">
             <h2 class="font-size--h2-38 u-blue-text font-weight--medium">
                 Featured Products
@@ -119,8 +158,12 @@ Last Modified: 2024-03-05
             <div class="slider-container margin-top-2">
                 <!--Slides -->
                 <div class="slider">
+
+ 
+  <!--  ::::::::::::::::::::::::::::::   Slide  1  ::::::::::::::::::::::::::::::    -->
+
                     <div class="slide">
-                        <img class="product-image" src="./images/Nootkatensis-Pendula-image.jpg" alt />
+                        <img class="product-image" src="./images/Nootkatensis-Pendula-image.jpg" alt="Nootkatensis Pendula" >
                         <h1
                             class="font-size--large text-black-70 font-weight--light u-center-text u-text-upper margin-top-1">
                             Nootkatensis Pendula
@@ -136,8 +179,11 @@ Last Modified: 2024-03-05
                             class="u-button bg-secondary-background font-size-17 text--white font-size-18">EXPLORE
                         </a>
                     </div>
+  
+  <!--  ::::::::::::::::::::::::::::::   Slide  2 ::::::::::::::::::::::::::::::    -->
+
                     <div class="slide">
-                        <img class="product-image" src="./images/Nootkatensis-Pendula-image.jpg" alt />
+                        <img class="product-image" src="./images/Little-Diamond.jpg" alt="Little Diamond" >
                         <h1
                             class="font-size--large text-black-70 font-weight--light u-center-text u-text-upper margin-top-1">
                             Little Diamond
@@ -152,8 +198,11 @@ Last Modified: 2024-03-05
                             class="u-button bg-secondary-background font-size-17 text--white font-size-18">EXPLORE
                         </a>
                     </div>
+ 
+  <!--  ::::::::::::::::::::::::::::::   Slide  3  ::::::::::::::::::::::::::::::    -->
+
                     <div class="slide">
-                        <img class="product-image" src="./images/Nootkatensis-Pendula-image.jpg" alt />
+                        <img class="product-image" src="./images/Dwarf-Balsam-Fir.jpg" alt="Dwarf Balsam Fir" >
                         <h1
                             class="font-size--large text-black-70 font-weight--light u-center-text u-text-upper margin-top-1">
                             Dwarf Balsam Fir
@@ -178,7 +227,12 @@ Last Modified: 2024-03-05
             </a>
         </section>
 
-        <!-- Gardening Tips -->
+    
+     <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                                             Gardening Tips Section
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    -->
+
         <section class="gardening-tips bg-light">
             <h2
                 class="font-size--h2-38 u-blue-text font-weight--medium margin-bottom-2 margin-top-3 u-line-height-normal">
@@ -194,9 +248,12 @@ Last Modified: 2024-03-05
 
             <div class="slider-container-gardening">
                 <div class="gardening-slider">
-                    <!-- SLIDE DIV  -->
+
+
+  <!--  ::::::::::::::::::::::::::::::   Slide  1  ::::::::::::::::::::::::::::::    -->                    
+
                     <div class="gardening-slide bg-white">
-                        <img class="tip-image" src="./images/Know-Your-Zone.jpg" alt />
+                        <img class="tip-image" src="./images/Know-Your-Zone.jpg" alt=" Know Your Zone" >
                         <h1 class="u-blue-text font-size--large u-padding-horizontal-22 font-weight--bold margin-top-1">
                             Know Your Zone
                         </h1>
@@ -214,9 +271,12 @@ Last Modified: 2024-03-05
                         </a>
                     </div>
 
-                    <!-- SLIDE DIV  -->
-                    <div class="gardening-slide bg-white margin-top-3">
-                        <img class="tip-image" src="./images/Water-Wisely.jpg" alt="Water Wisely" />
+  
+  <!--  ::::::::::::::::::::::::::::::   Slide  2  ::::::::::::::::::::::::::::::    -->
+  
+  
+  <div class="gardening-slide bg-white margin-top-3">
+                        <img class="tip-image" src="./images/Water-Wisely.jpg" alt="Water Wisely" >
                         <h1 class="font-size--large u-padding-horizontal-22 u-blue-text font-weight--bold margin-top-1">
                             Water Wisely
                         </h1>
@@ -233,9 +293,11 @@ Last Modified: 2024-03-05
                         </a>
                     </div>
 
-                    <!-- SLIDE DIV  -->
+ 
+  <!--  ::::::::::::::::::::::::::::::   Slide  3  ::::::::::::::::::::::::::::::    -->
+
                     <div class="gardening-slide bg-white">
-                        <img class="tip-image" src="./images/Mulch-Magic.jpg" alt="Mulch Magic" />
+                        <img class="tip-image" src="./images/Mulch-Magic.jpg" alt="Mulch Magic">
                         <h1 class="font-size--large u-padding-horizontal-22 u-blue-text font-weight--bold margin-top-1">
                             Mulch Magic
                         </h1>
@@ -253,9 +315,10 @@ Last Modified: 2024-03-05
                         </a>
                     </div>
 
-                    <!-- SLIDE DIV  -->
+  <!--  ::::::::::::::::::::::::::::::   Slide  4  ::::::::::::::::::::::::::::::    -->
+
                     <div class="gardening-slide bg-white margin-top-3">
-                        <img class="tip-image" src="./images/Prune-for-Power.jpg" alt="Prune for Power" />
+                        <img class="tip-image" src="./images/Prune-for-Power.jpg" alt="Prune for Power" >
                         <h1 class="font-size--large u-padding-horizontal-22 u-blue-text font-weight--bold margin-top-1">
                             Prune for Power
                         </h1>
@@ -282,16 +345,21 @@ Last Modified: 2024-03-05
 
 
 
-        <!-- Section Gifts -->
+   
+     <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                                             Gifts Section
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    -->
+
 
         <section class="gift bg-light-green margin-top-2">
 
             <div class="gift-div  ">
-                <div class="plant-gift"><img class="image-plant" src="./images/plant-gift.png" alt=""></div>
+                <div class="plant-gift"><img class="image-plant" src="./images/plant-gift.png" alt="Plant"></div>
             </div>
             <div class="gift-div u-center-text  u-center-flex-horizontal">
                 <h2 class="font-size--80 font-weight--light u-text-upper text--white margin-top-3">Celebrate
-                    <br /> <span class="font-size--hero-h1">the Gift of Green</span>
+                    <br> <span class="font-size--hero-h1">the Gift of Green</span>
                 </h2>
                 <p class="u-width--70 u-line-height-normal margin-top-1 font-weight--light">Looking for a unique gift
                     for birthdays, anniversaries, or just because?</p>
@@ -309,7 +377,11 @@ Last Modified: 2024-03-05
 
 
 
-        <!-- Section Community -->
+     <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                                             Community Section
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    -->
+
 
         <section class="community bg-white ">
 
@@ -326,102 +398,195 @@ Last Modified: 2024-03-05
                 <!--Slides -->
                 <div class="slider u-padding-t-48 ">
 
+
+ <!--  ::::::::::::::::::::::::::::::   Slide 1  ::::::::::::::::::::::::::::::    -->
+
+                    <div class="slide u-center-flex-horizontal u-radius-20  slide-community bg-primary-background ">
+                        <div class="stars"><img src="./images/starts.svg" alt=""></div>
+
+
+
+                        <p
+                            class=" text-black-70 font-size--body margin-bottom-10  u-center-text u-padding-horizontal-1-5 u-line-height-normal u-m-t-70 u-height--80 ">
+                            The moment you step onto the property, you're greeted by an astounding variety of plants,
+                            each more beautiful than the last.
+                        </p>
+
+                        <img class="user-image " src="./images/user-1.png" alt="Jane Doe" >
+                        <h1
+                            class="font-size--medium  text-black-70 font-weight--bold u-center-text margin-top-1 u-text-upper">
+                            Jane Doe
+                        </h1>
+                        <p class="font-size--small  text-black-70 font-weight--bold u-center-text  u-text-upper">
+                            Courtenay, BC
+                        </p>
+
+                    </div>
+
+
+  <!--  ::::::::::::::::::::::::::::::   Slide 2  ::::::::::::::::::::::::::::::    -->
+
+                    <div class="slide u-center-flex-horizontal u-radius-20  slide-community bg-primary-background ">
+                        <div class="stars"><img src="./images/starts.svg" alt="stars"></div>
+
+
+
+                        <p
+                            class=" text-black-70 font-size--body margin-bottom-10  u-center-text u-padding-horizontal-1-5 u-line-height-normal u-m-t-70 u-height--80 ">
+                            Not only are their plants of exceptional quality, but the customer service is top-notch
+                        </p>
+
+                        <img class="user-image " src="./images/user-2.png" alt="Samantha Smith" >
+                        <h1
+                            class="font-size--medium  text-black-70 font-weight--bold u-center-text margin-top-1 u-text-upper">
+                            Samantha Smith
+                        </h1>
+                        <p class="font-size--small  text-black-70 font-weight--bold u-center-text  u-text-upper">
+                            Courtenay, BC
+                        </p>
+
+                    </div>
+
+
+  <!--  ::::::::::::::::::::::::::::::   Slide 3  ::::::::::::::::::::::::::::::    -->
+
+                    <div class="slide u-center-flex-horizontal u-radius-20  slide-community bg-primary-background ">
+                        <div class="stars"><img src="./images/starts.svg" alt="">
                         
-                <!--Slides 1 -->
-                <div class="slide u-center-flex-horizontal u-radius-20  slide-community bg-primary-background ">
-                    <div class="stars"><img src="./images/starts.svg" alt=""></div>
+                        
+                        </div>
 
 
 
-                    <p
-                        class=" text-black-70 font-size--body margin-bottom-10  u-center-text u-padding-horizontal-1-5 u-line-height-normal u-m-t-70 u-height--80 ">
-                        The moment you step onto the property, you're greeted by an astounding variety of plants,
-                        each more beautiful than the last.
-                    </p>
+                        <p
+                            class=" text-black-70 font-size--body margin-bottom-10  u-center-text u-padding-horizontal-1-5 u-line-height-normal u-m-t-70 u-height--80 ">
+                            "Discovering Outback Nursery was like finding a hidden gem on Vancouver Island.”
+                        </p>
 
-                    <img class="user-image " src="./images/user-1.png" alt />
-                    <h1
-                        class="font-size--medium  text-black-70 font-weight--bold u-center-text margin-top-1 u-text-upper">
-                        Jane Doe
-                    </h1>
-                    <p class="font-size--small  text-black-70 font-weight--bold u-center-text  u-text-upper">
-                        Courtenay, BC
-                    </p>
+                        <img class="user-image " src="./images/user-3.png" alt="Nick Thomas" >
+                        <h1
+                            class="font-size--medium  text-black-70 font-weight--bold u-center-text margin-top-1 u-text-upper">
+                            Nick Thomas
+                        </h1>
+                        <p class="font-size--small  text-black-70 font-weight--bold u-center-text  u-text-upper">
+                            Courtenay, BC
+                        </p>
 
-                </div>
-
-                    
-                <!--Slides 2 -->
-                <div class="slide u-center-flex-horizontal u-radius-20  slide-community bg-primary-background ">
-                    <div class="stars"><img src="./images/starts.svg" alt=""></div>
+                    </div>
 
 
 
-                    <p
-                        class=" text-black-70 font-size--body margin-bottom-10  u-center-text u-padding-horizontal-1-5 u-line-height-normal u-m-t-70 u-height--80 ">
-                        Not only are their plants of exceptional quality, but the customer service is top-notch
-                    </p>
-
-                    <img class="user-image " src="./images/user-2.png" alt />
-                    <h1
-                        class="font-size--medium  text-black-70 font-weight--bold u-center-text margin-top-1 u-text-upper">
-                        Samantha Smith
-                    </h1>
-                    <p class="font-size--small  text-black-70 font-weight--bold u-center-text  u-text-upper">
-                        Courtenay, BC
-                    </p>
-
-                </div>
-
-                    
-                <!--Slides 3 -->
-                <div class="slide u-center-flex-horizontal u-radius-20  slide-community bg-primary-background ">
-                    <div class="stars"><img src="./images/starts.svg" alt=""></div>
 
 
-
-                    <p
-                        class=" text-black-70 font-size--body margin-bottom-10  u-center-text u-padding-horizontal-1-5 u-line-height-normal u-m-t-70 u-height--80 ">
-                        "Discovering Outback Nursery was like finding a hidden gem on Vancouver Island.”
-                    </p>
-
-                    <img class="user-image " src="./images/user-3.png" alt />
-                    <h1
-                        class="font-size--medium  text-black-70 font-weight--bold u-center-text margin-top-1 u-text-upper">
-                        Nick Thomas
-                    </h1>
-                    <p class="font-size--small  text-black-70 font-weight--bold u-center-text  u-text-upper">
-                        Courtenay, BC
-                    </p>
-
-                </div>
-                   
-                   
-               
-                  
-                  
                     <!--End Slides -->
                 </div>
             </div>
-          
 
 
 
-
-        </section>
-
-        <!-- Section About -->
-
-        <section class="about">
-
-
-
-
-            <div class="accordeon"></div>
 
 
         </section>
 
+   
+     <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                                             About Section
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    -->
+
+
+        <section class="about u-p-r">
+            <div class="about-content u-p-a  u-center-flex-horizontal  u-p-r">
+
+                <h2 class="u-zi-1 font-size--h2-38 font-weight--medium u-m-t-10 text--white">About us</h2>
+                <p class=" text--white u-padding-horizontal-2  u-center-text  u-m-t-20 u-zi-1">Discover Our Roots About
+                    Outback Nursery to inspire and nurture the love of plants and gardening</p>
+                <a href="#"
+                    class="u-button bg-white font-size-17 text--secondary-background font-size-18 margin-top-3 u-zi-1">KNOW
+                    MORE</a>
+                <div class="bg-secondary-background u-o-80 u-p-a bg-about u-zi-0"></div>
+            </div>
+
+        </section>
+
+
+     <!-- ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                                             Accordion Section
+     :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    -->
+
+        <div class="accordeon u-center bg-white">
+
+            <div class="accordion">
+
+  <!--  ::::::::::::::::::::::::::::::   Section  1  ::::::::::::::::::::::::::::::    -->
+
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <span class="font-size--largex u-blue-text font-weight--medium">Our Story</span>
+                        <span class="accordion-icon font-size--largex u-blue-text font-weight--medium">+</span>
+                    </button>
+                    <div class="accordion-body">
+                        <p class="font-size--body  text-black-70 font-weight--light  ">Outback Nursery began in
+                            1998-1999 when our parents retired to the island from Aldergrove. They asked if we'd be
+                            interested in joining them and then purchased this heavily treed property. We began clearing
+                            some trees and settled into country life trying our hand at raising some turkeys and pigs as
+                            well as growing some hedging and conifers. We joined the Farmer's Market, then as our
+                            inventory expanded we began running a spec truck down island stopping here and there to show
+                            our quality product to potential customers.
+
+                        </p>
+                    </div>
+                </div>
+
+  <!--  ::::::::::::::::::::::::::::::   Section  2  ::::::::::::::::::::::::::::::    -->
+
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <span class="font-size--largex u-blue-text font-weight--medium">Mision</span>
+                        <span class="accordion-icon font-size--largex u-blue-text font-weight--medium">+</span>
+                    </button>
+                    <div class="accordion-body">
+                        <p class="font-size--body  text-black-70 font-weight--light ">
+
+                            our mission is to cultivate joy, sustainability, and growth through the timeless art of
+                            gardening. We are dedicated to nurturing a deep connection between people and the planet by
+                            providing an exceptional selection of high-quality plants, expert gardening advice, and
+                            unparalleled customer service. Our goal is to inspire gardeners of all levels to create
+                            beautiful, thriving outdoor spaces that benefit the environment, enhance well-being, and
+                            foster community. By embracing innovation, education, and a deep respect for nature, we
+                            commit to being stewards of the earth and enablers of dreams, one garden at a time."
+                        </p>
+                    </div>
+                </div>
+
+  <!--  ::::::::::::::::::::::::::::::   Section  3  ::::::::::::::::::::::::::::::    -->
+
+                <div class="accordion-item">
+                    <button class="accordion-header" onclick="toggleAccordion(this)">
+                        <span class="font-size--largex u-blue-text font-weight--medium">Headquarters</span>
+                        <span class="accordion-icon font-size--largex u-blue-text font-weight--medium">+</span>
+                    </button>
+                    <div class="accordion-body">
+                        <p class="font-size--body  text-black-70 font-weight--light ">
+                            Outback Nursery is one of the largest garden centres on Vancouver Island. Our nursery is
+                            situated on a 6 acre property and offers 5 overflowing greenhouses (30x170ft); almost 23,000
+                            square feet.
+
+                            Little by little the property was cleared and one by one the greenhouses and irrigation
+                            zones increased to what you see today. In the beginning we were limited to wholesale and
+                            landscape clientele, then somewhere along the way interest in our nursery grew and we opened
+                            to the public.</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
 
         <!-- End of content ... -->
     </div>
