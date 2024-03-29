@@ -733,6 +733,11 @@
   margin-top: var(--normal-spacing);
 }
 
+.u-padding-t-0 {
+  padding-top: 0px!important;
+}
+
+
 .u-padding-vertical-1 {
   padding-top: var(--normal-spacing) !important;
   padding-bottom: var(--normal-spacing) !important; /* Vertical padding */
@@ -805,7 +810,7 @@
 
 .u-h-f-40 {height: var(--height-40);}
 .u-h-f-50 {height: var(--height-50);}
-.u-h-f-60 {height: var(--height-60);}
+.u-h-f-60 {height: var(--height-60) !important;}
 .u-h-f-70 {height: var(--height-70);}
 .u-h-f-72 {height: var(--height-72);}
 .u-h-f-80 {height: var(--height-80);}
@@ -1340,7 +1345,9 @@ body {
   color: var(--clr-primary);
   width: 267px;
   height: 63px;
-  margin-left: 160px;
+  margin-left: 120px;
+  margin-top: -24px;
+  }
 }
 
 /* Toggle icon Mobile */
@@ -1795,15 +1802,168 @@ margin-top: 200px;
 
 .contact-form{
 
-  
-
-
 
 }
 
 
 
 
+/* Button animations */
+
+
+.btn {
+  width: 289px;
+  height: 38px;
+  text-align: center;
+ 
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  padding-top: 17px;
+  padding-bottom: 5px;
+
+  
+}
+
+
+/* Btn Animation */
+.btn-animation {
+  background: var(--clr-secondary-background);
+  z-index: 1;
+}
+.btn-animation:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: var(--clr-light-blue-bg);
+  transition: all 0.3s ease;
+}
+.btn-animation:hover {
+  color: var(--clr-secondary-background);
+}
+.btn-animation:hover:after {
+  left: 0;
+  width: 100%;
+}
+.btn-animation:active {
+  top: 2px;
+}
+
+/* Btn Animation 2 */
+
+.btn-animation-2 {
+  background: var(--clr-secondary-background);
+  z-index: 1;
+}
+
+.btn-animation-2:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: var(--clr-white);
+  transition: all 0.3s ease;
+}
+.btn-animation-2:hover {
+  color: var(--clr-secondary-background);
+}
+.btn-animation-2:hover:after {
+  left: 0;
+  width: 100%;
+}
+.btn-animation-2:active {
+  top: 2px;
+}
+
+
+/* Btn Animation 3 */
+
+.btn-animation-3 {
+  background: var(--clr-white);
+  z-index: 1;
+}
+
+.btn-animation-3:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color:var(--clr-light-blue-bg);
+  transition: all 0.3s ease;
+}
+.btn-animation-3:hover {
+  color: var(--clr-secondary-background);
+}
+.btn-animation-3:hover:after {
+  left: 0;
+  width: 100%;
+}
+.btn-animation-3:active {
+  top: 2px;
+}
+
+
+/* Btn states  */
+.see-all {
+
+}
+.see-all:hover {
+  color: var(--clr-accent-background);
+
+}
+.navigation-main:hover{
+  color: var(--clr-accent-background);
+  
+ 
+
+}
+.learn-more:hover{
+  color: var(--clr-secondary-background) !important;
+
+}
+
+
+
+
+/* Animation hero  */
+
+.scene {
+
+  perspective: 10em;
+}
+
+.square {
+  width:100%;
+  height:100%;
+  background-color:#0379ff;
+  line-height:10em;
+  text-align:center;
+  color:#FFF;
+}
+
+
+
+.hero-image.y-axis {
+  animation: y-axis-animation 5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes y-axis-animation {
+  from {transform: rotateY(3deg)}
+  to {transform: rotateY(-3deg)}
+}
 
 
 
@@ -1910,7 +2070,7 @@ margin-top: 200px;
   .navbar__menu {
     display: flex;
 
-    width: 696px;
+    width: 716px;
     margin-right: 150px;
   }
   .navbar__side {
