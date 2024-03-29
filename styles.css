@@ -79,6 +79,7 @@
 
   --font-size-hero-h1: 2.8rem; /* 45px */
   --font-size-80: 5rem; /* 80px */
+  --font-size-60: 3.75rem; /* 60px */
   --font-size-hero-sub: 1rem; /* 16px */
 
   /* Font-weight variables */
@@ -310,7 +311,8 @@
 
 .font-size--hero-h1 {  font-size: var(--font-size-hero-h1) !important; /* 2.8rem / 45px */}
 
-.font-size--80 {  font-size: var(--font-size-80); /* 2.8rem / 45px */}
+.font-size--80 {  font-size: var(--font-size-80); /*  80px */}
+.font-size--60 {  font-size: var(--font-size-60); /*  60px */}
 
 .font-size--hero-sub {  font-size: var(--font-size-hero-sub); /* 1rem / 16px */}
 
@@ -1703,21 +1705,25 @@ margin-top: 100px;
 .gift {
   display: flex;
   flex-direction: row;
-  height: 406px;
+  height: 650px;
   width: 100%;
 }
+
 
 .gift-div {
   width: 33%;
 }
 
+
 .plant-gift {
   z-index: 1;
-  margin-top: -10px;
+  margin-top: 230px;
   width: 100%;
   height: auto;
   background-color: rgba(255, 255, 0, 0.4);
+  margin-left: 41px;
 }
+
 .image-plant {
   width: 317px !important;
   height: auto;
@@ -1727,12 +1733,28 @@ margin-top: 100px;
 
 .gift-card {
 }
+
 .image-card {
   width: 292px !important;
-  height: 252px !important;
-  margin-top: 140px;
-  margin-left: 60px;
+  height: auto !important;
+  margin-top: 270px;
+  margin-left: -30px;
 }
+
+.gift-title {
+  margin-top: -180px !important;
+  font-size: var(--font-size-60);
+  line-height: 40px !important;
+}
+
+.gift-title-small {
+  font-size: 33px !important;
+  
+ 
+}
+
+
+
 
 /* Community Section */
 
