@@ -1319,21 +1319,28 @@ body {
 }
 
 /* Nav Bar */
+
+
 .navbar-top {
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
   background-color: var(--clr-primary-background);
-  position: fixed;
-  top: 0;
   width: 100%;
   margin-top: 0px;
-
-  height: 77px;
-  padding-top: 30px;
+  position: fixed;
+  top: 0;
   border-bottom: #b3a25691 solid 0.5px;
+ padding: 0;
+  margin-top: 0px;
+  height: 92px;
+padding-top:0;
+
 }
+
+
+
 
 /* Hide on mobile devices */
 .navbar__menu {
@@ -1343,18 +1350,20 @@ body {
 .logo {
   font-weight: bold;
   color: var(--clr-primary);
-  width: 267px;
-  height: 63px;
-  margin-left: 120px;
-  margin-top: -24px;
+  width: 220px;
+    height: 63px;
+    margin-left: 10px;
+    margin-top: -4px;
+
+ 
   }
-}
+
 
 /* Toggle icon Mobile */
 .navbar__mobile-toggle:before {
   content: "☰";
   cursor: pointer;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 /*Toggle icon close */
@@ -2024,6 +2033,28 @@ margin-top: 200px;
     display: none;
     margin-left: 350px;
   }
+
+
+  .logo {
+    font-weight: bold;
+    color: var(--clr-primary);
+    width: 267px;
+    height: 63px;
+    margin-left: 120px;
+    margin-top: -24px;
+    }
+  
+
+    .navbar-top {
+ 
+      padding: 1rem;
+      height: 77px;
+      padding-top: 30px;
+     
+    }
+    
+
+
   .swatch {
     max-width: 30%;
     min-width: 30%;
