@@ -43,6 +43,11 @@
   --clr-sunset-dark: #d68c3d;
   --clr-gray-medium: #909090;
   --clr-blue-medium: #396f86;
+  --clr-brown-dark: #DED9C5;
+
+
+  
+  
 
   /* Functuonal gray tones*/
   --clr-black-100: #000000; /* Black */
@@ -476,6 +481,10 @@
   background-color: var(--clr-white) !important;
 }
 
+.bg-clr-brown-dark {
+  background-color: var(--clr-brown-dark) !important;
+}
+
 
 /* Background colors for specific purposes (text color variables being used for backgrounds*/
 .bg-primary-text {
@@ -489,6 +498,8 @@
 .bg-text-light {
   background-color: var(--clr-text-light);
 }
+
+
 
 .bg-text-gray {
   background-color: var(--clr-text-gray);
@@ -1333,7 +1344,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--clr-primary-background);
+  background-color: var(--clr-primary-background); 
   width: 100%;
   margin-top: 0px;
   position: fixed;
@@ -1371,7 +1382,7 @@ padding-top:0;
   content: "☰";
   cursor: pointer;
   font-size: 40px;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 /*Toggle icon close */
@@ -1403,6 +1414,7 @@ padding-top:0;
   border-bottom: 2px solid var(--clr-primary);
 }
 
+
 /* Hide the mobile menu */
 .navbar__side {
   display: none;
@@ -1420,14 +1432,27 @@ padding-top:0;
 /* Side Navbar top items */
 .top__items {
   display: block;
-  margin-top: 20px;
+  margin-top: 70px;
+  margin-left: 50px;
+  line-height: 60px;
 }
+
+
+.mobile-items{
+border-bottom: #2c2c20;
+border-bottom-width: 0.5px;
+border-bottom-style: solid;
+margin-right: 30px;
+margin-bottom: 10px;
+}
+
 
 /* Menu links and states */
 
 .menu__link {
   text-decoration: none;
   color: var(--clr-black-80);
+ 
 }
 
 .menu__link:hover {
@@ -1450,6 +1475,41 @@ a:focus {
 .menu__heading {
   margin-top: 20px !important;
   margin-bottom: 20px !important;
+}
+.second-menu{
+margin-top:50px;
+
+}
+
+.second-item{
+
+
+  margin-left: 50px;
+  margin-top: 10px;
+  font-size: var(--font-size-medium);
+  color:var(--clr-black-60);
+
+
+}
+.social{
+ 
+  width: 79px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding-top: 0px;
+  font-size: var(--font-size-medium);
+  color:var(--clr-black-80);
+  font-weight: 600;
+  text-align: center;
+
+}
+.logo-social{
+
+  margin-top: 10px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*  BreadCrumb */
@@ -1490,6 +1550,63 @@ a:focus {
   margin-left: 10px;
   color: #666;
 }
+
+/*  Icons */
+
+.icon1{
+  width: 18px !important;
+  height: auto;
+  float: left;
+  margin-top: 8px;
+  margin-right: 22px;
+
+}
+.icon2{
+  width: 21px !important;
+  height: auto;
+  float: left;
+  margin-top: 12px;
+  margin-right: 20px;
+  
+  }
+  .icon3{
+    width: 22px !important;
+    height: auto;
+    float: left;
+    margin-top: 17px;
+    margin-right: 20px;
+
+}
+.icon4{
+  width: 24px !important;
+  height: auto;
+  float: left;
+  margin-top: 13px;
+  margin-right: 18px;
+  
+  }
+  .icon5{
+    width: 18px !important;
+    height: auto;
+    float: left;
+    margin-top: 19px;
+    margin-right: 22px;
+    margin-left: 4px;
+}
+    
+    
+    .icon6{
+      width: 26px !important;
+      height: auto;
+      float: left;
+      margin-top: 17px;
+      margin-right: 17px;
+      margin-left: 2px;
+      
+      }
+
+
+
 
 /*  Hero Section */
 
@@ -1603,10 +1720,10 @@ margin-top: 100px;
 .slider {
   display: flex;
   gap: 40px;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  overflow-x: scroll;
-  scrollbar-width: none;
+  scroll-snap-type: x mandatory !important;
+  -webkit-overflow-scrolling: touch !important;
+  overflow-x: scroll !important;
+  scrollbar-width: none !important;
  
   padding-left: 50px;
   padding-right: 50px;
@@ -2086,233 +2203,6 @@ height: 100%
 
 
 
-/* General style for the slider */
-
-/* Styles for tablets and desktop, adjust as needed */
-@media (min-width: 768px) {
-    .slide {
-      width: 320px; /* Four cards in a row*/
-      margin-right: 0;
-    }
-  
-    .gardening-slide {
-      width: 320px; /* Four cards in a row*/
-      margin-right: 0;
-    }
-  
-    .slide-community {
-      width: 320px; /* Four cards in a row*/
-      height: 278px;
-      margin-right: 0;
-    }
-  }
-  
-  /* Media query para pantallas más grandes */
-  @media (min-width: 768px) {
-    .slide {
-    }
-  }
-  
-  /* Media Queries */
-  
-  @media (min-width: 768px) {
-    /* Tablets and above */
-    .navbar__mobile-toggle {
-      display: none;
-      margin-left: 350px;
-    }
-  
-  
-    .logo {
-      font-weight: bold;
-      color: var(--clr-primary);
-      width: 267px;
-      height: 63px;
-      margin-left: 120px;
-      margin-top: -24px;
-      }
-    
-  
-      .navbar-top {
-   
-        padding: 1rem;
-        height: 77px;
-        padding-top: 30px;
-       
-      }
-  
-  
-      /*  Breadcrumb  */
-
-      .breadcrumb-container {
-        margin-top: 120px;
-        padding-bottom: 0px;
-        padding-top: 0px;
-        padding-left: 230px;
-      
-        
-      }
-     
-      
-
-  
-      /*  Hero Section */
-  
-      .hero {
-      
-        height: 560px;
-      }
-      
-      
-  .upper-hero {
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction:row
-  }
-  
-  
-  
-  .hero-right {
-    width: 40%;
-  }
-  
-
-  .hero-image {
-    width: 526.42px !important ;
-    height: 441.21px !important ;
-    margin: 4px;
-  }
-  
-  .hero-left {
-    margin-bottom: 30px;
-    margin-top: 30px;
-    width: 40%;
-    padding-left: 10%;
-  }
-   /*  feature products*/
-
-  .feature-products-title{
-    margin-top: 0px;
-    
-    }
-    
-
-
-    .feature-products {
-      
-        height: 660px;
-      }
-      
-
-      .slider-container {
-        
-        height: 440px;
-        width: auto;
-      }
-      
-
-
-      .slider {
-      
-        gap: 60px;
-        padding-left: 0px;
-        padding-right: 0px;
-      
-      }
-      
-      .slider-container-gardening {
-        
-        width: auto;
-      }
-
-      .gardening-slider {
- 
-        width: auto;
-      
-       
-      }
-
- /*  Gift Section*/
-
-      .gift {
-  
-        height: 406px;
-      
-      }
-
-      .plant-gift {
-
-        margin-top: -10px;
-        margin-left: 0px;
-      
-      
-      }
-
-      .gift-title {
-        margin-top: 50px !important;
-        font-size: var(--font-size-80)!important;
-        line-height: var(--line-heightTriple)!important;
-       
-       
-      }
-      .gift-title-small {
-  font-size: var(--font-size-hero-h1) !important;
-}
-
-.gift-copy{
-    width: 368px !important;
-    margin-top: 40px !important;
-  
-  }
-
-.image-card {
-    width: 292px !important;
-    height: 252px !important;
-    margin-top: 140px;
-    margin-left: 60px;
-  }
-  .btn-gift {
-    width: 289px;
-    margin-top: 20px;
-  }
-
-  .btn {
-    width: 289px;
-  }
-  
-/*  About Section*/
-  .about-content{
- 
-    left: 14%;
-  
-  }
-  
-  /*  Contact  Section*/
-
-  .contact{
-    height: 700px;
-    flex-direction: row;
-
-  }
-  .form-container{
-height: 80%; 
-  }
-
-/* Footer  */
-
-.footer{
-    height: 400px !important;
-
-}
-
-.nav-footer-container{
-    display: flex !important;
-  
-  
-  }
- 
     
 /*
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -2339,16 +2229,18 @@ height: 80%;
     }
   
     .navbar__side {
-      display: block;
+      /* display: block; */
       position: fixed;
       top: 0;
       left: 0;
-      width: 250px;
-      margin-top: 60px; /* Adjusts according to the height of your top navigation bar */
-      max-height: 100vh; /* This makes the sidebar at most the height of the browser window */
+      width: 80%;
+      max-width:300px;
+
+      height: 100vh; /* This makes the sidebar at most the height of the browser window */
       overflow-y: auto; /* Allows vertical scrolling if the content exceeds the maximum height */
-      background-color: var(--clr-primary-background);
+      background-color: var(--clr-brown-dark); 
       min-width: 250px;
+      z-index:5;
     }
   
     .no-menu {
@@ -2357,7 +2249,7 @@ height: 80%;
     .no-content-container-main {
       margin-left: 0px !important;
     }
-  }
+  
   
   /* Larger desktop screens */
   @media (min-width: 1024px) {
@@ -2370,10 +2262,7 @@ height: 80%;
       width: 716px;
       margin-right: 150px;
     }
-    .navbar__side {
-      display: block;
-      width: 250px;
-    }
+  
     .navbar__mobile-toggle {
       display: none;
       margin-left: 350px;
@@ -2386,48 +2275,16 @@ height: 80%;
   
 
 /*
-:::::::::::::::::::::::::::::  DESKTO QUERIES  :::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::  DESKTOP QUERIES  :::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 */
 
 
-
-
-
-
-/* Styles for tablets and desktop, adjust as needed */
-@media (min-width: 768px) {
-  .slide {
-    width: 320px; /* Four cards in a row*/
-    margin-right: 0;
-  }
-
-  .gardening-slide {
-    width: 320px; /* Four cards in a row*/
-    margin-right: 0;
-  }
-
-  .slide-community {
-    width: 320px; /* Four cards in a row*/
-    height: 278px;
-    margin-right: 0;
-  }
-}
-
-/* Media query para pantallas más grandes */
-@media (min-width: 768px) {
-  .slide {
-  }
-}
-
-/* Media Queries */
-
-@media (min-width: 768px) {
-  /* Tablets and above */
+@media (min-width: 1200px) {
   .navbar__mobile-toggle {
     display: none;
-    margin-left: 350px;
+   
   }
-
 
   .logo {
     font-weight: bold;
@@ -2437,6 +2294,65 @@ height: 80%;
     margin-left: 120px;
     margin-top: -24px;
     }
+    .top__items {
+      display: none;
+    }
+    .navbar__menu {
+      display: flex;
+  
+      width: 716px;
+      margin-right: 150px;
+    }
+    .navbar__side {
+      display: none;
+     
+    }
+    .navbar__mobile-toggle {
+      display: none;
+      margin-left: 350px;
+    }
+    .swatch {
+      max-width: 30%;
+      min-width: 30%;
+    }
+    .slider-container {
+      
+      height: 440px;
+      width: auto;
+    }
+
+    .feature-products {
+    
+      height: 660px;
+    }
+
+
+
+    .slider-container-gardening {
+      
+      width: auto;
+    }
+
+    .gardening-slider {
+
+      width: auto;
+    
+     
+    }
+    
+}
+
+
+
+
+
+
+@media (min-width: 768px) {
+  /* Tablets and above */
+ 
+
+
+
   
 
     .navbar-top {
@@ -2460,7 +2376,6 @@ height: 80%;
     }
    
     
-
 
     /*  Hero Section */
 
@@ -2506,17 +2421,9 @@ height: 80%;
   
 
 
-  .feature-products {
-    
-      height: 660px;
-    }
-    
+ 
 
-    .slider-container {
-      
-      height: 440px;
-      width: auto;
-    }
+   
     
 
 
@@ -2528,17 +2435,7 @@ height: 80%;
     
     }
     
-    .slider-container-gardening {
-      
-      width: auto;
-    }
-
-    .gardening-slider {
-
-      width: auto;
-    
-     
-    }
+   
 
 /*  Gift Section*/
 
@@ -2645,16 +2542,13 @@ height: 80%;
   }
 
   .navbar__side {
-    display: block;
+   
     position: fixed;
     top: 0;
     left: 0;
-    width: 250px;
-    margin-top: 60px; /* Adjusts according to the height of your top navigation bar */
-    max-height: 100vh; /* This makes the sidebar at most the height of the browser window */
-    overflow-y: auto; /* Allows vertical scrolling if the content exceeds the maximum height */
-    background-color: var(--clr-primary-background);
-    min-width: 250px;
+  
+
+  
   }
 
   .no-menu {
@@ -2666,7 +2560,7 @@ height: 80%;
 }
 
 /* Larger desktop screens */
-@media (min-width: 1024px) {
+@media (min-width: 1624px) {
   .top__items {
     display: none;
   }
