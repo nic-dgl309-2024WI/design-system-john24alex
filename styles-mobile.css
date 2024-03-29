@@ -1,0 +1,238 @@
+
+/* Styles for tablets and desktop, adjust as needed */
+@media (min-width: 768px) {
+    .slide {
+      width: 320px; /* Four cards in a row*/
+      margin-right: 0;
+    }
+  
+    .gardening-slide {
+      width: 320px; /* Four cards in a row*/
+      margin-right: 0;
+    }
+  
+    .slide-community {
+      width: 320px; /* Four cards in a row*/
+      height: 278px;
+      margin-right: 0;
+    }
+  }
+  
+  /* Media query para pantallas más grandes */
+  @media (min-width: 768px) {
+    .slide {
+    }
+  }
+  
+  /* Media Queries */
+  
+  @media (min-width: 768px) {
+    /* Tablets and above */
+    .navbar__mobile-toggle {
+      display: none;
+      margin-left: 350px;
+    }
+  
+  
+    .logo {
+      font-weight: bold;
+      color: var(--clr-primary);
+      width: 267px;
+      height: 63px;
+      margin-left: 120px;
+      margin-top: -24px;
+      }
+    
+  
+      .navbar-top {
+   
+        padding: 1rem;
+        height: 77px;
+        padding-top: 30px;
+       
+      }
+  
+  
+  
+      /*  Hero Section */
+  
+      .hero {
+      
+        height: 560px;
+      }
+      
+      
+  .upper-hero {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row
+  }
+  
+  
+  
+  .hero-right {
+    width: 40%;
+  }
+  
+
+  .hero-image {
+    width: 526.42px !important ;
+    height: 441.21px !important ;
+    margin: 4px;
+  }
+  
+  .hero-left {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 40%;
+    padding-left: 10%;
+  }
+   /*  feature products*/
+
+  .feature-products-title{
+    margin-top: 0px;
+    
+    }
+    
+
+
+    .feature-products {
+      
+        height: 660px;
+      }
+      
+
+      .slider-container {
+        
+        height: 440px;
+        width: auto;
+      }
+      
+
+
+      .slider {
+      
+        gap: 60px;
+        padding-left: 0px;
+        padding-right: 0px;
+      
+      }
+      
+      .slider-container-gardening {
+        
+        width: auto;
+      }
+
+      .gardening-slider {
+ 
+        width: auto;
+      
+       
+      }
+
+ /*  Gift Section*/
+
+      .gift {
+  
+        height: 406px;
+      
+      }
+
+      .plant-gift {
+
+        margin-top: -10px;
+        margin-left: 0px;
+      
+      
+      }
+
+      .gift-title {
+        margin-top: 80px !important;
+        font-size: var(--font-size-80)!important;
+        line-height: var(--line-heightTriple)!important;
+       
+       
+      }
+      .gift-title-small {
+  font-size: var(--font-size-hero-h1) !important;
+}
+.image-card {
+    width: 292px !important;
+    height: 252px !important;
+    margin-top: 140px;
+    margin-left: 60px;
+  }
+  
+
+/*
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+*/
+
+    .swatch {
+      max-width: 30%;
+      min-width: 30%;
+    }
+  
+    .content-container-main {
+    }
+  
+    .card-full-width {
+      position: relative;
+      width: calc(100vw - 260px); /* Ajust width*/
+    }
+  
+    .content-container-main {
+      padding-left: 0;
+    }
+  
+    .navbar__side {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 250px;
+      margin-top: 60px; /* Adjusts according to the height of your top navigation bar */
+      max-height: 100vh; /* This makes the sidebar at most the height of the browser window */
+      overflow-y: auto; /* Allows vertical scrolling if the content exceeds the maximum height */
+      background-color: var(--clr-primary-background);
+      min-width: 250px;
+    }
+  
+    .no-menu {
+      display: none !important;
+    }
+    .no-content-container-main {
+      margin-left: 0px !important;
+    }
+  }
+  
+  /* Larger desktop screens */
+  @media (min-width: 1024px) {
+    .top__items {
+      display: none;
+    }
+    .navbar__menu {
+      display: flex;
+  
+      width: 716px;
+      margin-right: 150px;
+    }
+    .navbar__side {
+      display: block;
+      width: 250px;
+    }
+    .navbar__mobile-toggle {
+      display: none;
+      margin-left: 350px;
+    }
+    .swatch {
+      max-width: 30%;
+      min-width: 30%;
+    }
+  }
+  
