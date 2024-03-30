@@ -676,6 +676,7 @@
 .u-pa-r-30{ padding-right: var(--spacing-30)!important;}
 .u-pa-r-40{ padding-right: var(--spacing-40)!important;}
 .u-pa-r-50{ padding-right: var(--spacing-50)!important;}
+.u-pa-r-100{ padding-right: var(--spacing-100)!important;}
 
 /* Padding options left */
 .u-pa-l-10{ padding-left: var(--spacing-10)!important;}
