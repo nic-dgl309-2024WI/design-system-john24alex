@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+Author: John Huerfano M.
+Purpose: Color page for the design system
+Last Modified: 2024-03-29
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design System</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="design-system.css" />
+
+</head>
+
+<body>
+    <!-- Top Navbar -->
+    <header class="navbar__top u-zi-5">
+        <div class="navbar__logo"><a href="design-system.html" class="menu__link">Design System</a></div>
+        <!-- Hamburger icon for mobile menu -->
+        <div class="navbar__mobile-toggle" onclick="toggleMobileMenu()"></div>
+        <nav class="navbar__menu l-mr-1-25 ">
+            <ul class="navbar__items">
+                <li><a href="about-me.html" class="navbar__link">About Me</a></li>
+                <li><a href="design-system.html" class="navbar__link">Demos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Side navbar -->
+    <nav class="navbar__side l-pl-2  u-line-height-1-8  l-mt-3  ">
+        <!-- Top level navigation items -->
+        <ul class="top__items l-mb-2">
+            <li><a class="menu__link  " href="about-me.html">About Me</a></li>
+            <li><a class="menu__link" href="index.html">Demos</a></li>
+        </ul>
+
+        <!-- Branding section -->
+        <h3 class="menu__heading l-mt-3  ">Branding</h3>
+        <ul class="sidebar__list l-mb-2 ">
+            <li><a class="menu__link menu__link--active" href="#Colours"><span class="list__number">01 </span>
+                    Colours</a></li>
+            <li><a class="menu__link" href="typography.html"><span class="list__number">02 </span> Typography</a></li>
+            <li><a class="menu__link" href="#Logo"><span class="list__number">03 </span> Logo</a></li>
+        </ul>
+
+        <!-- Utilities section -->
+        <h3 class="menu__heading">Utilities</h3>
+        <ul class="sidebar__list">
+            <li><a class="menu__link " href="spacing.html"><span class="list__number">04 </span> Spacing</a></li>
+            <li><a class="menu__link " href="containers.html"><span class="list__number">05 </span> Containers</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">06 </span> Images</a></li>
+
+            <li><a class="menu__link" href="#"><span class="list__number">07 </span> Interactive</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">08 </span> Feedback</a></li>
+        </ul>
+
+        <!-- Navigation section -->
+        <h3 class="menu__heading">Navigation</h3>
+        <ul class="sidebar__list">
+            <li><a class="menu__link" href="navbars.html"><span class="list__number">09 </span> Navbars</a></li>
+            <li><a class="menu__link" href="breadcrumbs.html"><span class="list__number">10 </span> Breadcrumbs</a></li>
+            <li><a class="menu__link" href="pagination.html"><span class="list__number">11 </span> Pagination</a></li>
+        </ul>
+
+        <!-- Blocks section -->
+        <h3 class="menu__heading">Blocks</h3>
+        <ul class="sidebar__list">
+            <li><a class="menu__link" href="hero.html"><span class="list__number">12 </span> Hero</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">13 </span> Carousel</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">14 </span> Slats</a></li>
+            <li><a class="menu__link" href="footer.html"><span class="list__number">15 </span> Footer</a></li>
+        </ul>
+
+        <!-- Components section -->
+        <h3 class="menu__heading">Components</h3>
+        <ul class="sidebar__list">
+            <li><a class="menu__link" href="#"><span class="list__number">16 </span> Cards</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">17 </span> Forms</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">18 </span> Accordion</a></li>
+            <li><a class="menu__link" href="#"><span class="list__number">19 </span> Lists</a></li>
+        </ul>
+    </nav>
+
+
+
+    <div class="content-container">
+        <!-- Main content-->
+        <!-- Colours section -->
+        <section class="colour-swatches u-width-90 u-m-b-40 ">
+            <!-- Colour swatches -->
+
+            <h1 class="colour-swatches__heading">Navbars</h1>
+
+            <br>
+
+
+            <p class="u-m-t-10 u-m-b-40 text-black-90 ">
+
+
+                The navbars become not only the components which guide a visitor,
+                 but also the solid links that make the site easy to navigate.
+                 The earthy palette and background
+                   and text colors getting derived directly from nature in a way that will 
+                   provide a visual harmony.
+
+            </p>
+            <br>
+            <h3 class="u-m-b-40">Navbar Desktop</h3>
+
+
+
+    <div class="u-p-r bg-primary-background  u-pa-r-30  u-pa-l-30  u-pa-t-30 u-pa-b-30">
+       
+           
+         <!--  :::::::::::::: Navigation Menu  ::::::::::::::  -->
+    
+            
+            <nav class="navbar__menu l-mr-1-25">
+                <ul class="navbar__items u-gap-2 font-weight--bold l-gap-2 ">
+                    <li><a  href="./coming-soon.html" class="menu__link navigation-main">Products</a></li>
+                    <li><a href="./coming-soon.html" class="menu__link navigation-main">Gardening Tips</a></li>
+                    <li><a href="./coming-soon.html" class="menu__link navigation-main">Gift
+                            Certificates</a></li>
+                    <li><a href="./coming-soon.html" class="menu__link navigation-main">Community</a></li>
+                    <li><a href="./coming-soon.html" class="menu__link navigation-main">About</a></li>
+                    <li><a href="./coming-soon.html" class="menu__link navigation-main">Contact</a></li>
+                </ul>
+            </nav>
+        
+    </div>
+    
+    <br>
+
+    <div class="code-snippet-container">
+        <pre id="codeSnippet">
+&lt;nav class=&quot;navbar__menu l-mr-1-25&quot;&gt;
+     &lt;ul class=&quot;navbar__items u-gap-2 font-weight--bold l-gap-2 &quot;&gt;
+        &lt;li&gt;&lt;a  href=&quot;&quot; class=&quot;menu__link navigation-main&quot;&gt;Products&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;menu__link navigation-main&quot;&gt;Gardening Tips&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;menu__link navigation-main&quot;&gt;Gift Certificates&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;menu__link navigation-main&quot;&gt;Community&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;menu__link navigation-main&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;&quot; class=&quot;menu__link navigation-main&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+ &lt;/nav&gt;</pre>
+        <button onclick="copyToClipboard()">Copy</button>
+    </div>
+
+   
+    <br>
+    <h3 class="u-m-b-40">Menu Mobile</h3>
+    <br>
+
+    <div class="u-p-r bg-primary-background  u-pa-r-30  u-pa-l-30  u-pa-t-30 u-pa-b-30 u-w-f-300">
+
+ <!-- :::::::::::::::::::: Mobile Menu ::::::::::::::::::::::::: -->
+
+ <nav class=" l-pl-2 ">
+    <!-- Top level navigation items -->
+    <ul class="top__items  u-block  ">
+        <li class="mobile-items"><a href="./coming-soon.html" class="menu__link"><span ><img class="icon1" src="./images/Prodcuts.svg" alt=""></span>Products</a></li>
+        <li class="mobile-items"><a href="./coming-soon.html" class="menu__link"><span ><img class="icon2" src="./images/Tips.svg" alt=""></span>Gardening Tips</a></li>
+        <li class="mobile-items"><a href="./coming-soon.html" class="menu__link"><span ><img class="icon3" src="./images/card.svg" alt=""></span>Gift Certificates</a></li>
+        <li class="mobile-items"><a href="./coming-soon.html" class="menu__link"><span ><img class="icon4" src="./images/Community.svg" alt=""></span>Community</a></li>
+        <li class="mobile-items"><a href="./coming-soon.html" class="menu__link"><span ><img class="icon5" src="./images/About.svg" alt=""></span>About</a></li>
+        <li class="mobile-items"><a href="./coming-soon.html" class="menu__link"><span ><img class="icon6" src="./images/Contact.svg" alt=""></span>Contact</a></li>
+    </ul>
+
+
+<ul class="second-menu">
+
+<li class="second-item"><a href="./coming-soon.html" class="menu__link">FAQ</a></li>
+<li class="second-item"><a href="./coming-soon.html" class="menu__link">News Letter</a></li>
+
+<li class="second-menu social" > Follow us <a  href="https://www.facebook.com/profile.php?id=100045470087619"  target="_blank"><img class="logo-social" src="./images/facebook-icon.svg"
+alt="Logo"><span class="u-hide">Facebook</span></a></li>
+</ul>
+
+</nav>
+
+
+        </div>
+
+
+ <br>
+
+
+    <div class="code-snippet-container">
+        <pre id="codeSnippet2">
+&lt;nav class=&quot;navbar__side l-pl-2&quot;&gt;
+&lt;ul class=&quot;top__items&quot;&gt;
+    &lt;li class=&quot;mobile-items&quot;&gt;&lt;a href=&quot;&quot; class=&quot;menu__link&quot;&gt;&lt;span&gt;&lt;img class=&quot;icon1&quot; src=&quot;&quot;
+        alt=&quot;&quot;&gt;&lt;/span&gt;Products&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;mobile-items&quot;&gt;&lt;a href=&quot;&quot; class=&quot;menu__link&quot;&gt;&lt;span&gt;&lt;img class=&quot;icon2&quot; src=&quot;&quot;
+        alt=&quot;&quot;&gt;&lt;/span&gt;Gardening Tips&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;mobile-items&quot;&gt;&lt;a href=&quot;&quot; class=&quot;menu__link&quot;&gt;&lt;span&gt;&lt;img class=&quot;icon3&quot; src=&quot;&quot;
+        alt=&quot;&quot;&gt;&lt;/span&gt;Gift Certificates&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;mobile-items&quot;&gt;&lt;a href=&quot;&quot; class=&quot;menu__link&quot;&gt;&lt;span&gt;&lt;img class=&quot;icon4&quot; src=&quot;&quot;
+        alt=&quot;&quot;&gt;&lt;/span&gt;Community&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;mobile-items&quot;&gt;&lt;a href=&quot;&quot; class=&quot;menu__link&quot;&gt;&lt;span&gt;&lt;img class=&quot;icon5&quot; src=&quot;&quot;
+        alt=&quot;&quot;&gt;&lt;/span&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;mobile-items&quot;&gt;&lt;a href=&quot;&quot; class=&quot;menu__link&quot;&gt;&lt;span&gt;&lt;img class=&quot;icon6&quot; src=&quot;&quot;
+        alt=&quot;&quot;&gt;&lt;/span&gt;Contact&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class=&quot;second-menu&quot;&gt;
+         &lt;li class=&quot;second-item&quot;&gt;&lt;a href=&quot;&quot; class=&quot;menu__link&quot;&gt;FAQ&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;second-item&quot;&gt;&lt;a href=&quot;&quot; class=&quot;menu__link&quot;&gt;News Letter&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;second-menu social&quot;&gt; Follow us &lt;a href=&quot;;&gt;&lt;img class=&quot;logo-social&quot; src=&quot;&quot; alt=&quot;Logo&quot;&gt;&lt;span
+    class=&quot;u-hide&quot;&gt;Facebook&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+         &lt;/nav&gt;</pre>
+        <button onclick="copyToClipboard()">Copy</button>
+    </div>
+
+
+
+        </section>
+        <!-- End of content ... -->
+    </div>
+
+
+
+
+
+
+
+    <!-- Scripts -->
+    <script src="design-system.js"></script>
+
+
+</body>
+
+</html>
