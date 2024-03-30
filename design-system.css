@@ -160,6 +160,7 @@ a:focus {
 .colour-swatches__heading {
   margin-top: 20px;
   margin-bottom: 20px;
+
 }
 
 .swatch {
@@ -941,6 +942,88 @@ padding-right: 80px;
   transform: translateX(0);
 }
 
+.colour-swatches{
+  margin-left: 40px;
+}
+
+.breadcrumb-container {
+  margin-top: 0px;
+  padding-top: 10px;
+  padding-left: 30px;
+  /* margin-left: 231px; */
+  padding-bottom: 10px;
+}
+
+
+/* Code snippet  */
+
+
+
+.code-snippet-container {
+  position: relative;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin: 20px 0;
+  margin-left: 0px;
+  margin-right: 20px;
+}
+
+pre {
+  white-space: pre-wrap; /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
+  margin: 0;
+}
+
+button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+/* Pagination  */
+
+.pagination {
+  gap: 10px; /* Adjust the spacing between pagination items */
+}
+
+.pagination__item {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 0 4px;
+  background-color: var(--bg-primary); 
+  color: var(--text--white); 
+  text-decoration: none;
+  font-size: var(--font-size--standard); 
+  border-radius: 4px; 
+}
+
+.pagination__item:hover {
+  background-color: var(--bg-primary-dark); /* Darker shade for hover state */
+}
+
+
+.hero-system{
+margin-left: -100px;
+height: auto !important;
+
+}
+
+.hero-image-system{
+
+  scale:0.8;
+}
+
+
+
+
+
+
+
 /* Media Queries */
 
 @media (min-width: 768px) {
@@ -988,6 +1071,12 @@ padding-right: 80px;
   .no-content-container {
     margin-left: 0px !important;
   }
+
+
+.colour-swatches{
+  margin-left: 0px;
+}
+ 
 }
 
 /* Larger desktop screens */
@@ -1011,6 +1100,14 @@ padding-right: 80px;
     min-width: 30%;
 
   
+  }
+  .code-snippet-container {
+    position: relative;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+    margin-left: 0px;
   }
 
 
