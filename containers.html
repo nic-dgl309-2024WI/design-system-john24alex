@@ -84,12 +84,18 @@ Last Modified: 2024-03-05
             <li><a class="menu__link" href="#"><span class="list__number">19 </span> Lists</a></li>
         </ul>
     </nav>
-    
-    <div class="content-container l-mb-2">
+
+    <div class="content-container l-mb-2 u-pa-r-100">
         <!-- Main content-->
+        <h1 class="colour-swatches__heading">Containers</h1>
+        <br>
+        <p class="u-m-t-10 u-m-b-40 text-black-90 ">
+            Through the showcasing of the implementations combining both flexbox layouts with grid systems, this serves
+            to demonstrate the practicality of such containers individually, with each such section having a brief
+            explanation and class names included for easy application.
+        </p>
 
-
-
+ <!--Flexbox -->
         <section>
             <h2>Flexbox</h2>
             <p>Classes: <code>.l-flex</code>, <code>.l-justify-center</code>, <code>.l-align-center</code></p>
@@ -99,7 +105,9 @@ Last Modified: 2024-03-05
                 <div style="padding: 10px; background-color: lightgrey;">Elemento 3</div>
             </div>
         </section>
-    <br/>
+        <br />
+        <br />
+         <!--Grid 2 columns -->
         <section>
             <h2>Grid 2 columns</h2>
             <p>Classes: <code>.l-grid</code>, <code>.l-grid--2-columns</code></p>
@@ -110,7 +118,9 @@ Last Modified: 2024-03-05
                 <div style="padding: 10px; background-color: lightgrey;">Celda 4</div>
             </div>
         </section>
-        <br/>
+        <br />
+        <br />
+         <!--Grid 3 columns -->
         <section>
             <h2>Grid 3 columns</h2>
             <p>Classes: <code>.l-grid</code>, <code>.l-grid--3-columns </code></p>
@@ -123,8 +133,9 @@ Last Modified: 2024-03-05
                 <div style="padding: 10px; background-color: lightgrey;">Celda 6</div>
             </div>
         </section>
-        <br/>
-
+        <br />
+        <br />
+ <!--Grid 4 columns -->
         <section>
             <h2>Grid 4 columns</h2>
             <p>Classes: <code>.l-grid</code>, <code>.l-grid--4-columns </code></p>
@@ -140,105 +151,94 @@ Last Modified: 2024-03-05
             </div>
         </section>
 
-        <br/>
-
+        <br />
+        <br />
         <section>
             <h2>Max-width y Full-width</h2>
             <p>Classes: <code>.max-w-500</code> ( Max-width), <code>.width-100</code> ( Full-width)</p>
-            
+
             <!-- Max-width -->
 
             <div class="max-w-500" style="background-color: lightblue; padding: 20px; margin-bottom: 20px;">
                 This container has a maximum width of 500px.
-                        </div>
+            </div>
             <!-- Full-width -->
             <div class="width-100" style="background-color: lightcoral; padding: 20px;">
                 <p>Classes: width-100</p>
 
                 This container occupies the full available width.
-                        </div>
+            </div>
         </section>
-<!--examples of Containers for Different Sizes-->
-<br/><br/>
+        <!--examples of Containers for Different Sizes-->
+        <br /><br />
         <h3>Examples of Containers for Different Sizes
         </h3>
-        <br/>
+        <br />
 
         <!-- Max-width -->
         <section>
             <h2>Max-width Containers</h2>
             <p>Class: max-w-300</p>
-            <br/>
+            <br />
             <div class="max-w-300">
                 This container has a maximum width of 300px. Resize the browser window to see the effect.
             </div>
-            <br/>
+            <br />
             <div class="max-w-500">
                 <p>Class: max-w-500</p>
-                This container has a maximum width of 500px. Useful to keep the content readable on large screens.            </div>
+                This container has a maximum width of 500px. Useful to keep the content readable on large screens.
+            </div>
         </section>
-    
+
         <!--  Full-width -->
-        <br/>
-        <br/>
+        <br />
+        <br />
         <section>
             <h2> Full-width Container</h2>
             <p>Class: width-100</p>
             <div class="width-100">
-                This container occupies the full width of the browser window. Resize the window to see how it fits.            </div>
+                This container occupies the full width of the browser window. Resize the window to see how it fits.
+            </div>
         </section>
-    
-      
 
-        <br/>
 
+
+        <br />
+ <!--Full-width Container -->
         <section>
             <h2> Full-width Container</h2>
             <p>Classes: l-flex l-wrap-content</p>
-        <div class="l-flex l-wrap-content">
-            <div class="box l-2-columns">Ítem 1</div>
-            <div class="box l-2-columns">Ítem 2</div>
-            <div class="box l-2-columns">Ítem 3</div>
-            <div class="box l-2-columns">Ítem 4</div>
-        </div>
-    </section>
-        <br/>
+            <div class="l-flex l-wrap-content">
+                <div class="box l-2-columns">Ítem 1</div>
+                <div class="box l-2-columns">Ítem 2</div>
+                <div class="box l-2-columns">Ítem 3</div>
+                <div class="box l-2-columns">Ítem 4</div>
+            </div>
+        </section>
+        <br />
+        <br />
 
+
+        <!--Full-width Container 2 Column -->
         <section>
-            <h2> Full-width Container 3 Columns</h2>
+            <h2> Full-width Container 2 Columns</h2>  
             <p>Classes:l-flex l-wrap-content</p>
-        <div class="l-flex l-wrap-content">
-            
-            <div class="box l-3-columns">Ítem 1</div>
-            <div class="box l-3-columns">Ítem 2</div>
-            <div class="box l-3-columns">Ítem 3</div>
-            <div class="box l-3-columns">Ítem 4</div>
-            <div class="box l-3-columns">Ítem 5</div>
-            <div class="box l-3-columns">Ítem 6</div>
-        </div>
-    </section>
-    <br/>
-    <section>
-        <h2> Fluid Container </h2>
-        <p>Classes:l-flex l-wrap-content</p>
-    <div class="l-flex l-wrap-content">
-        
-        <div class="box l-3-columns">Ítem 1</div>
-        <div class="box l-3-columns">Ítem 2</div>
-        <div class="box l-3-columns">Ítem 3</div>
-        <div class="box l-3-columns">Ítem 4</div>
-        <div class="box l-3-columns">Ítem 5</div>
-        <div class="box l-3-columns">Ítem 6</div>
-        <div class="box l-3-columns">Ítem 7</div>
-        <div class="box l-3-columns">Ítem 8</div>
-      
+            <div class="l-flex l-wrap-content">
 
-    </div>
-</section>
-       
+                <div class="box l-3-columns">Ítem 1</div>
+                <div class="box l-3-columns">Ítem 2</div>
+                <div class="box l-3-columns">Ítem 3</div>
+                <div class="box l-3-columns">Ítem 4</div>
+                <div class="box l-3-columns">Ítem 5</div>
+                <div class="box l-3-columns">Ítem 6</div>
+            </div>
+        </section>
+        <br />
 
 
-       
+
+
+
         <!-- <h2 class="colour-swatches__heading u-width-90">Containers</h2> 
 
         <div class="containers">
@@ -404,12 +404,12 @@ Last Modified: 2024-03-05
 
 
     </div> -->
-    <!-- End of content ... -->
+        <!-- End of content ... -->
 
 
 
-    <!-- Scripts -->
-    <script src="design-system.js"></script>
+        <!-- Scripts -->
+        <script src="design-system.js"></script>
 
 </body>
 
