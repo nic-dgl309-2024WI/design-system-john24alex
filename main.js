@@ -1,5 +1,6 @@
 
 // Mobile menu toggle function
+
 function toggleMobileMenu() { 
     var menu = document.querySelector('.navbar__side');
     var toggle = document.querySelector('.navbar__mobile-toggle');
@@ -10,7 +11,7 @@ function toggleMobileMenu() {
 
 
 // Mobile slider function
-// 
+
 const slider = document.querySelector('.slider');
 let isDown = false;
 let startX;
@@ -38,6 +39,7 @@ slider.addEventListener('mousemove', (e) => {
   slider.scrollLeft = scrollLeft - walk;
 });
 
+
 //Touch events for mobile support
 
 slider.addEventListener('touchstart', (e) => {
@@ -61,7 +63,6 @@ slider.addEventListener('touchmove', (e) => {
 
 
 // Accordion
-
 
 function toggleAccordion(element) {
     const item = element.parentElement;
