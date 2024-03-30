@@ -723,7 +723,7 @@
 
 /* Display utilities */
 .u-hide{display: none;}
-.u-block{display: block;}
+.u-block{display: block !important;}
 .u-inline{display: inline;}
 .u-inline-block{display: inline-block;}
 .u-flex{display: flex;}
@@ -1308,7 +1308,7 @@ blockquote,
   display: none;
 }
 .show-item {
-  display: block;
+  display: block !important;
 }
 
 /* Borders */
@@ -2258,6 +2258,7 @@ height: 100%
 .color3 {
   background-color: rgba(35, 41, 76, 0.4);
 }
+
 
 
 
