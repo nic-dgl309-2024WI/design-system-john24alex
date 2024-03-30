@@ -53,6 +53,19 @@
       }
   
   
+      /*  Breadcrumb  */
+
+      .breadcrumb-container {
+        margin-top: 120px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        padding-left: 230px;
+      
+        
+      }
+     
+      
+
   
       /*  Hero Section */
   
@@ -149,7 +162,7 @@
       }
 
       .gift-title {
-        margin-top: 80px !important;
+        margin-top: 50px !important;
         font-size: var(--font-size-80)!important;
         line-height: var(--line-heightTriple)!important;
        
@@ -158,14 +171,60 @@
       .gift-title-small {
   font-size: var(--font-size-hero-h1) !important;
 }
+
+.gift-copy{
+    width: 368px !important;
+    margin-top: 40px !important;
+  
+  }
+
 .image-card {
     width: 292px !important;
     height: 252px !important;
     margin-top: 140px;
     margin-left: 60px;
   }
-  
+  .btn-gift {
+    width: 289px;
+    margin-top: 20px;
+  }
 
+  .btn {
+    width: 289px;
+  }
+  
+/*  About Section*/
+  .about-content{
+ 
+    left: 14%;
+  
+  }
+  
+  /*  Contact  Section*/
+
+  .contact{
+    height: 700px;
+    flex-direction: row;
+
+  }
+  .form-container{
+height: 80%; 
+  }
+
+/* Footer  */
+
+.footer{
+    height: 400px !important;
+
+}
+
+.nav-footer-container{
+    display: flex !important;
+  
+  
+  }
+ 
+    
 /*
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
