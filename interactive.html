@@ -26,7 +26,7 @@ Last Modified: 2024-03-29
         <nav class="navbar__menu l-mr-1-25 ">
             <ul class="navbar__items">
                 <li><a href="about-me.html" class="navbar__link">About Me</a></li>
-                <li><a href="design-system.html" class="navbar__link">Demos</a></li>
+              <li><a class="menu__link" href="index.html" target="_blank">Demos</a></li>
             </ul>
         </nav>
     </header>
@@ -37,13 +37,13 @@ Last Modified: 2024-03-29
         <!-- Top level navigation items -->
         <ul class="top__items l-mb-2">
             <li><a class="menu__link  " href="about-me.html">About Me</a></li>
-            <li><a class="menu__link" href="index.html">Demos</a></li>
+             <li><a class="menu__link" href="index.html" target="_blank">Demos</a></li>
         </ul>
 
         <!-- Branding section -->
         <h3 class="menu__heading l-mt-3  ">Branding</h3>
         <ul class="sidebar__list l-mb-2 ">
-            <li><a class="menu__link menu__link--active" href="#Colours"><span class="list__number">01 </span>
+            <li><a class="menu__link " href="#Colours"><span class="list__number">01 </span>
                     Colours</a></li>
             <li><a class="menu__link" href="typography.html"><span class="list__number">02 </span> Typography</a></li>
             <li><a class="menu__link" href="#Logo"><span class="list__number">03 </span> Logo</a></li>
@@ -56,7 +56,7 @@ Last Modified: 2024-03-29
             <li><a class="menu__link " href="containers.html"><span class="list__number">05 </span> Containers</a></li>
             <li><a class="menu__link" href="images.html"><span class="list__number">06 </span> Images</a></li>
 
-            <li><a class="menu__link" href="interactive.html"><span class="list__number">07 </span> Interactive</a></li>
+            <li><a class="menu__link menu__link--active" href="interactive.html"><span class="list__number">07 </span> Interactive</a></li>
             <li><a class="menu__link" href="feedback.html"><span class="list__number">08 </span> Feedback</a></li>
         </ul>
 
@@ -95,60 +95,79 @@ Last Modified: 2024-03-29
         <section class="colour-swatches u-width-90 u-m-b-40 ">
             <!-- Colour swatches -->
 
-            <h1 class="colour-swatches__heading">Pagination</h1>
+            <h1 class="colour-swatches__heading">Interactive</h1>
 
             <br>
 
 
             <p class="u-m-t-10 u-m-b-10 text-black-90 ">
-                With the help of pagination we enable users to see content in a systematic way, thus in a manageable manner, and without the loss of any data, contrary to an infinite scroll that can end up in overlooked information.
+                
 
 
             </p>
             <br>
-            <h3 class="u-m-b-20">Paginations</h3>
-
-
-
-    <div class="u-p-r bg-primary-background  u-pa-r-10  u-pa-l-10  u-pa-t-10 u-pa-b-10">
-       
-           
-       <!-- :::::::::::::::::::: Pagination  ::::::::::::::::::::::::: -->
-
-
-       <nav aria-label="Page navigation" class="pagination u-flex l-j-c l-a-c">
-        <a href="#" class="pagination__item text--primary-background">Prev</a>
-        <a href="#" class="pagination__item text--primary-background">1</a>
-        <a href="#" class="pagination__item text--primary-background">2</a>
-        <a href="#" class="pagination__item text--primary-background">3</a>
-        <a href="#" class="pagination__item text--primary-background">Next</a>
-    </nav>
-    
        
 
-            
-        
-    </div>
-    
-    <br>
+            <!-- :::::::::::::::::::: Interactive  ::::::::::::::::::::::::: -->
 
-    <div class="code-snippet-container">
-        <pre id="codeSnippet">
+            <h3 class="u-m-b-20">Blue animation</h3>
+            <div class="u-p-r bg-black-10 u-pa-r-10  u-pa-l-10  u-pa-t-10 u-pa-b-10">
 
- &lt;nav aria-label=&quot;Page navigation&quot; class=&quot;pagination u-flex l-j-c l-a-c&quot;&gt;
-    &lt;a href=&quot;#&quot; class=&quot;pagination__item text--primary-background&quot;&gt;Prev&lt;/a&gt;
-    &lt;a href=&quot;#&quot; class=&quot;pagination__item text--primary-background&quot;&gt;1&lt;/a&gt;
-    &lt;a href=&quot;#&quot; class=&quot;pagination__item text--primary-background&quot;&gt;2&lt;/a&gt;
-    &lt;a href=&quot;#&quot; class=&quot;pagination__item text--primary-background&quot;&gt;3&lt;/a&gt;
-    &lt;a href=&quot;#&quot; class=&quot;pagination__item text--primary-background&quot;&gt;Next&lt;/a&gt;
-&lt;/nav&gt;
-    </pre>
-        <button onclick="copyToClipboard()">Copy</button>
-    </div>
+                <a href="./coming-soon.html"
+                    class="btn btn-animation font-size-18  font-weight--bold text--white ">EXPLORE
+                </a>
+            </div>
+            <br>
+            <div class="code-snippet-container">
+                <pre id="codeSnippet">
 
-   
-    <br>
-    
+ &lt;a href="#" class="btn btn-animation font-size-18 font-weight--bold text--white"&gt;EXPLORE&lt;/a&gt;</pre>
+                <button onclick="copyToClipboard()">Copy</button>
+            </div>
+
+
+            <br>
+            <h3 class="u-m-b-20">White animation</h3>
+            <div class="u-p-r bg-black-10  u-pa-r-10  u-pa-l-10  u-pa-t-10 u-pa-b-10">
+
+                <a href="./coming-soon.html"
+                    class="learn-more u-padding-horizontal-22 u-text-no-decoration font-size-medium text--sunset-dark u-m-t-10 font-weight--bolder">--LEAR
+                    MORE
+                </a>
+
+            </div>
+            <br>
+            <div class="code-snippet-container">
+                <pre id="codeSnippet">
+
+&lt;a href="#" class="learn-more u-padding-horizontal-22 u-text-no-decoration font-size-medium text--sunset-dark u-m-t-10 font-weight--bolder"&gt;--LEARN MORE&lt;/a&gt;</pre>
+                <button onclick="copyToClipboard()">Copy</button>
+            </div>
+
+
+            <br>
+            <h3 class="u-m-b-20">Text button</h3>
+            <div class="u-p-r bg-black-10  u-pa-r-10  u-pa-l-10  u-pa-t-10 u-pa-b-10">
+
+                <a href="./coming-soon.html"
+                    class="btn btn-animation-2 btn-gift font-size-18  font-weight--bold margin-top-2 text--white  ">EXPLORE
+                </a>
+            </div>
+
+
+
+
+            <br>
+            <div class="code-snippet-container">
+                <pre id="codeSnippet">
+
+&lt;a href="#" class="btn btn-animation-2 btn-gift font-size-18 font-weight--bold margin-top-2 text--white"&gt;EXPLORE&lt;/a&gt; </pre>
+                <button onclick="copyToClipboard()">Copy</button>
+            </div>
+
+
+            <br>
+
 
 
 
