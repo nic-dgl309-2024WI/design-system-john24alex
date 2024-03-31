@@ -33,3 +33,25 @@ function copyToClipboard() {
        
     });
 });
+
+
+// Accordion
+
+function toggleAccordion(element) {
+    const item = element.parentElement;
+    const items = document.querySelectorAll('.accordion-item');
+  
+    for (const otherItem of items) {
+      if (otherItem !== item) {
+        otherItem.querySelector('.accordion-body').style.display = 'none';
+        otherItem.querySelector('.accordion-icon').textContent = '+';
+      }
+    }
+  
+    const body = item.querySelector('.accordion-body');
+    const isOpen = body.style.display === 'block';
+    
+    body.style.display = isOpen ? 'none' : 'block';
+    element.querySelector('.accordion-icon').textContent = isOpen ? '+' : '-';
+  }
+  
