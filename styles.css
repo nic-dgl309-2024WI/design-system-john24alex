@@ -45,6 +45,7 @@
   --clr-gray-medium: #909090;
   --clr-blue-medium: #396f86;
   --clr-brown-dark: #DED9C5;
+  --clr-lightcoral:lightcoral;
 
 
   
@@ -455,6 +456,10 @@
 }
 .bg-gray-light {
   background-color: var(--clr-bg-gray-light);
+}
+
+.bg-lightcoral{
+  background-color: var(--clr-lightcoral)
 }
 
 
@@ -1360,6 +1365,76 @@ blockquote,
 .u-border-right-color-primary { border-right-color:var(--clr-black-30); }
 .u-border-bottom-color-primary { border-bottom-color:var(--clr-black-30); }
 .u-border-left-color-primary { border-left-color: var(--clr-black-30); }
+
+
+
+
+
+
+
+.custom-ol{
+  list-style: auto !important;
+  padding-left: 10px;
+
+}
+
+
+/* Custom Square Bullets */
+ul.custom-square {
+  list-style-type: square !important;
+  list-style: square !important;
+  color: #000000; /* Black */
+}
+
+/* Custom Circle Bullets */
+ul.custom-circle {
+  list-style-type: circle !important;
+  list-style: circle !important;
+  color: #333333; /* Dark Grey */
+}
+
+/* Custom Image Bullets */
+ul.custom-image {
+  list-style-type: none !important;
+  padding-left: 0;
+}
+ul.custom-image li {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="" viewBox="0 0 2 2"><circle cx="1" cy="1" r="1" /></svg>');
+  background-repeat: no-repeat;
+  background-position: 0 5px; 
+  background-size: 10px 10px;
+  padding-left: 20px;
+  margin-bottom: 5px;
+}
+
+/* Custom Color Bullets */
+ul.custom-color {
+  list-style-type: none;
+  padding-left: 0;
+}
+ul.custom-color li::before {
+  content: "• ";
+  color: var(--clr-blue-medium);
+  font-size: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+
+
+.spinner {
+  border: 4px solid var(--clr-light); /* Light grey */
+  border-top: 4px solid var(--clr-primary-text); /* Primary color */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
 /*
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -2596,7 +2671,7 @@ height: 80%;
 {
 
   width: 100%;
-  height: 500;
+  height: 500px;
 
 }
 
