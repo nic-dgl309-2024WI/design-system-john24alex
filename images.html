@@ -3,48 +3,48 @@
 
 <!-- 
 Author: John Huerfano M.
-Purpose: Index page for the design system
-Last Modified: 2024-03-05
+Purpose: Color page for the design system
+Last Modified: 2024-03-29
 -->
 
 <head>
-
-
     <meta charset="UTF-8">
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design System</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="design-system.css" />
+
 </head>
 
 <body>
     <!-- Top Navbar -->
-    <header class="navbar__top">
+    <header class="navbar__top u-zi-5">
         <div class="navbar__logo"><a href="design-system.html" class="menu__link">Design System</a></div>
         <!-- Hamburger icon for mobile menu -->
         <div class="navbar__mobile-toggle" onclick="toggleMobileMenu()"></div>
         <nav class="navbar__menu l-mr-1-25 ">
             <ul class="navbar__items">
                 <li><a href="about-me.html" class="navbar__link">About Me</a></li>
-                <li><a href="design-system.html" class="menu__link menu__link--active">Demos</a></li>
+                <li><a href="design-system.html" class="navbar__link">Demos</a></li>
             </ul>
         </nav>
     </header>
 
 
     <!-- Side navbar -->
-    <nav class="navbar__side l-pl-2">
+    <nav class="navbar__side l-pl-2  u-line-height-1-8  l-mt-3  ">
         <!-- Top level navigation items -->
-        <ul class="top__items">
-            <li><a class="menu__link" href="about-me.html">About Me</a></li>
-            <li><a class="menu__link menu__link--active" href="index.html">Demos</a></li>
+        <ul class="top__items l-mb-2">
+            <li><a class="menu__link  " href="about-me.html">About Me</a></li>
+            <li><a class="menu__link" href="index.html">Demos</a></li>
         </ul>
 
         <!-- Branding section -->
-        <h3 class="menu__heading">Branding</h3>
-        <ul class="sidebar__list">
-            <li><a class="menu__link" href="colours.html"><span class="list__number">01 </span> Colours</a></li>
+        <h3 class="menu__heading l-mt-3  ">Branding</h3>
+        <ul class="sidebar__list l-mb-2 ">
+            <li><a class="menu__link menu__link--active" href="#Colours"><span class="list__number">01 </span>
+                    Colours</a></li>
             <li><a class="menu__link" href="typography.html"><span class="list__number">02 </span> Typography</a></li>
             <li><a class="menu__link" href="#Logo"><span class="list__number">03 </span> Logo</a></li>
         </ul>
@@ -55,6 +55,7 @@ Last Modified: 2024-03-05
             <li><a class="menu__link " href="spacing.html"><span class="list__number">04 </span> Spacing</a></li>
             <li><a class="menu__link " href="containers.html"><span class="list__number">05 </span> Containers</a></li>
             <li><a class="menu__link" href="images.html"><span class="list__number">06 </span> Images</a></li>
+
             <li><a class="menu__link" href="interactive.html"><span class="list__number">07 </span> Interactive</a></li>
             <li><a class="menu__link" href="feedback.html"><span class="list__number">08 </span> Feedback</a></li>
         </ul>
@@ -85,16 +86,86 @@ Last Modified: 2024-03-05
             <li><a class="menu__link" href="list.html"><span class="list__number">19 </span> Lists</a></li>
         </ul>
     </nav>
+
+
+
     <div class="content-container">
         <!-- Main content-->
+        <!-- Colours section -->
+        <section class="colour-swatches u-width-90 u-m-b-40 ">
+            <!-- Colour swatches -->
+
+            <h1 class="colour-swatches__heading">Pagination</h1>
+
+            <br>
+
+
+            <p class="u-m-t-10 u-m-b-10 text-black-90 ">
+                With the help of pagination we enable users to see content in a systematic way, thus in a manageable manner, and without the loss of any data, contrary to an infinite scroll that can end up in overlooked information.
+
+
+            </p>
+            <br>
+            
+
+
+    <div class="u-p-r bg-primary-background  u-pa-r-10  u-pa-l-20  u-pa-t-20 u-pa-b-20">
+       
+           
+       <!-- :::::::::::::::::::: Images  ::::::::::::::::::::::::: -->
+
+       <h3 class="u-m-b-20">Product Images Thumnail</h3>
+       <img class="product-image" src="./images/Nootkatensis-Pendula-image.jpg" alt="Nootkatensis Pendula" >
+    </div>
+    <br>
+
+    <div class="code-snippet-container">
+        <pre id="codeSnippet">
+
+&lt;img class="product-image" src="./images/Nootkatensis-Pendula-image.jpg" alt="Nootkatensis Pendula" &gt; </pre>
+        <button onclick="copyToClipboard()">Copy</button>
+    </div>
+
+   
+    <br>
+
+    <br>
+    <div class="u-p-r bg-primary-background  u-pa-r-10  u-pa-l-20  u-pa-t-20 u-pa-b-20">
+
+       <h3 class="u-m-b-20">Tip Images Thumnail</h3>
+       <img class="tip-image" src="./images/Know-Your-Zone.jpg" alt=" Know Your Zone" >
+    </div> 
+        
+
+    
+    <br>
+
+    <div class="code-snippet-container">
+        <pre id="codeSnippet">
+
+&lt;img class="tip-image" src="./images/Know-Your-Zone.jpg" alt=" Know Your Zone" &gt;</pre>
+        <button onclick="copyToClipboard()">Copy</button>
+    </div>
+
+   
+    <br>
+    
 
 
 
+        </section>
         <!-- End of content ... -->
     </div>
 
+
+
+
+
+
+
     <!-- Scripts -->
     <script src="design-system.js"></script>
+
 
 </body>
 

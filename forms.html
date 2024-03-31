@@ -95,61 +95,79 @@ Last Modified: 2024-03-29
         <section class="colour-swatches u-width-90 u-m-b-40 ">
             <!-- Colour swatches -->
 
-            <h1 class="colour-swatches__heading">Pagination</h1>
+            <h1 class="colour-swatches__heading">Forms</h1>
 
             <br>
 
 
-            <p class="u-m-t-10 u-m-b-10 text-black-90 ">
-                With the help of pagination we enable users to see content in a systematic way, thus in a manageable manner, and without the loss of any data, contrary to an infinite scroll that can end up in overlooked information.
+            <p class="u-m-t-10 u-m-b-40 text-black-90 ">
 
-
+               Simplifying the user interface and minimizing the required input fields, we ensure that reaching out to us is as effortless as asking a gardener about the day's harvest. 
+               
             </p>
             <br>
-            <h3 class="u-m-b-20">Paginations</h3>
-
-
-
-    <div class="u-p-r bg-primary-background  u-pa-r-10  u-pa-l-10  u-pa-t-10 u-pa-b-10">
-       
-           
-       <!-- :::::::::::::::::::: Pagination  ::::::::::::::::::::::::: -->
-
-
-       <nav aria-label="Page navigation" class="pagination u-flex l-j-c l-a-c">
-        <a href="#" class="pagination__item text--primary-background">Prev</a>
-        <a href="#" class="pagination__item text--primary-background">1</a>
-        <a href="#" class="pagination__item text--primary-background">2</a>
-        <a href="#" class="pagination__item text--primary-background">3</a>
-        <a href="#" class="pagination__item text--primary-background">Next</a>
-    </nav>
-    
-       
+            <h3 class="u-m-b-40">Contact Form</h3>
 
             
+
+    <div class="u-p-r bg-clr-brown-dark   u-pa-r-30  u-pa-l-30  u-pa-t-30 u-height-100 u-pa-b-30">
+       
+           
+         <!--  ::::::::::::::Contact Form  ::::::::::::::  -->
+
+
+            <form class="contact-form u-width-80 u-height-60  u-flex l-j-c l-a-c l-fd-c l-gap-1 font-size--medium u-font-family--main "  action="/submit-form-endpoint" method="post">
+                <div class="u-width-80">
+                    <input class=" form-input u-width-100 u-h-f-50 u-padding-horizontal-1 font-size--medium u-border-none text--sunset-dark " type="text" id="name" name="name" placeholder="Name" required aria-label="Name">
+                </div>
+                <div class="u-width-80">
+                    <input class=" form-input u-width-100 u-h-f-50 u-padding-horizontal-1 font-size--medium u-border-none" type="email" id="email" name="email" placeholder="Email" required aria-label="Email">
+                </div>
+                <div class="u-width-80">
+                    <input  class=" form-input u-width-100 u-h-f-50 u-padding-horizontal-1 font-size--medium u-border-none" type="text" id="subject" name="subject" placeholder="Subject" required aria-label="Subjet">
+                </div>
+                <div class="u-width-80">
+                    <textarea class="  form-input u-width-100  u-h-f-100 u-border-none u-padding-horizontal-1 u-padding-vertical-1 font-size--medium u-border-none" id="message" name="message" rows="4" placeholder="Message" required aria-label="Message"></textarea>
+                </div>
+                <button class="btn btn-animation font-size-18 margin-top-3 font-weight--bold text--white u-h-f-60 u-padding-t-0   u-text-no-decoration u-border-none" type="submit">Send Message</button>
+           
+           
+            
+            </form>
+
+    
+         
         
     </div>
     
     <br>
 
+    <br>
     <div class="code-snippet-container">
         <pre id="codeSnippet">
 
- &lt;nav aria-label=&quot;Page navigation&quot; class=&quot;pagination u-flex l-j-c l-a-c&quot;&gt;
-    &lt;a href=&quot;#&quot; class=&quot;pagination__item text--primary-background&quot;&gt;Prev&lt;/a&gt;
-    &lt;a href=&quot;#&quot; class=&quot;pagination__item text--primary-background&quot;&gt;1&lt;/a&gt;
-    &lt;a href=&quot;#&quot; class=&quot;pagination__item text--primary-background&quot;&gt;2&lt;/a&gt;
-    &lt;a href=&quot;#&quot; class=&quot;pagination__item text--primary-background&quot;&gt;3&lt;/a&gt;
-    &lt;a href=&quot;#&quot; class=&quot;pagination__item text--primary-background&quot;&gt;Next&lt;/a&gt;
-&lt;/nav&gt;
-    </pre>
+ &lt;form class=&quot;contact-form u-width-80 u-height-60  u-flex l-j-c l-a-c l-fd-c l-gap-1 font-size--medium u-font-family--main &quot;  action=&quot;/submit-form-endpoint&quot; method=&quot;post&quot;&gt;
+    &lt;div class=&quot;u-width-80&quot;&gt;
+        &lt;input class=&quot; form-input u-width-100 u-h-f-50 u-padding-horizontal-1 font-size--medium u-border-none text--sunset-dark &quot; type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot; placeholder=&quot;Name&quot; required aria-label=&quot;Name&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;u-width-80&quot;&gt;
+        &lt;input class=&quot; form-input u-width-100 u-h-f-50 u-padding-horizontal-1 font-size--medium u-border-none&quot; type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; placeholder=&quot;Email&quot; required aria-label=&quot;Email&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;u-width-80&quot;&gt;
+        &lt;input  class=&quot; form-input u-width-100 u-h-f-50 u-padding-horizontal-1 font-size--medium u-border-none&quot; type=&quot;text&quot; id=&quot;subject&quot; name=&quot;subject&quot; placeholder=&quot;Subject&quot; required aria-label=&quot;Subject&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;u-width-80&quot;&gt;
+        &lt;textarea class=&quot;  form-input u-width-100  u-h-f-100 u-border-none u-padding-horizontal-1 u-padding-vertical-1 font-size--medium u-border-none&quot; id=&quot;message&quot; name=&quot;message&quot; rows=&quot;4&quot; placeholder=&quot;Message&quot; required aria-label=&quot;Message&quot;&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+    &lt;button class=&quot;btn btn-animation font-size-18 margin-top-3 font-weight--bold text--white u-h-f-60 u-padding-t-0   u-text-no-decoration u-border-none&quot; type=&quot;submit&quot;&gt;Send Message&lt;/button&gt;
+&lt;/form&gt;
+        </pre>
         <button onclick="copyToClipboard()">Copy</button>
     </div>
 
    
     <br>
     
-
 
 
         </section>

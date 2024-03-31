@@ -95,60 +95,133 @@ Last Modified: 2024-03-29
         <section class="colour-swatches u-width-90 u-m-b-40 ">
             <!-- Colour swatches -->
 
-            <h1 class="colour-swatches__heading">Pagination</h1>
+            <h1 class="colour-swatches__heading">List</h1>
 
             <br>
-
-
-            <p class="u-m-t-10 u-m-b-10 text-black-90 ">
-                With the help of pagination we enable users to see content in a systematic way, thus in a manageable manner, and without the loss of any data, contrary to an infinite scroll that can end up in overlooked information.
-
-
-            </p>
-            <br>
-            <h3 class="u-m-b-20">Paginations</h3>
-
-
-
-    <div class="u-p-r bg-primary-background  u-pa-r-10  u-pa-l-10  u-pa-t-10 u-pa-b-10">
-       
-           
-       <!-- :::::::::::::::::::: Pagination  ::::::::::::::::::::::::: -->
-
-
-       <nav aria-label="Page navigation" class="pagination u-flex l-j-c l-a-c">
-        <a href="#" class="pagination__item text--primary-background">Prev</a>
-        <a href="#" class="pagination__item text--primary-background">1</a>
-        <a href="#" class="pagination__item text--primary-background">2</a>
-        <a href="#" class="pagination__item text--primary-background">3</a>
-        <a href="#" class="pagination__item text--primary-background">Next</a>
-    </nav>
-    
-       
-
             
-        
-    </div>
-    
-    <br>
+            <div class="">
 
-    <div class="code-snippet-container">
-        <pre id="codeSnippet">
+                <div class="bg-light u-padding-horizontal-1-5 u-padding-vertical-1">
+                    <h2 class="font-size--large font-weight--light text--blue-highlight u-m-b-10">Unordered List</h2>
+                    <ul class="custom-ul">
+                        <li class="text-primary">Item 1</li>
+                        <li class="text-secondary">Item 2</li>
+                        <li>Item 3</li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+            <div class="code-snippet-container">
+                <pre id="codeSnippet">
+&lt;ul class="custom-ul"&gt;
+    &lt;li class="text-primary"&gt;Item 1&lt;/li&gt;
+    &lt;li class="text-secondary"&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;</pre>
+                <button onclick="copyToClipboard()">Copy</button>
+            </div>
+            <br>
+                <br>
+                <div class="bg-light u-padding-horizontal-1-5 u-padding-vertical-1">
+                    <h2 class="font-size--large font-weight--light text--blue-highlight u-m-b-10">Ordered List</h2>
+                    <ol class="custom-ol">
+                        <li class="text-primary">First</li>
+                        <li class="text-secondary">Second</li>
+                        <li>Third</li>
+                    </ol>
+                </div>
+                <br>
+                <br>
+            <div class="code-snippet-container">
+                <pre id="codeSnippet">
+&lt;ol class="custom-ol"&gt;
+    &lt;li class="text-primary"&gt;First&lt;/li&gt;
+    &lt;li class="text-secondary"&gt;Second&lt;/li&gt;
+    &lt;li&gt;Third&lt;/li&gt;
+&lt;/ol&gt;</pre>
+                <button onclick="copyToClipboard()">Copy</button>
+            </div>
+            <br>
 
- &lt;nav aria-label=&quot;Page navigation&quot; class=&quot;pagination u-flex l-j-c l-a-c&quot;&gt;
-    &lt;a href=&quot;#&quot; class=&quot;pagination__item text--primary-background&quot;&gt;Prev&lt;/a&gt;
-    &lt;a href=&quot;#&quot; class=&quot;pagination__item text--primary-background&quot;&gt;1&lt;/a&gt;
-    &lt;a href=&quot;#&quot; class=&quot;pagination__item text--primary-background&quot;&gt;2&lt;/a&gt;
-    &lt;a href=&quot;#&quot; class=&quot;pagination__item text--primary-background&quot;&gt;3&lt;/a&gt;
-    &lt;a href=&quot;#&quot; class=&quot;pagination__item text--primary-background&quot;&gt;Next&lt;/a&gt;
-&lt;/nav&gt;
-    </pre>
-        <button onclick="copyToClipboard()">Copy</button>
-    </div>
 
-   
-    <br>
-    
+
+                <br>
+                <div class="bg-light u-padding-horizontal-1-5 u-padding-vertical-1">
+                    <h2 class="font-size--large font-weight--light text--blue-highlight u-m-b-10">Description List</h2>
+                    <dl class="custom-dl">
+                        <dt>Term 1</dt>
+                        <dd>Description 1</dd>
+                        <dt>Term 2</dt>
+                        <dd>Description 2</dd>
+                    </dl>
+                </div>
+                
+                <br>
+                <br>
+            <div class="code-snippet-container">
+                <pre id="codeSnippet">
+&lt;dl class="custom-dl"&gt;
+    &lt;dt&gt;Term 1&lt;/dt&gt;
+    &lt;dd&gt;Description 1&lt;/dd&gt;
+    &lt;dt&gt;Term 2&lt;/dt&gt;
+    &lt;dd&gt;Description 2&lt;/dd&gt;
+&lt;/dl&gt; </pre>
+                <button onclick="copyToClipboard()">Copy</button>
+            </div>
+            <br>
+
+                <div class="bg-light u-padding-horizontal-1-5 u-padding-vertical-1">
+                    <h2 class="font-size--large font-weight--light text--blue-highlight u-m-b-10">Big Image Bullets</h2>
+                    <ul class="custom-image">
+                        <li>Point One</li>
+                        <li>Point Two</li>
+                        <li>Point Three</li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+            <div class="code-snippet-container">
+                <pre id="codeSnippet">
+&lt;ul class="custom-image"&gt;
+    &lt;li&gt;Point One&lt;/li&gt;
+    &lt;li&gt;Point Two&lt;/li&gt;
+    &lt;li&gt;Point Three&lt;/li&gt;
+&lt;/ul&gt;</pre>
+                <button onclick="copyToClipboard()">Copy</button>
+            </div>
+            <br>
+
+                <br>
+                <div class="bg-light u-padding-horizontal-1-5 u-padding-vertical-1">
+
+                    <h2 class="font-size--large font-weight--light text--blue-highlight u-m-b-10">Small Color Bullets
+                    </h2>
+                    <ul class="custom-color">
+                        <li>First Item</li>
+                        <li>Second Item</li>
+                        <li>Third Item</li>
+                    </ul>
+
+                </div>
+                <br>
+                <br>
+            <div class="code-snippet-container">
+                <pre id="codeSnippet">
+&lt;ul class="custom-color"&gt;
+    &lt;li&gt;First Item&lt;/li&gt;
+    &lt;li&gt;Second Item&lt;/li&gt;
+    &lt;li&gt;Third Item&lt;/li&gt;
+&lt;/ul&gt;</pre>
+                <button onclick="copyToClipboard()">Copy</button>
+            </div>
+            <br>
+
+
+            </div>
+
+
+
+
 
 
 
