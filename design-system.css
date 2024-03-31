@@ -44,7 +44,7 @@ body {
 .navbar__items {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   color: var(--clr-primary-text);
 }
 
@@ -82,6 +82,8 @@ body {
 .top__items {
   display: block;
   margin-top: 20px;
+  margin-left: 0px !important;
+  line-height: normal !important;
 }
 
 /* Menu links and states */
@@ -725,6 +727,88 @@ a:focus {
   z-index: 9999;
 }
 
+
+
+
+
+/* Justify Content */
+.l-j-c { justify-content: center; }
+.l-j-s { justify-content: start; }
+.l-j-e { justify-content: end; }
+.l-j-sb { justify-content: space-between; }
+.l-j-sa { justify-content: space-around; }
+.l-j-se { justify-content: space-evenly; }
+
+/* Align Items */
+.l-a-c { align-items: center; }
+.l-a-s { align-items: start; }
+.l-a-e { align-items: end; }
+.l-a-b { align-items: baseline; }
+.l-a-st { align-items: stretch; }
+
+/* Align Self */
+.l-as-c { align-self: center; }
+.l-as-s { align-self: start; }
+.l-as-e { align-self: end; }
+.l-as-b { align-self: baseline; }
+.l-as-st { align-self: stretch; }
+
+/* Flex Direction */
+.l-fd-r { flex-direction: row; }
+.l-fd-rr { flex-direction: row-reverse; }
+.l-fd-c { flex-direction: column; }
+.l-fd-cr { flex-direction: column-reverse; }
+
+/* Flex Wrap */
+.l-fw-w { flex-wrap: wrap; }
+.l-fw-nw { flex-wrap: nowrap; }
+.l-fw-wr { flex-wrap: wrap-reverse; }
+
+/* Flex Grow */
+.l-fg-0 { flex-grow: 0; }
+.l-fg { flex-grow: 1; }
+
+/* Flex Shrink */
+.l-fs-0 { flex-shrink: 0; }
+.l-fs { flex-shrink: 1; }
+
+
+
+/* Grid Template Columns */
+.l-gtc-a { grid-template-columns: auto; }
+.l-gtc-f { grid-template-columns: 1fr; }
+.l-gtc-2 { grid-template-columns: repeat(2, 1fr); }
+.l-gtc-3 { grid-template-columns: repeat(3, 1fr); }
+.l-gtc-4 { grid-template-columns: repeat(4, 1fr); }
+
+/* Grid Template Rows */
+.l-gtr-a { grid-template-rows: auto; }
+.l-gtr-f { grid-template-rows: 1fr; }
+.l-gtr-2 { grid-template-rows: repeat(2, 1fr); }
+.l-gtr-3 { grid-template-rows: repeat(3, 1fr); }
+.l-gtr-4 { grid-template-rows: repeat(4, 1fr); }
+
+/* Gap */
+.l-gap-1 { gap: 1rem; }
+.l-gap-2 { gap: 2rem; }
+.l-gap-3 { gap: 3rem; }
+.l-gap-4 { gap: 4rem; }
+
+/* Place Items */
+.l-pi-c { place-items: center; }
+.l-pi-s { place-items: start; }
+.l-pi-e { place-items: end; }
+.l-pi-st { place-items: stretch; }
+.l-pi-b { place-items: baseline; }
+
+
+
+
+
+
+
+
+
 /* Color Section  */
 
 /* Typography Section  */
@@ -915,18 +999,20 @@ a:focus {
 /* side bar Mobile*/
 
 .navbar__side {
+  
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000; /* Make sure the z-index is enough to be above other elements */
-  height: 100vh; /* Set the height to be the same as the height of the viewport */
+  height: calc(100vh - 100px) !important; /* Set the height to be the same as the height of the viewport */
   width: 80%; /* Or the width you want for the side menu */
-  overflow-y: auto; /* Allow vertical scrolling */
+  overflow-y: auto !important; /* Allow vertical scrolling */
   -webkit-overflow-scrolling: touch; /* Enables smoother scrolling on iOS */
   background-color: var(--clr-primary-background); /* Background color */
   transition: transform 0.3s; /* Smooth transition for menu opening */
-  padding-bottom: 100px;
+  padding-bottom: 500px !important;
   padding-top: 30px;
+  max-height: calc(100vh - 100px);
 }
 
 .typo-container{
@@ -1086,6 +1172,8 @@ height: auto !important;
   }
   .navbar__menu {
     display: flex;
+    justify-content: end;
+    margin-right: 100px;
   }
   .navbar__side {
     display: block;
