@@ -18,7 +18,7 @@
   --clr-link--active: #1074ab; /* dark blue */
 
   --clr-blue-highlight: #0884c7; /* dark blue */
-  --clr-blue-text: #466e84; /* dark blue */
+  --clr-blue-text:#304A5A; /* dark blue */
 
   /* Site color Variables  */
   --clr-primary-text: #231007;
@@ -1653,7 +1653,7 @@ margin-top:50px;
 
 .breadcrumb li a {
   text-decoration: none;
-  color: #0275d8;
+  color: #02549C;
   transition: color 0.3s ease;
 }
 
