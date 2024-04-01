@@ -613,7 +613,7 @@
 
 .u-line-height-1-5 {  line-height: var(--line-height);}
 
-.u-line-height-1-8 {  line-height: var(--line-height-1-8);}
+.u-line-height-1-8 {  line-height: var(--line-height-1-8) !important;}
 
 .u-line-height-double {  line-height: var(--line-heightdouble) !important;}
 
@@ -689,6 +689,7 @@
 .u-pa-l-30{ padding-left: var(--spacing-30)!important;}
 .u-pa-l-40{ padding-left: var(--spacing-40)!important;}
 .u-pa-l-50{ padding-left: var(--spacing-50)!important;}
+.u-pa-l-80{ padding-left: var(--spacing-80)!important;}
 .u-pa-l-10-per{ padding-left: var(--per-10)!important;}
 
 /* Padding options top */
@@ -1080,11 +1081,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-/* Layout  2 columns */
-.u-grid--2-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
+
 
 /* Gaps */
 

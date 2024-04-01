@@ -83,7 +83,7 @@ body {
   display: block;
   margin-top: 20px;
   margin-left: 0px !important;
-  line-height: normal !important;
+  line-height: 40px !important;
 }
 
 /* Menu links and states */
@@ -1158,7 +1158,10 @@ height: auto !important;
     margin-left: 0px !important;
   }
 
+.about-section{
+display: none !important;
 
+}
 .colour-swatches{
   margin-left: 0px;
 }

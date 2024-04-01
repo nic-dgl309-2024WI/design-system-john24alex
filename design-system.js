@@ -10,7 +10,8 @@ function toggleMobileMenu() {
 
 
 
-// Copy paste
+
+// Copy paste function
 
 function copyToClipboard() {
     // Get the text from the pre element
@@ -55,3 +56,4 @@ function toggleAccordion(element) {
     element.querySelector('.accordion-icon').textContent = isOpen ? '+' : '-';
   }
   
+
