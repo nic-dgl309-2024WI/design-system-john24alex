@@ -1012,7 +1012,7 @@ a:focus {
   transition: transform 0.3s; /* Smooth transition for menu opening */
   padding-bottom: 500px !important;
   padding-top: 30px;
-  max-height: calc(100vh - 100px);
+  max-height: calc(100vh - 200px);
 }
 
 .typo-container{
